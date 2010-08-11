@@ -1,0 +1,14 @@
+#Note: If this file prevents running vector in your environment, simply delete
+#      it. Everything should be safe even if the files blocked by the following
+#      Apache rules are accessible.
+#      The reason for protecting these files is to to keep searchengines/foo
+#      away from indexing files containing version information, names and/or not
+#      necessarily public template parts by default.
+<FilesMatch "^inc_(detail|cite|mediamanager)\.php$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>
+<FilesMatch "^(README|README-de|COPYING|ChangeLog|CREDITS|VERSION|style\.ini|detail\.php|main\.php|mediamanager\.php)$">
+  Order Deny,Allow
+  Deny from all
+</FilesMatch>

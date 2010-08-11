@@ -1,0 +1,68 @@
+Title: Development Changelog of the vector template for DokuWiki
+Creation Date: 2010-06-12
+Last Update: 2010-06-29
+Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
+     <http://www.dokuwiki.org/template:vector>
+
+
+
+PLEASE NOTE: I am NO native English speaker. If you find any errors please let
+             me know (e.g. by mail). Otherwise, my English is not getting better
+             (as desired by myself). Thank you! -- Andreas Haerter
+
+
+
+2010-06-29 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Corrected small typos in Italian and Dutch language files
+
+
+2010-06-28 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Template respects $conf['disableactions']
+    Links to disabled functions should be hidden now.
+
+  * Mediamanager CSS improved
+
+
+2010-06-27  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * New config option: closed wiki
+    If active, most tabs/boxes will be hidden until user is logged in.
+
+  * Added Italian language files
+    Thanks to Luigi Micco :-) (see CREDITS for details).
+
+
+2010-06-26  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * New config option: user pages
+    You can (de)activate user pages now + choose a custom namespace for them.
+
+  * Support for PNG favicons
+    I do NOT recommend PNG for favicons (cause it is not supported by
+    all browsers), but some users requested this feature. See README for
+    details.
+
+  * Fixed bug: "wrong link (double slash in front) when urlrewriteing is active"
+    I replaced all "wl(getID())" with "wl(cleanID(getID())". Additionally, all
+    "auth_quickaclcheck(trim($id, ":))" where replaced with
+    "auth_quickaclcheck(cleanID($id))". See comment on
+    <http://bugs.splitbrain.org/index.php?do=details&task_id=1983> for details.
+
+  * Fixed bug: "wrong CSS within site wide notice"
+
+  * Minor CSS improvements (screen and print layout)
+
+  * Updated Brazilian Portuguese language files
+    Thanks to Fabio Reis :-) (see CREDITS for details).
+
+
+2010-06-18  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added Dutch language files
+    Thanks to Theo Klein :-) (see CREDITS for details).
+
+  * Added Brazilian Portuguese language files
+    Thanks to Fabio Reis :-) (see CREDITS for details).
+
+
+2010-06-12  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Initial release.
+

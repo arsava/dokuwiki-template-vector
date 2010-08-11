@@ -1,0 +1,425 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/screen.css". You have been warned!
+ *****************************************************************************/
+
+/* Notes about how the template CSS works:
+
+   - This template includes 3rd party CSS files:
+     1) CSS from the "default" DokuWiki template by Andreas Gohr (brings
+        important and basic styling for syntax and core features)
+     2) CSS from the original "vector" skin for MediaWiki (brings the basic
+        layout and overwrites some "default" styling)
+     These files will be included BEFORE this specific CSS file. In this file,
+     I just overwrite non fitting MediaWiki "vector" and DokuWiki "default" CSS
+     + add some CSS for some exclusive objects of this template
+   - Why I am doing this? Well, read <http://j.mp/jIyE2>. I followed the main
+     principle described there and simply apply it to the two sources ("default"
+     template and "vector" skin).
+   - This way also ensures a painless update, if there are new versions of
+     MediaWiki vector or DokuWiki CSS files. Cause these 3rd party components
+     were not edited or partially copied, I do not have to track their changes
+     in detail.
+
+   Explanation of the different sections in here:
+   - "Styles/corrections for the template itself"
+     General CSS targeting the template structure. This section overwrites non
+     fitting CSS of the "vector" MediaWiki skin and "default" DokuWiki template.
+     Read the notes above and <http://j.mp/jIyE2> if you do not know why I am
+     doing it this way.
+   - "Browser Hacks and corrections"
+     Section containing bigger hacks for browser specific problems.
+*/
+
+
+/******************************************************************************
+ ************** Styles/corrections for the template itself ********************
+ ******************************************************************************/
+/* --------------- general styling --------------- */
+/* missing page links outside rendered articles */
+a.wikilink2,
+a.wikilink2:link,
+a.wikilink2:visited,
+a.wikilink2:hover {
+  color: __missing__;
+  border-bottom: 0 none;
+  text-decoration: none;
+}
+a.wikilink2:hover {
+  text-decoration: underline;
+}
+
+/* external links */
+div#bodyContent a.urlextern {
+  background: url(static/3rd/vector/external-link-ltr-icon.png) center right no-repeat;
+  padding: 0 13px 0 0;
+}
+div#bodyContent a.mail {
+  background: transparent url(static/3rd/vector/mail-icon.png) center right no-repeat;
+  padding: 0 13px 0 0;
+}
+
+/* other links */
+div.dokuwiki a.windows {
+  background: transparent url(static/3rd/dokuwiki/windows.gif) center right no-repeat;
+  padding: 0 18px 1px 0;
+}
+
+/* interwiki links: place icons at the right side */
+div.dokuwiki a.interwiki {
+  background-position: center right;
+  padding: 0 17px 0 0;
+}
+
+/* headlines */
+div#content .dokuwiki h1,
+div#content .dokuwiki h2,
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  border-bottom: 1px solid #aaa;
+  color: __text__;
+  margin: 0;
+  padding-bottom: 0.17em;
+  padding-top: 0.5em;
+}
+div#content .dokuwiki h1,
+div#content .dokuwiki h2 {
+  margin-bottom:0.6em;
+  font-weight: normal;
+}
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  font-weight: bold;
+  border-bottom: none;
+  margin-bottom: 0.3em;
+}
+div#content .dokuwiki h3 {
+  font-size: 132%;
+}
+div#content .dokuwiki h4 {
+  font-size: 116%;
+}
+div#content .dokuwiki h5 {
+  font-size: 100%;
+}
+div#content .dokuwiki h6 {
+  font-size: 80%;
+}
+
+/* remove indent from different sections */
+div#content .dokuwiki div.level1,
+div#content .dokuwiki div.level2,
+div#content .dokuwiki div.level3,
+div#content .dokuwiki div.level4,
+div#content .dokuwiki div.level5 {
+  margin-left: 0;
+}
+
+/* quotes */
+div#content .dokuwiki blockquote {
+  border-left: 2px solid __border__;
+  padding-left: 3px;
+  margin-left: 0.2em;
+}
+
+/* preformatted stuff, source code */
+div#content .dokuwiki code,
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  font-size: 100%;
+}
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  line-height: 1.2em;
+  background-color: __background_other__;
+}
+div#content .dokuwiki dl.file,
+div#content .dokuwiki dl.file dd {
+  margin-left: 0;
+}
+div#content .dokuwiki dl.file dt {
+  background-color: __background_other__;
+  border-bottom: 2px solid __background_other__;
+}
+
+/* "you are here" and "breadcrumbs" */
+.catlinks {
+  font-size: 80%;
+  margin-bottom: 1em;
+}
+.catlinks p,
+.catlinks div {
+  margin: 0.3em 0;
+}
+
+/* section edit buttons */
+div#content .dokuwiki div.secedit input.button {
+  border: 0 none;
+  text-transform: lowercase;
+  color: __existing__;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent none;
+}
+
+
+/* --------------- sidebar --------------- */
+div#panel .dokuwiki {
+  font-size: 0.75em;
+  line-height: 1.125em;
+}
+div#panel a.wikilink1,
+div#panel a.wikilink2,
+div#panel a.urlextern {
+  padding-left: 0;
+  background: transparent none;
+  color: __existing__;
+}
+div#panel .body {
+  margin-right: 0.45em !important;
+}
+div#panel .body .dokuwiki p {
+  margin: 0;
+}
+div#panel .body .dokuwiki ul li {
+  font-size: 1em !important;
+}
+div#panel .body .dokuwiki ol {
+  margin: 0 0 0 1.65em;
+}
+/* translation plugin by Anreas Gohr */
+div#panel .body .dokuwiki .plugin_translation span {
+  display: none;
+}
+div#panel .body .dokuwiki .plugin_translation {
+  padding-right: 0 !important;
+}
+div#panel .body .dokuwiki .plugin_translation,
+div#panel .body .dokuwiki .plugin_translation ul,
+div#panel .body .dokuwiki .plugin_translation li {
+  float: none;
+  margin: 0;
+  padding-right: 0;
+  line-height: 1.5em;
+  font-size: 100%;
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:link,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:hover,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:active,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:visited,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:link,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:hover,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:active,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:visited {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:before,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:before {
+  content: attr(title) " (";
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:after,
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:after {
+  content: ") ";
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1 {
+  color: __existing__ !important;
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2 {
+  color: __missing__ !important;
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink1:hover {
+  text-decoration: underline;
+}
+div#panel .body .dokuwiki .plugin_translation ul li a.wikilink2:hover {
+  text-decoration: underline !important;
+}
+div#panel .body .dokuwiki .plugin_translation select {
+  width: 90%;
+  margin: auto !important;
+  text-align: left;
+}
+div#panel .body .dokuwiki .plugin_translation option,
+div#panel .body .dokuwiki .plugin_translation option.wikilink1,
+div#panel .body .dokuwiki .plugin_translation option.wikilink2 {
+  padding: auto 5px !important;
+  text-align: left;
+}
+
+
+/* --------------- search --------------- */
+/* copy of the original vector id="searchInput" styles cause we have to use
+   another id for DokuWiki */
+div#simpleSearch input#qsearch__in {
+  margin: 0;
+  border-width: 0;
+  padding: 0.25em;
+  line-height: 1em;
+  font-size: 0.8em;
+  width: 14em;
+  background-color: transparent;
+}
+/* Ajax quicksearch */
+#qsearch__out {
+  top: 72px;
+  width: 100%;
+  display: none;
+  left: auto;
+  right: 7.93335px;
+  bottom: auto;
+  height: auto;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  background-color: window;
+  border: 1px solid #aaa;
+}
+#qsearch__out ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#qsearch__out li {
+  color: windowtext;
+  margin: 0;
+  width: 100%;
+  padding: 1px;
+}
+#qsearch__out li a {
+  width: 97%; /* leave some space for browser rounding errors */
+  display: block;
+}
+#qsearch__out li:hover {
+  background-color: #bbb;
+}
+#qsearch__out li a,
+#qsearch__out li a:link,
+#qsearch__out li a:visited,
+#qsearch__out li a:hover {
+  color: windowtext;
+  text-decoration: none;
+}
+
+
+/* --------------- footer --------------- */
+div#footer a.wikilink1,
+div#footer a.wikilink2,
+div#footer a.urlextern {
+  padding-left: 0;
+  background: transparent none;
+  color: __existing__;
+}
+/* default copyright notice layout */
+div#footer #footer-info li#footer-info-copyright .license {
+  font-size: 100%;
+  text-align: left;
+  padding: 0;
+}
+div#footer #footer-info li#footer-info-copyright .license a.urlextern {
+  margin-left: 0.4em;
+}
+
+
+/* --------------- Table of contents (TOC) --------------- */
+div.toc,
+#toc__inside a.toc,
+#toc__inside ul.toc {
+  border: 0 none;
+  background: transparent none;
+  font-size: 100%;
+}
+#toc__inside ul.toc {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+/* --------------- generic content classes --------------- */
+div.error,
+div.info,
+div.success,
+div.notify {
+  font-size: 80%;
+  line-height: 1.25em;
+}
+
+
+/* --------------- admin menu --------------- */
+/* editing preview */
+div#content .dokuwiki div.preview {
+  margin-left: 0;
+}
+/* "remeber me" checkbox, login */
+div.dokuwiki form#dw__login label.simple {
+  text-align: center;
+  padding-bottom: 0.4em;
+}
+
+
+/* --------------- media manager --------------- */
+#media__manager {
+  min-heigth: 550px;
+}
+#media__left,
+#media__right {
+  position: relative !important;
+}
+#media__right {
+  padding-left: 0.2em;
+  width: 98%;
+}
+/* make a "non-embedded"/fullpage manager possible trough hiding some stuff */
+body.mmanagernotembedded .noprint,
+body.mmanagernotembedded #siteNotice,
+body.mmanagernotembedded #footer {
+  display: none !important;
+}
+body.mmanagernotembedded #content {
+  margin: 0 !important;
+}
+
+
+
+
+
+/******************************************************************************
+ ********************* Browser Hacks and corrections **************************
+ ******************************************************************************/
+/* MSIE: fix textarea in admin menu (incl. jumping bug MSIE8) */
+textarea,
+.dokuwiki #dw__editform textarea.edit {
+  /* fix scrollbar flickers in IE8 standards mode, see
+     http://j.mp/bHExde and http://j.mp/ad7Abj for details */
+  width: 450px\9;
+  max-width: 100%\9;
+  min-width: 100%\9;
+  /* overwrite original vector with fixes for IE6/7 */
+  #width: 100% !important;
+  border: auto;
+}
+/* ajax quicksearch: MSIE 6/7 */
+* html #qsearch__out {
+  width: 206px;
+}
+#qsearch__out ul {
+  #list-style: none !important;
+  #list-style-image: none !important;
+}
+#qsearch__out li {
+  #width: 206px;
+}
+/* admin menu icons: MSIE 6/7 */
+.dokuwiki ul.admin_tasks li div.li {
+   #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
+}
+

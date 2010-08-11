@@ -1,0 +1,15 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/rtl.css". You have been warned!
+ *****************************************************************************/
+
+/* @TODO: better right-to-left support */
+
+/* external links */
+div#bodyContent a.urlextern {
+  background: url(static/3rd/vector/external-link-rtl-icon.png) center left no-repeat;
+  padding: 0 13px 0 0;
+}

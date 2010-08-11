@@ -1,0 +1,6 @@
+en: To use an own logo, DO NOT replace the logo.png in here. Simply store your
+logo.[png|gif|jpg] into "/vector/user/". See README for details.
+
+de: Um ein eigenes Logo zu nutzen bitte NICHT die logo.png in diesem Verzeichnis
+ersetzen, sondern einfach eine logo.[png|gif|jpg] unterhalb "/vector/user/"
+abspeichern. Siehe README für weiter Details.

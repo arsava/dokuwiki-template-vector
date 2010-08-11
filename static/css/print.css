@@ -1,0 +1,66 @@
+/******************************************************************************
+ ********************************  ATTENTION  *********************************
+         DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
+ ******************************************************************************
+  If you want to add some own screen CSS, have a look at the README of this
+  template and "/user/print.css". You have been warned!
+ *****************************************************************************/
+
+/* define the "noprint" class used by the original MediaWiki vector skin */
+.noprint {
+  display: none;
+}
+
+/* remove interwiki link icons */
+div.dokuwiki a.interwiki {
+  background: transparent none;
+  padding: 0;
+}
+
+/* quotes */
+div#content .dokuwiki blockquote {
+  border-left: 2px solid __border__;
+  padding-left: 3px;
+  margin-left: 0.2em;
+}
+
+/* preformatted stuff, source code */
+div#content .dokuwiki code,
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  font-size: 100%;
+}
+div#content .dokuwiki pre,
+div#content .dokuwiki pre.code,
+div#content .dokuwiki pre.file {
+  line-height: 1.2em;
+  background-color: __background_other__;
+}
+div#content .dokuwiki dl.file,
+div#content .dokuwiki dl.file dd,
+div#content .dokuwiki dl.file dt {
+  margin-left: 0;
+}
+div#content .dokuwiki dl.file dt {
+  background-color: __background_other__;
+}
+
+/* misc tweaks */
+div#content,
+div#footer,
+div#bodyContent {
+  margin-left: 0;
+  border: 0 none;
+  font-size: 1em;
+}
+div#footer {
+  border-top: 1px solid black;
+  margin-top: 0.5em;
+  padding: 0.75em;
+  background: none;
+}
+body {
+  background-image: none;
+  background-color: #fff;
+}
