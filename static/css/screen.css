@@ -122,6 +122,21 @@ div#content .dokuwiki div.level5 {
   margin-left: 0;
 }
 
+/* lists */
+div#content .dokuwiki ul {
+  list-style-type: square;
+  margin-top: .3em;
+  margin-left: 1.5em;
+  padding: 0;
+  list-style-image: url(static/3rd/vector/bullet-icon.png);
+}
+div#content .dokuwiki ol {
+  margin-top: .3em;
+  margin-left: 3.2em;
+  padding: 0;
+  list-style-image: none;
+}
+
 /* quotes */
 div#content .dokuwiki blockquote {
   border-left: 2px solid __border__;
@@ -172,6 +187,12 @@ div#content .dokuwiki div.secedit input.button {
   background: transparent none;
 }
 
+/* insitu-footnotes */
+div.insitu-footnote code,
+div.insitu-footnote pre {
+  font-size: 80%;
+}
+
 
 /* --------------- sidebar --------------- */
 div#panel .dokuwiki {
@@ -187,12 +208,21 @@ div#panel a.urlextern {
 }
 div#panel .body {
   margin-right: 0.45em !important;
+  padding-top: 0.25em !important;
 }
 div#panel .body .dokuwiki p {
   margin: 0;
 }
+/* div#panel .body .dokuwiki ul {
+  line-height: 1.5em;
+} */
 div#panel .body .dokuwiki ul li {
   font-size: 1em !important;
+  padding: 0.25em 0 !important;
+}
+div#panel .body .dokuwiki li ul {
+  font-size: 95% !important;
+  margin: 0.25em 0 0 1em !important;
 }
 div#panel .body .dokuwiki ol {
   margin: 0 0 0 1.65em;
@@ -331,6 +361,9 @@ div#footer #footer-info li#footer-info-copyright .license a.urlextern {
 
 
 /* --------------- Table of contents (TOC) --------------- */
+#toc__header {
+  line-height: 1.45em;
+}
 div.toc,
 #toc__inside a.toc,
 #toc__inside ul.toc {
@@ -341,6 +374,13 @@ div.toc,
 #toc__inside ul.toc {
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 1em !important;
+  list-style-type: none !important;
+  list-style-image: none !important;
+  margin: 0 !important;
+}
+#toc__inside a.toc {
+  padding: 0;
 }
 
 
@@ -420,6 +460,5 @@ textarea,
 }
 /* admin menu icons: MSIE 6/7 */
 .dokuwiki ul.admin_tasks li div.li {
-   #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
+  #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
 }
-

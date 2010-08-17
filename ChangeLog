@@ -1,6 +1,6 @@
 Title: Development Changelog of the vector template for DokuWiki
 Creation Date: 2010-06-12
-Last Update: 2010-06-29
+Last Update: 2010-08-17
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -13,7 +13,31 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
 
 
 
-2010-06-29 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-08-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Added Chinese (simplified) language files
+    Thanks to LAINME :-) (see CREDITS for details).
+
+  * Addition -> $conf['disableactions']: respect disabled "search" and "profile"
+
+  * Added /user/tracker.php to make web analytics software integration easier
+    See README for details.
+
+
+2010-08-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+  * Changed list styles (<ul>, <ol> -> list-style-image and indentation/margin)
+    They are finally looking like the ones of the MediaWiki vector. If you want
+    the previous indentation back, put the following into your /user/screen.css:
+      div#content .dokuwiki ul {
+        margin: 0 0 0.8em 3.5em !important;
+      }
+
+  * CSS-fix: Wrong font-site for <code> and <pre> @ insitu-footnotes
+
+  * Changed Table of contents (TOC) styles
+    Now it looks as usual (compared with the default tamplate)
+
+
+2010-06-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
   * Corrected small typos in Italian and Dutch language files
 
 

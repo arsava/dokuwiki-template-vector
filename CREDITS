@@ -1,6 +1,6 @@
 Title: Credits of the vector template for DokuWiki
 Creation date: 2010-06-11
-Last Update: 2010-06-27
+Last Update: 2010-08-17
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -21,3 +21,8 @@ This file lists contributors and contributions to this template for DokuWiki
  * Luigi Micco <l.micco [ät] tiscali.it> <http://www.luigimicco.altervista.org>
    Luigi contributed the Italian language files an reported a few bugs. Thank
    you for this!
+
+
+* LAINME <lainme993 [ät] gmail.com>
+  LAINME contributed the Chinese translation (simplified) language files. Thank
+  you for this!

@@ -636,7 +636,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
               echo  "      <li id=\"pt-admin\"><a href=\"".wl(cleanID(getId()), array("do" => "admin"))."\" rel=\"nofollow\">".hsc($lang["btn_admin"])."</a></li>\n"; //language comes from DokuWiki core
           }
           //profile
-          echo  "      <li id=\"pt-preferences\"><a href=\"".wl(cleanID(getId()), array("do" => "profile"))."\" rel=\"nofollow\">".hsc($lang["btn_profile"])."</a></li>\n"; //language comes from DokuWiki core
+          if (actionOK("profile")){ //check if action is disabled
+              echo  "      <li id=\"pt-preferences\"><a href=\"".wl(cleanID(getId()), array("do" => "profile"))."\" rel=\"nofollow\">".hsc($lang["btn_profile"])."</a></li>\n"; //language comes from DokuWiki core
+          }
           //logout
           echo  "      <li id=\"pt-logout\"><a href=\"".wl(cleanID(getId()), array("do" => "logout"))."\" rel=\"nofollow\">".hsc($lang["btn_logout"])."</a></li>\n"; //language comes from DokuWiki core
       }
@@ -674,6 +676,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 
       </ul>
     </div>
+<?php if (actionOK("search")){ ?>
     <div id="p-search">
       <h5>
         <label for="qsearch__in"><?php echo hsc($lang["vector_search"]); ?></label>
@@ -687,6 +690,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
         <div id="qsearch__out" class="ajax_qsearch JSpopup"></div>
       </form>
     </div>
+<?php } ?>
   </div>
   <!-- end div id=right-navigation -->
 
@@ -784,6 +788,11 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 <?php
 //provide DokuWiki housekeeping, required in all templates
 tpl_indexerWebBug();
+
+//include web analytics software
+if (file_exists(DOKU_TPLINC."/user/tracker.php")){
+   include DOKU_TPLINC."/user/tracker.php";
+}
 ?>
 
 </body>

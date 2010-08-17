@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2010-06-28
+Last Update: 2010-08-17
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -110,6 +110,14 @@ II. Customizing the template
     community if you can't get it work.
     If "vector/user/boxes.php" does not exist, simply copy it out of the
     current actual installation archive.
+
+  - Web analytics software (Piwik, Google Analytics etc.)
+    Tools like Piwik and Google Analytics normally provide a small code snippet
+    ("tag") which you have to include at your website to make everything work.
+    If you want to use such software with this template, have a look at
+    "vector/user/tracker.php". This file exists to make it easier for you. You
+    You don't have to deliberate where you have to copy and paste the code,
+    simply do it there.
 
 
 
