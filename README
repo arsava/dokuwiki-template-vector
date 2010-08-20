@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2010-08-17
+Last Update: 2010-08-20
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -182,6 +182,9 @@ V. About
   "vector" is a template to offer the new MediaWiki/Wikipedia Look&Feel
   (introduced in 2010) to DokuWiki. It is a (mostly) optical port of the
   MediaWiki skin and maintained/developed by me, Andreas Haerter.
+  If you have any suggestions and/or bug reports, feel free to post on
+  <http://www.dokuwiki.org/template:vector>, send me an email or have a look at
+  <http://andreas-haerter.com/contact>.
 
 
 

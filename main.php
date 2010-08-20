@@ -139,7 +139,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  * Helper to render the tabs (like a dynamic XHTML snippet)
  *
  * @param array The tab data to render within the snippet. Each element
- *        is represented through an subarray:
+ *        is represented through a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
  *                                       "nofollow" => true),
@@ -246,7 +246,7 @@ function _vector_renderTabs($arr)
  * Helper to render the boxes (like a dynamic XHTML snippet)
  *
  * @param array The box data to render within the snippet. Each box is
- *        represented through an subarray:
+ *        represented through a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
  *        Available keys within the subarrays:
@@ -313,7 +313,7 @@ function _vector_renderBoxes($arr)
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
  * @param array The button data to render within the snippet. Each element
- *        is represented through an subarray:
+ *        is represented through a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-vector.png",
  *                                       "href"     => "http://andreas-haerter.com/projects/dokuwiki-template-vector",
  *                                       "width"    => 80,
@@ -338,8 +338,6 @@ function _vector_renderBoxes($arr)
  *        - "height" (optional)
  *          height="<value>" will be added to the image tag if both "height" and
  *          "width" are set (otherwise, this will be ignored).
- *        - "nofollow" (optional)
- *          If set to TRUE, rel="nofollow" will be added to the link.
  *        - "nofollow" (optional)
  *          If set to TRUE, rel="nofollow" will be added to the link.
  *        - "title" (optional)
@@ -742,7 +740,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
     <?php
     //copyright notice
     if (tpl_getConf("vector_copyright")){
-        //show dokuwikis default notice?
+        //show dokuwiki's default notice?
         if (tpl_getConf("vector_copyright_default")){
             echo "<li id=\"footer-info-copyright\">\n      <div class=\"dokuwiki\">";  //dokuwiki CSS class needed cause we have to show DokuWiki content
             tpl_license(false);
@@ -791,7 +789,7 @@ tpl_indexerWebBug();
 
 //include web analytics software
 if (file_exists(DOKU_TPLINC."/user/tracker.php")){
-   include DOKU_TPLINC."/user/tracker.php";
+    include DOKU_TPLINC."/user/tracker.php";
 }
 ?>
 
