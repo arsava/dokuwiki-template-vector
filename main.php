@@ -108,7 +108,7 @@ if (!empty($conf["lang"]) &&
 
 
 //detect revision
-$rev = (int)$INFO["rev"]; //$INFO comes from the DokuWiku core
+$rev = (int)$INFO["rev"]; //$INFO comes from the DokuWiki core
 if ($rev < 1){
     $rev = (int)$INFO["lastmod"];
 }
