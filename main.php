@@ -503,6 +503,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
                   !tpl_getConf("vector_mediamanager_embedded")){
                   echo "mmanagernotembedded ";
               } ?>skin-vector">
+<div id="page-container">
 <div id="page-base" class="noprint"></div>
 <div id="head-base" class="noprint"></div>
 
@@ -730,6 +731,8 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 
 </div>
 <!-- end panel/sidebar -->
+</div>
+<!-- end page-container -->
 
 <!-- start footer -->
 <div id="footer">
