@@ -1,238 +1,123 @@
+/**
+ * This file provides the styles for printing.
+ *
+ * @todo: improve and finish
+ */
 
 body {
-  font: 10pt "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-  background-color: White;
-  color: Black;
+    /*
+    font: normal 12pt/1.2 serif;
+    color: #000;
+    background-color: #fff;
+    */
 }
 
-table {
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
+/* hide certain sections */
+.a11y,
+div.notify, div.info, div.success, div.error,
+#dokuwiki__header .tools, #dokuwiki__aside,
+.dokuwiki .breadcrumbs, .dokuwiki .toc, .dokuwiki .secedit,
+#dokuwiki__pagetools, #dokuwiki__footer {
+    display: none;
 }
 
-tr,td,th { padding: 0; margin: 0; }
+.dokuwiki h1, .dokuwiki h2, .dokuwiki h3, .dokuwiki h4, .dokuwiki h5,
+.dokuwiki caption, .dokuwiki legend {
+    clear: both;
+}
+.dokuwiki ul             { list-style: disc outside; }
+.dokuwiki ol             { list-style: decimal outside; }
+.dokuwiki ol ol          { list-style-type: lower-alpha; }
+.dokuwiki ol ol ol       { list-style-type: upper-roman; }
+.dokuwiki ol ol ol ol    { list-style-type: upper-alpha; }
+.dokuwiki ol ol ol ol ol { list-style-type: lower-roman; }
 
-img { border: 0; }
-
-a {
-  color: #000000;
-  text-decoration: none;
-  background: none !important;
+/* undo icons */
+.dokuwiki a:link, .dokuwiki a:visited {
+    text-decoration: underline;
+    color: #333;
+    background-color: inherit;
+    background-image: none;
+    padding: 0;
 }
 
-
-div.meta {
-  clear: both;
-  margin-top: 1em;
-  font-size: 70%;
-  text-align: right;
-}
-
-
-div.notify,
-div.info,
-div.success,
-div.error,
-div.breadcrumbs,
-div.secedit {
-  display: none;
-}
-
-/* --------------------- Text formating -------------------------------- */
-
-/* external link */
-a.urlextern:after {
-   content: " [" attr(href) "]";
-   font-size: 90%;
-}
-
-/* interwiki link */
-a.interwiki:after {
-   content: " [" attr(href) "]";
-   font-size: 90%;
-}
-
-/* email link */
+/* display href after link */
+a.urlextern:after,
+a.interwiki:after,
 a.mail:after {
    content: " [" attr(href) "]";
    font-size: 90%;
 }
 
-/* existing wikilink */
-a.wikilink1    { text-decoration: underline; }
-
-/* the document */
-div.page {
-  text-align: justify;
+/* code blocks */
+.dokuwiki pre {
+    font-family: monospace;
+}
+.dokuwiki dl.code dt, .dokuwiki dl.file dt {
+    font-weight: bold;
 }
 
-/* general headline setup */
-h1, h2, h3, h4, h5 {
-    color: Black;
-    background-color: transparent;
-    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
-    font-size: 100%;
-    font-weight: normal;
-    margin-left:    0;
-    margin-right:   0;
-    margin-top:     0;
-    margin-bottom:  1em;
-    padding-left:   0;
-    padding-right:  0;
-    padding-top:    0.5em;
-    padding-bottom: 0;
-    border-bottom: 1px solid #000000;
-    clear: left;
+/* images */
+.dokuwiki img             { border-width: 0; vertical-align: middle; }
+.dokuwiki img.medialeft   { margin: .5em 1.5em .5em 0; float: left; }
+.dokuwiki img.mediaright  { margin: .5em 0 .5em 1.5em; float: right; }
+.dokuwiki img.mediacenter { margin: .5em auto; display: block; }
+
+/* align table cells */
+.dokuwiki .leftalign   { text-align: left; }
+.dokuwiki .centeralign { text-align: center; }
+.dokuwiki .rightalign  { text-align: right; }
+
+/* underline */
+.dokuwiki em.u { font-style: normal; text-decoration: underline; }
+.dokuwiki em em.u { font-style: italic; }
+
+div.clearer {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
 }
 
-/* special headlines */
-h1 { font-size: 160%; font-weight: bold; }
-h2 { font-size: 150%; }
-h3 { font-size: 140%; border-bottom: none; }
-h4 { font-size: 120%; border-bottom: none; }
-h5 { font-size: 100%; border-bottom: none; }
-
-/* embedded images */
-img.media {
-  margin: 3px;
+.dokuwiki blockquote {
+    padding: 0 10pt;
+    margin: 0;
+    border: solid #ccc;
+    border-width: 0 0 0 2pt;
 }
 
-img.medialeft {
-  border: 0;
-  float: left;
-  margin: 0 1.5em 0 0;
+/* tables */
+.dokuwiki table {
+    border-collapse: collapse;
+    empty-cells: show;
+    border-spacing: 0;
+    border: 1pt solid #ccc;
+}
+.dokuwiki th, .dokuwiki td {
+    padding: 3pt 5pt;
+    margin: 0;
+    vertical-align: top;
+    border: 1pt solid #666;
+    text-align: left;
+}
+.dokuwiki th {
+    font-weight: bold;
 }
 
-img.mediaright {
-  border: 0;
-  float: right;
-  margin: 0 0 0 1.5em;
+
+/*____________ a bit of layout ____________*/
+
+#dokuwiki__header {
+    border-bottom: 2pt solid #ccc;
 }
-
-/* unordered lists */
-ul {
-    line-height: 1.5em;
-    list-style-type: square;
-    margin: 0 0 1em 3.5em;
-    padding: 0;
+#dokuwiki__header h1 {
+    font-size: 1.5em;
 }
-
-/* ordered lists */
-ol {
-    line-height: 1.5em;
-    margin: 0 0 1em 3.5em;
-    padding: 0;
-    font-weight: normal;
+#dokuwiki__header h1 a {
+    text-decoration: none;
 }
-
-div.dokuwiki li ul {
-  margin-bottom: 0;
+.dokuwiki div.footnotes {
+    clear: both;
+    border-top: 1pt solid #000;
+    margin-top: 10pt;
 }
-div.dokuwiki li ol {
-  margin-bottom: 0;
-}
-
-div.dokuwiki ol { list-style-type: decimal; }
-div.dokuwiki ol ol { list-style-type: upper-roman; }
-div.dokuwiki ol ol ol { list-style-type: lower-alpha; }
-div.dokuwiki ol ol ol ol { list-style-type: lower-greek; }
-
-/* the list items overriding the ol definition */
-span.li {
-    font-weight: normal;
-}
-
-/* code blocks by indention */
-pre.pre {
-  font-size: 8pt;
-  padding: 0.5em;
-  border: 1px dashed #000000;
-  color: Black;
-  overflow: visible;
-}
-
-/* code blocks by code tag */
-pre.code {
-  font-size: 8pt;
-  padding: 0.5em;
-  border: 1px dashed #000000;
-  color: Black;
-  overflow: visible;
-}
-
-/* inline code words */
-code {
-  font-size: 120%;
-}
-
-/* code blocks by file tag */
-pre.file {
-  font-size: 8pt;
-  padding: 0.5em;
-  border: 1px dotted #000000;
-  color: Black;
-  overflow: visible;
-}
-
-/* footnotes */
-div.footnotes {
-  clear: both;
-  border-top: 1px solid #000000;
-  padding-left: 1em;
-  margin-top: 1em;
-}
-
-div.fn {
-  font-size: 90%;
-}
-
-a.fn_top {
-  vertical-align: super;
-  font-size: 80%;
-}
-
-a.fn_bot {
-  vertical-align: super;
-  font-size: 80%;
-  font-weight: bold;
-}
-
-acronym {
-  border: 0;
-}
-
-/* ---------- inline tables ------------------- */
-
-table.inline {
-  font-size: 80%;
-  background-color: #ffffff;
-  border-spacing: 0px;
-  border-collapse: collapse;
-}
-
-table.inline th {
-  padding: 3px;
-  border: 1px solid #000000;
-  border-bottom: 2px solid #000000;
-}
-
-table.inline td {
-  padding: 3px;
-  border: 1px solid #000000;
-}
-
-.leftalign {
-  text-align: left;
-}
-
-.centeralign {
-  text-align: center;
-}
-
-.rightalign {
-  text-align: right;
-}
-
-.toc, .footerinc, .header, .bar, .user { display: none; }
-

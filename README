@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2010-08-20
+Last Update: 2011-03-13
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -262,3 +262,11 @@ VI. Creation transcript
     All relevant information should be found within the inline comments.
 
   - Worked worked worked a few days.... and done! :-P
+
+  - After ~1 year, I switched the CSS base from DokuWiki's default template
+    to <http://www.dokuwiki.org/template:starter>. See
+    <http://www.freelists.org/post/dokuwiki/Core-devs-I-need-some-info-to-keep-my-templates-maintainable>
+    for more information about this. I edited
+    "vector/static/3rd/dokuwiki/_links.css|_toc.css": url() rules were edited
+    (-> "static/3rd/..."). To make this clear, a comment was added at the top of
+    the files.
