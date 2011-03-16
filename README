@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-03-13
+Last Update: 2011-03-15
 Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -139,7 +139,8 @@ III. Some notes about the dirs of this template
   * "vector/static/3rd"
     Static files originally taken from a third party.
   * "vector/static/3rd/dokuwiki"
-    Static files originally taken from the DokuWiki "default" template.
+    Static files originally taken from the DokuWiki "default" or "starter"
+    template.
   * "vector/static/3rd/vector"
     Static files originally taken from the MediaWiki "vector" skin.
   * "vector/static/css"
@@ -269,4 +270,4 @@ VI. Creation transcript
     for more information about this. I edited
     "vector/static/3rd/dokuwiki/_links.css|_toc.css": url() rules were edited
     (-> "static/3rd/..."). To make this clear, a comment was added at the top of
-    the files.
+    the files. "static/3rd/dokuwiki/bullet|close|open.gif" were re-saved as PNG.

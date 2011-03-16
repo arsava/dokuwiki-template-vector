@@ -63,6 +63,7 @@ if (tpl_getConf("vector_donate")){
 
 
 //"vector for DokuWiki" button
+//Note: You are NOT allowed to remove this button. Please respect this!
 $_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
 $_vector_btns["vecfdw"]["href"]     = "http://andreas-haerter.com/projects/dokuwiki-template-vector";
 $_vector_btns["vecfdw"]["width"]    = 80;
