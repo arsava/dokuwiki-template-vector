@@ -148,19 +148,19 @@ if (empty($conf["useacl"]) || //are there any users?
         //2010-11-07 "Anteater" and newer ones
         if (empty($lang["btn_unsubscribe"])) {
             if (actionOK("subscribe")){ //check if action is disabled
-                $_vector_tabs["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "subscribe"), false, "&");
-                $_vector_tabs["ca-watch"]["text"] = $lang["btn_subscribe"]; //language comes from DokuWiki core
+                $_vector_tabs_right["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "subscribe"), false, "&");
+                $_vector_tabs_right["ca-watch"]["text"] = $lang["btn_subscribe"]; //language comes from DokuWiki core
             }
         //2009-12-25 "Lemming" and older ones. See the following for information:
         //<http://www.freelists.org/post/dokuwiki/Question-about-tpl-buttonsubscribe>
         } else {
             if (empty($INFO["subscribed"]) && //$INFO comes from DokuWiki core
                 actionOK("subscribe")){ //check if action is disabled
-                $_vector_tabs["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "subscribe"), false, "&");
-                $_vector_tabs["ca-watch"]["text"] = $lang["btn_subscribe"]; //language comes from DokuWiki core
+                $_vector_tabs_right["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "subscribe"), false, "&");
+                $_vector_tabs_right["ca-watch"]["text"] = $lang["btn_subscribe"]; //language comes from DokuWiki core
             }elseif (actionOK("unsubscribe")){ //check if action is disabled
-                $_vector_tabs["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "unsubscribe"), false, "&");
-                $_vector_tabs["ca-watch"]["text"] = $lang["btn_unsubscribe"]; //language comes from DokuWiki core
+                $_vector_tabs_right["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "unsubscribe"), false, "&");
+                $_vector_tabs_right["ca-watch"]["text"] = $lang["btn_unsubscribe"]; //language comes from DokuWiki core
             }
         }
     }
