@@ -528,6 +528,27 @@ div.dokuwiki .gallery td {
   border: 0 none;
 }
 
+/* bureaucracy plugin compatibilty */
+div.dokuwiki form.bureaucracy__plugin fieldset {
+  text-align: center;
+}
+div.dokuwiki form.bureaucracy__plugin label {
+  width: 95% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.dokuwiki form.bureaucracy__plugin label span,
+div.dokuwiki form.bureaucracy__plugin input.edit,
+div.dokuwiki form.bureaucracy__plugin textarea.edit,
+div.dokuwiki form.bureaucracy__plugin fieldset textarea.edit {
+   text-align: left;
+   margin: auto 5px;
+   float: none !important;
+   width: 97% !important;
+   min-width: 97% !important;
+   max-width: 97% !important;
+}
+
 
 /* --------------- sidebar --------------- */
 div#panel {
