@@ -52,28 +52,11 @@ $placeholder_names = array(//main text and background colors
                            "__background_neu__",
                            //border color
                            "__border__",
-                           //other text and background colors
-                           "__text_other__",
-                           "__background_other__",
                            //these are used for links
-                           "__extern__",
                            "__existing__",
                            "__missing__",
                            //highlighting search snippets
-                           "__highlight__",
-                           //for keeping old templates and plugins compatible to the old pattern
-                           //to be deleted at the next or after next DokuWiki release)
-                           "__white__",
-                           "__lightgray__",
-                           "__mediumgray__",
-                           "__darkgray__",
-                           "__black__",
-                           //these are the shades of blue
-                           "__lighter__",
-                           "__light__",
-                           "__medium__",
-                           "__dark__",
-                           "__darker__");
+                           "__highlight__");
 $placeholder_values = array(//main text and background colors
                             "#000",
                             "#fff",
@@ -85,35 +68,30 @@ $placeholder_values = array(//main text and background colors
                             "#fff",
                             //border color
                             "#8cacbb",
-                            //other text and background colors
-                            "#ccc",
-                            "#f9f9f9",
                             //these are used for links
-                            "#436976",
-                            "#002bb8", //use #090 for dokuwiki-green links
+                            "#002bb8",
                             "#ba0000",
                             //highlighting search snippets
-                            "#ff9",
-                            //for keeping old templates and plugins compatible to the old pattern
-                            //to be deleted at the next or after next DokuWiki release)
-                            "#fff",
-                            "#f5f5f5",
-                            "#ccc",
-                            "#666",
-                            "#000",
-                            //these are the shades of blue
-                            "#f7f9fa",
-                            "#eef3f8",
-                            "#dee7ec",
-                            "#8cacbb",
-                            "#638c9c");
+                            "#ff9");
 
 //get needed file contents: screen media CSS
-$interim =  trim(file_get_contents("./static/3rd/dokuwiki/layout.css"))."\n"
+$interim =  trim(file_get_contents("./static/3rd/dokuwiki/basic.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/structure.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/design.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/media.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/content.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_mediamanager.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_links.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_toc.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_footnotes.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_search.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_recent.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_diff.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_edit.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_modal.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_forms.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_admin.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/_linkwiz.css"))."\n";
+           .trim(file_get_contents("./static/3rd/dokuwiki/includes.css"))."\n";
 if (!empty($_GET["langdir"]) &&
     $_GET["langdir"] === "rtl"){
   $interim .=  trim(file_get_contents("./static/3rd/dokuwiki/rtl.css"))."\n"
