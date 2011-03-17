@@ -1,7 +1,7 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-03-15
-Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Last Update: 2011-03-17
+Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
 
@@ -224,7 +224,7 @@ VI. Creation transcript
       - /skins/vector/images/*
     - The following files were copied from Andreas Gohr's "default" DokuWiki
       template:
-      * /default/*.css (see <http://j.mp/jIyE2> why I do this)
+      * /default/*.css (see <http://j.mp/eq8zSo> why I do this)
       * /default/images/closed.gif
       * /default/images/favicon.ico
       * /default/images/link_icon.gif

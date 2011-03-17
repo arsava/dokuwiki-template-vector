@@ -1,7 +1,7 @@
 Title: Development Changelog of the vector template for DokuWiki
 Creation Date: 2010-06-12
-Last Update: 2010-08-17
-Author: Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+Last Update: 2011-03-17
+Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
 
@@ -13,7 +13,26 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
 
 
 
-2010-08-17  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+ATTENTION: I will not update this file anymore. Have a look at
+           <https://github.com/andreashaerter/dokuwiki-template-vector/>
+           if you want to know what changed under the hood.
+
+
+
+2011-03-17  Andreas Haerter <development [ät] andreas-haerter.com>
+  * Switched CSS base from switch css base from 'default' to 'starter' template.
+    See <http://j.mp/f7V4ES> and <http://j.mp/eq8zSo> for background
+    information.
+
+  * DokuWiki 2010-11-07 compatibility fixes and smaller improvements.
+
+  * This will be the last manual changelog update.
+    We are living in times of useful OSS development platforms. Have a look at
+    <https://github.com/andreashaerter/dokuwiki-template-vector/> if you want
+    to know what changed.
+
+
+2010-08-17  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added Chinese (simplified) language files
     Thanks to LAINME :-) (see CREDITS for details).
 
@@ -23,7 +42,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     See README for details.
 
 
-2010-08-16  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-08-16  Andreas Haerter <development [ät] andreas-haerter.com>
   * Changed list styles (<ul>, <ol> -> list-style-image and indentation/margin)
     They are finally looking like the ones of the MediaWiki vector. If you want
     the previous indentation back, put the following into your /user/screen.css:
@@ -37,18 +56,18 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Now it looks as usual (compared with the default tamplate)
 
 
-2010-06-29  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-29  Andreas Haerter <development [ät] andreas-haerter.com>
   * Corrected small typos in Italian and Dutch language files
 
 
-2010-06-28 Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-28 Andreas Haerter <development [ät] andreas-haerter.com>
   * Template respects $conf['disableactions']
     Links to disabled functions should be hidden now.
 
   * Mediamanager CSS improved
 
 
-2010-06-27  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-27  Andreas Haerter <development [ät] andreas-haerter.com>
   * New config option: closed wiki
     If active, most tabs/boxes will be hidden until user is logged in.
 
@@ -56,7 +75,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Thanks to Luigi Micco :-) (see CREDITS for details).
 
 
-2010-06-26  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-26  Andreas Haerter <development [ät] andreas-haerter.com>
   * New config option: user pages
     You can (de)activate user pages now + choose a custom namespace for them.
 
@@ -79,7 +98,7 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Thanks to Fabio Reis :-) (see CREDITS for details).
 
 
-2010-06-18  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-18  Andreas Haerter <development [ät] andreas-haerter.com>
   * Added Dutch language files
     Thanks to Theo Klein :-) (see CREDITS for details).
 
@@ -87,6 +106,6 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
     Thanks to Fabio Reis :-) (see CREDITS for details).
 
 
-2010-06-12  Andreas Haerter <andreas.haerter [ät] dev.mail-node.com>
+2010-06-12  Andreas Haerter <development [ät] andreas-haerter.com>
   * Initial release.
 

@@ -16,7 +16,7 @@
      These files will be included BEFORE this specific CSS file. In this file,
      I just overwrite non fitting MediaWiki "vector" and DokuWiki "starter"
      CSS + add some CSS for some exclusive objects of this template
-   - Why I am doing this? Well, read <http://j.mp/jIyE2>. I followed the main
+   - Why I am doing this? Well, read <http://j.mp/eq8zSo>. I followed the main
      principle described there and simply apply it to the two sources ("starter"
      template and "vector" skin).
    - This way also ensures a painless update, if there are new versions of
@@ -28,7 +28,7 @@
    - "Styles/corrections for the template itself"
      General CSS targeting the template structure. This section overwrites non
      fitting CSS of the "vector" MediaWiki skin and "starter" DokuWiki
-     template. Read the notes above and <http://j.mp/jIyE2> if you do not know
+     template. Read the notes above and <http://j.mp/eq8zSo> if you do not know
      why I am doing it this way.
    - "Browser Hacks and corrections"
      Section containing bigger hacks for browser specific problems.
@@ -285,6 +285,14 @@ div#content .dokuwiki h5 a,
 div#content .dokuwiki h6 a {
   color: __text__;
 }
+div#content .dokuwiki h1 a:hover,
+div#content .dokuwiki h2 a:hover,
+div#content .dokuwiki h3 a:hover,
+div#content .dokuwiki h4 a:hover,
+div#content .dokuwiki h5 a:hover,
+div#content .dokuwiki h6 a:hover {
+  text-decoration: none;
+}
 div#content .dokuwiki h1 {
   font-size: 160%;
 }
@@ -396,12 +404,10 @@ div#content .dokuwiki dl.file,
 div#content .dokuwiki dl.file dd {
   margin-left: 0;
 }
-div#content .dokuwiki dl.file dt {
-  background-color: #f9f9f9;
-  border-bottom: 2px solid #f9f9f9;
-}
 div#content .dokuwiki dl.file dt,
 div#content .dokuwiki dl.code dt {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #f9f9f9;
   border-top: 1px dashed __border__;
   border-left: 1px dashed __border__;
   border-right: 1px dashed __border__;
@@ -425,23 +431,28 @@ div#content .dokuwiki dl.code dt a {
 }
 
 /* tables */
+th,
+td {
+  border: 0;
+}
 td[align="right"],
 th[align="right"] {
   text-align: right;
 }
-
 div.dokuwiki table.inline {
   background-color: __background__;
   min-width: 0;
 }
-
+div.dokuwiki table.inline th,
+div.dokuwiki table.inline td {
+  border: 1px solid __border__;
+}
 div.dokuwiki table.inline th {
-  border-color: __border__;
   background-color: __background_alt__;
 }
-
-div.dokuwiki table.inline td {
-  border-color: __border__;
+div.dokuwiki table.inline tr:hover th,
+div.dokuwiki table.inline th:hover {
+  background-color: __background_alt__;
 }
 
 /* section edit buttons */
@@ -511,11 +522,10 @@ button.pickerbutton {
   cursor: pointer;
 }
 
-/* pagelist plugin compatibilty */
-div.dokuwiki table.pagelist tr,
-div.dokuwiki table.pagelist td {
-  border-left: 0 none;
-  border-right: 0 none;
+/* gallery plugin compatibilty */
+div.dokuwiki .gallery table,
+div.dokuwiki .gallery td {
+  border: 0 none;
 }
 
 
@@ -808,6 +818,11 @@ div.dokuwiki form#dw__login label.simple {
   text-align: center;
   padding-bottom: 0.4em;
 }
+/* main menu */
+.dokuwiki ul.admin_tasks li {
+  list-style-type: none;
+  list-style-image: none;
+}
 .dokuwiki ul.admin_tasks li a {
   font-weight: bold;
 }
@@ -947,3 +962,12 @@ textarea,
 .dokuwiki ul.admin_tasks li div.li {
   #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
 }
+/* list style: MSIE 6/7 */
+div#panel div.portal div.body ul {
+  #list-style: none outside none !important;
+}
+form#page__revisions ul,
+form#dw__recent ul {
+  #list-style: none outside none !important;
+}
+

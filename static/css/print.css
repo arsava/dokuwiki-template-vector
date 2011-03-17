@@ -11,6 +11,11 @@
   display: none;
 }
 
+/* remove some link styling */
+div.dokuwiki a {
+  text-decoration: none !important;
+}
+
 /* remove interwiki link icons */
 div.dokuwiki a.interwiki {
   background: transparent none;

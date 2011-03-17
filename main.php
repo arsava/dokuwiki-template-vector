@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://andreas-haerter.com/projects/dokuwiki-template-vector
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:templates
@@ -36,7 +36,7 @@ if (!defined("DOKU_INC")){
  * same folder, they are also influencing the var's value.
  *
  * @var string
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  */
 $vector_action = "article";
 //note: I used $_REQUEST before (cause DokuWiki controls and fills it. Normally,
@@ -71,7 +71,7 @@ if (!empty($vector_action) &&
  * page or not.
  *
  * @var string
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  */
 $vector_context = "article";
 if (preg_match("/^".tpl_getConf("vector_discuss_ns")."?$|^".tpl_getConf("vector_discuss_ns").".*?$/i", ":".getNS(getID()))){
@@ -83,7 +83,7 @@ if (preg_match("/^".tpl_getConf("vector_discuss_ns")."?$|^".tpl_getConf("vector_
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -173,7 +173,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *        - "accesskey" (optional)
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -256,7 +256,7 @@ function _vector_renderTabs($arr)
  *          aware of XSS and stuff.
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderTabs()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -343,7 +343,7 @@ function _vector_renderBoxes($arr)
  *        - "title" (optional)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow

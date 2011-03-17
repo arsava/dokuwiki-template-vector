@@ -11,7 +11,7 @@
  *   menu of DokuWiki, have a look at the file
  *   "/lib/tpl/vector/lang/<your lang>/settings.php". If it does not exists,
  *   copy and translate the English one. And don't forget to mail the
- *   translation to me, Andreas Haerter <andreas.haerter@dev.mail-node.com> :-D.
+ *   translation to me, Andreas Haerter <development@andreas-haerter.com> :-D.
  * - To change the [tabs|boxes|buttons] configuration, have a look at
  *   "/user/[tabs|boxes|buttons].php".
  *
@@ -21,7 +21,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <andreas.haerter@dev.mail-node.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://andreas-haerter.com/projects/dokuwiki-template-vector
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
