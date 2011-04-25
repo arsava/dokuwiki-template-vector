@@ -115,7 +115,7 @@ II. Customizing the template
     Tools like Piwik and Google Analytics normally provide a small code snippet
     ("tag") which you have to include at your website to make everything work.
     If you want to use such software with this template, have a look at
-    "vector/user/tracker.php". This file exists to make it easier for you. You
+    "vector/user/tracker.php". This file exists to make it easier for you.
     You don't have to deliberate where you have to copy and paste the code,
     simply do it there.
 
