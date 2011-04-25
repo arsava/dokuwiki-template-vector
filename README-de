@@ -1,6 +1,6 @@
 Titel: LiesMich des vector-Templates für DokuWiki
 Erstellungsdatum: 2010-05-29
-Letzte Änderung: 2011-03-17
+Letzte Änderung: 2011-04-25
 Autor: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -29,7 +29,7 @@ I. Das Template benutzen/installieren
            <http://bugs.php.net/bug.php?id=49692>). Sie finden evtl. Einträge
            wie "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini
            on line XX" in Ihren PHP-Logs falls dies der Fall sein sollte.
-           vector bietet einen Workaround für  diesen Fehler an, löschen Sie
+           vector bietet einen Workaround für diesen Fehler an, löschen Sie
            einfach vectors "style.ini" um das Template dazu zu bewegen,
            selbigen zu nutzen.
 

@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-03-17
+Last Update: 2011-04-25
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -122,33 +122,32 @@ II. Customizing the template
 
 
 III. Some notes about the dirs of this template
-
   * "vector/conf"
-    Configuration files. See
-    <http://www.dokuwiki.org/devel:templates#directory_layout> for information.
+    Contains configuration files:
+    default.php:  default settings, see
+                  <http://www.dokuwiki.org/devel:configuration#default_settings>
+    metadata.php: configuration metadata, see
+                  <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
   * "vector/lang"
-    Language. See <http://www.dokuwiki.org/devel:templates#directory_layout> for
-    information. You may copy the English language files and translate them
-    if your language is missing (hint: looking at
-    <http://[your lang].wikipedia.org> might be helpful). Simply mail me,
-    Andreas Haerter, the translated files, I will include them in the next
-    release :-D.
+    Language files (subdir names = language code). You may copy the English
+    language files and translate them if your language is missing. Simply mail
+    me, Andreas Haerter, the translated files and I will include them in the
+    next release :-D.
   * "vector/static"
     Static files (images, CSS, JavaScript). The interesting stuff is located
     in subdirs (as described below).
-  * "vector/static/3rd"
-    Static files originally taken from a third party.
-  * "vector/static/3rd/dokuwiki"
-    Static files originally taken from the DokuWiki "default" or "starter"
-    template.
-  * "vector/static/3rd/vector"
-    Static files originally taken from the MediaWiki "vector" skin.
-  * "vector/static/css"
-    Non-3rd party CSS files for vector.
-  * "vector/static/img"
-    Non-3rd party images files for vector.
-  * "vector/static/js"
-    Non-3rd party JavaScripts for vector.
+    - "3rd"
+      Static files originally taken from a third party like MediaWiki or
+      DokuWiki. The subdir "dokuwiki" contains files originally taken from the
+      DokuWiki "default" or "starter" template. The subdir "vector" contains
+      files taken from the MediaWiki "vector" skin.
+    - "css"
+      All non-3rd-party Cascading Style Sheets (CSS). See <http://j.mp/eq8zSo>
+      for more information about how the CSS is handled.
+    - "img"
+      All non-3rd-party images files.
+    - "js"
+      All non-3rd-party JavaScript files.
   * "vector/user"
     Place for userdefined stuff. E.g. if you want to replace the default-logo,
     simply copy a logo.[png|gif|jpg] in here. See "II. Customizing the template"
