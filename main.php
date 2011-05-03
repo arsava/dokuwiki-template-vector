@@ -561,7 +561,11 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
     <!-- start rendered wiki content -->
     <?php
     //flush the buffer for faster page rendering, heaviest content follows
-    flush();
+    if (functions_exists("tpl_flush")) {
+        tpl_flush(); //exists since 2010-11-07 "Anteater"...
+    } else {
+        flush(); //...but I won't loose compatibility to 2009-12-25 "Lemming" right now.
+    }
     //decide which type of pagecontent we have to show
     switch ($vector_action){
         //"image details"
