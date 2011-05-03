@@ -565,7 +565,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
     <!-- start rendered wiki content -->
     <?php
     //flush the buffer for faster page rendering, heaviest content follows
-    if (functions_exists("tpl_flush")) {
+    if (function_exists("tpl_flush")) {
         tpl_flush(); //exists since 2010-11-07 "Anteater"...
     } else {
         flush(); //...but I won't loose compatibility to 2009-12-25 "Lemming" right now.
