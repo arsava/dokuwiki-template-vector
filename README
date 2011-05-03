@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-04-25
+Last Update: 2011-05-03
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -123,7 +123,7 @@ II. Customizing the template
 
 III. Some notes about the dirs of this template
   * "vector/conf"
-    Contains configuration files:
+    Contains some configuration files (do NOT edit them!), especially
     default.php:  default settings, see
                   <http://www.dokuwiki.org/devel:configuration#default_settings>
     metadata.php: configuration metadata, see
@@ -157,8 +157,8 @@ III. Some notes about the dirs of this template
 
 IV. Other notes
   - Even if it is not required: If you like the template, think about a small
-    donation (see <http://andreas-haerter.com/donate/vector>) and/or a link to
-    <http://andreas-haerter.com/projects/dokuwiki-template-vector>.
+    donation (see <http://andreas-haerter.com/donate/dokuwiki-template-vector>)
+    and/or a link to <http://andreas-haerter.com/projects/dokuwiki-template-vector>.
     Thanks :-).
 
   - This template follows the DokuWiki coding style (see

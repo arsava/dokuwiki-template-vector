@@ -433,6 +433,10 @@ if (!file_exists(DOKU_TPLINC."style.ini")){
 }
 
 //include default or userdefined favicon
+//
+//note: since 2011-04-22 "Rincewind RC1", there is a core function named
+//      "tpl_getFavicon()". But its functionality is not really fitting the
+//      behaviour of this template, therefore I don't use it here.
 if (file_exists(DOKU_TPLINC."user/favicon.ico")) {
     //user defined - you might find http://tools.dynamicdrive.com/favicon/
     //useful to generate one

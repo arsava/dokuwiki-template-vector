@@ -51,7 +51,7 @@ if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
     $_vector_btns["donate"]["href"]     = DOKU_BASE."feed.php";
     if (tpl_getConf("vector_donate_default")){
-        $_vector_btns["donate"]["href"] = "http://andreas-haerter.com/donate/vector/paypal"; //default url
+        $_vector_btns["donate"]["href"] = "http://andreas-haerter.com/donate/dokuwiki-template-vector"; //default url
     }else{
         $_vector_btns["donate"]["href"] = tpl_getConf("vector_donate_url"); //custom url
     }

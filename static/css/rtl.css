@@ -6,7 +6,8 @@
   template and "/user/rtl.css". You have been warned!
  *****************************************************************************/
 
-/* @TODO: better right-to-left support */
+/* right-to-left-support is still TODO - Feel free to send patches to me
+   (Andreas Haerter). */
 
 /* external links */
 div#bodyContent a.urlextern {
