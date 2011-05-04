@@ -865,9 +865,9 @@ div.dokuwiki form#dw__login label.simple {
 #media__manager h2,
 #media__popup h1,
 #media__popup h2 {
-    font-size: 1em !important;
-    line-height: 1em !important;
-    font-weight: bold !important;
+  font-size: 1em !important;
+  line-height: 1em !important;
+  font-weight: bold !important;
 }
 /* make a "non-embedded"/fullpage manager possible trough hiding some stuff */
 body.mmanagernotembedded .noprint,

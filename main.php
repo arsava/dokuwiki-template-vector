@@ -546,6 +546,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show breadcrumps if enabled and position = top
   if ($conf["breadcrumbs"] == true &&
+      (empty($conf["useacl"]) || //are there any users?
+       $loginname !== "" || //user is logged in?
+       !tpl_getConf("vector_closedwiki")) &&
       tpl_getConf("vector_breadcrumbs_position") === "top"){
       echo "\n  <div class=\"catlinks noprint\"><p>\n    ";
       tpl_breadcrumbs();
@@ -553,6 +556,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = top
   if ($conf["youarehere"] == true &&
+      (empty($conf["useacl"]) || //are there any users?
+       $loginname !== "" || //user is logged in?
+       !tpl_getConf("vector_closedwiki")) &&
       tpl_getConf("vector_youarehere_position") === "top"){
       echo "\n  <div class=\"catlinks noprint\"><p>\n    ";
       tpl_youarehere();
@@ -598,6 +604,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   <?php
   //show breadcrumps if enabled and position = bottom
   if ($conf["breadcrumbs"] == true &&
+      (empty($conf["useacl"]) || //are there any users?
+       $loginname !== "" || //user is logged in?
+       !tpl_getConf("vector_closedwiki")) &&
       tpl_getConf("vector_breadcrumbs_position") === "bottom"){
       echo "\n  <div class=\"catlinks noprint\"><p>\n    ";
       tpl_breadcrumbs();
@@ -605,6 +614,9 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = bottom
   if ($conf["youarehere"] == true &&
+      (empty($conf["useacl"]) || //are there any users?
+       $loginname !== "" || //user is logged in?
+       !tpl_getConf("vector_closedwiki")) &&
       tpl_getConf("vector_youarehere_position") === "bottom"){
       echo "\n  <div class=\"catlinks noprint\"><p>\n    ";
       tpl_youarehere();
