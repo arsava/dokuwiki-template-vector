@@ -25,22 +25,18 @@ if (!defined("DOKU_INC")){
 
 ?>
 <div id="media__manager" class="dokuwiki">
-  <table id="media__manager_table" border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="left" valign="top" id="media__left">
-        <h1><?php echo hsc($lang["mediaselect"]); ?></h1>
+  <?php html_msgarea() ?>
+  <div id="mediamgr__aside"><div class="pad">
+  <h1><?php echo hsc($lang['mediaselect'])?></h1>
 
-        <?php /* keep the id! additional elements are inserted via JS here */?>
-        <div id="media__opts"></div>
+  <?php /* keep the id! additional elements are inserted via JS here */?>
+  <div id="media__opts"></div>
 
-        <?php tpl_mediaTree() ?>
-      </td>
-      <td align="left" valign="top">
-        <div id="media__right">
-          <?php tpl_mediaContent() ?>
-        </div>
-      </td>
-    </tr>
-  </table>
+  <?php tpl_mediaTree() ?>
+  </div></div>
+
+  <div id="mediamgr__content"><div class="pad">
+    <?php tpl_mediaContent() ?>
+  </div></div>
 </div>
 
