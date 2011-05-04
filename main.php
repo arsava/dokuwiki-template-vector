@@ -546,6 +546,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show breadcrumps if enabled and position = top
   if ($conf["breadcrumbs"] == true &&
+      $vector_action !== "mediamanager" &&
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -556,6 +557,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = top
   if ($conf["youarehere"] == true &&
+      $vector_action !== "mediamanager" &&
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -604,6 +606,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   <?php
   //show breadcrumps if enabled and position = bottom
   if ($conf["breadcrumbs"] == true &&
+      $vector_action !== "mediamanager" &&
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -614,6 +617,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = bottom
   if ($conf["youarehere"] == true &&
+      $vector_action !== "mediamanager" &&
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
