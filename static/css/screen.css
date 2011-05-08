@@ -659,7 +659,7 @@ div#simpleSearch input#qsearch__in {
 /* Ajax quicksearch */
 #qsearch__out {
   top: 72px;
-  width: 100%;
+  width: 17em;
   display: none;
   left: auto;
   right: 7.93335px;
