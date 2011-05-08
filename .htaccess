@@ -8,7 +8,7 @@
   Order Deny,Allow
   Deny from all
 </FilesMatch>
-<FilesMatch "^(README|README-de|COPYING|ChangeLog|CREDITS|VERSION|style\.ini|detail\.php|main\.php|mediamanager\.php)$">
+<FilesMatch "^(README|README-de|COPYING|ChangeLog|CREDITS|VERSION|style\.ini|template\.info\.txt|detail\.php|main\.php|mediamanager\.php)$">
   Order Deny,Allow
   Deny from all
 </FilesMatch>
