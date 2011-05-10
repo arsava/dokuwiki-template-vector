@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-05-03
+Last Update: 2011-05-10
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -28,8 +28,8 @@ I. Using/Installing the template
         <http://bugs.php.net/bug.php?id=49692> for details). You may find errors
         like "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini
         on line XX" in your PHP logs when this is the case. vector provides
-        a workaround for this, simply delete the vector's "style.ini" to trigger
-        the template to use it.
+        a workaround for this, simply delete vector's "style.ini" to trigger the
+        template to use it.
 
 
 
