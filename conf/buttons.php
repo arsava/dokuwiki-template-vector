@@ -46,6 +46,16 @@ $_vector_btns["rss"]["title"]    = $lang["vector_recentchanges"];
 $_vector_btns["rss"]["nofollow"] = true;
 
 
+//"vector for DokuWiki" button
+//Note: You are NOT allowed to remove this button. Please respect this!
+$_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
+$_vector_btns["vecfdw"]["href"]     = "http://andreas-haerter.com/";
+$_vector_btns["vecfdw"]["width"]    = 80;
+$_vector_btns["vecfdw"]["height"]   = 15;
+$_vector_btns["vecfdw"]["title"]    = $lang["vector_mdtemplatefordw"];
+$_vector_btns["vecfdw"]["nofollow"] = false;
+
+
 //donation button
 if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
@@ -60,16 +70,6 @@ if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["title"]    = $lang["vector_donate"];
     $_vector_btns["donate"]["nofollow"] = true;
 }
-
-
-//"vector for DokuWiki" button
-//Note: You are NOT allowed to remove this button. Please respect this!
-$_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
-$_vector_btns["vecfdw"]["href"]     = "http://andreas-haerter.com/projects/dokuwiki-template-vector";
-$_vector_btns["vecfdw"]["width"]    = 80;
-$_vector_btns["vecfdw"]["height"]   = 15;
-$_vector_btns["vecfdw"]["title"]    = $lang["vector_mdtemplatefordw"];
-$_vector_btns["vecfdw"]["nofollow"] = false;
 
 
 //DokuWiki button
