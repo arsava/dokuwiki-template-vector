@@ -42,6 +42,7 @@
 /* general tags */
 html {
   background-color: #f3f3f3;
+  overflow-y: auto;
 }
 div.dokuwiki p,
 div.dokuwiki blockquote,
