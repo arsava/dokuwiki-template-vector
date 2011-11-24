@@ -56,7 +56,10 @@ $placeholder_names = array(//main text and background colors
                            "__existing__",
                            "__missing__",
                            //highlighting search snippets
-                           "__highlight__");
+                           "__highlight__",
+                           //starter template css base compatibility
+                           "__site_width__",
+                           "__sidebar_width__");
 $placeholder_values = array(//main text and background colors
                             "#000",
                             "#fff",
@@ -72,7 +75,10 @@ $placeholder_values = array(//main text and background colors
                             "#002bb8",
                             "#ba0000",
                             //highlighting search snippets
-                            "#ff9");
+                            "#ff9",
+                            //starter template css base compatibility
+                            "64em",
+                            "16em");
 
 //get needed file contents: screen media CSS
 $interim =  trim(file_get_contents("./static/3rd/dokuwiki/basic.css"))."\n"
@@ -80,7 +86,10 @@ $interim =  trim(file_get_contents("./static/3rd/dokuwiki/basic.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/design.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/content.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/_mediamanager.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_media_popup.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_media_fullscreen.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_fileuploader.css"))."\n"
+           .trim(file_get_contents("./static/3rd/dokuwiki/_tabs.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_links.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_toc.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_footnotes.css"))."\n"
