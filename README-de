@@ -1,6 +1,6 @@
 Titel: LiesMich des vector-Templates für DokuWiki
 Erstellungsdatum: 2010-05-29
-Letzte Änderung: 2011-04-25
+Letzte Änderung: 2011-11-24
 Autor: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -135,6 +135,14 @@ II. Das Template anpassen
     anschauen. Sie existiert, um die Integration einfacher zu gestalten und man
     nicht überlegen muss, wo solche Codes eingefügt werden müssen: dies ist
     der korrekte Platz dafür.
+
+  - Eigenes Apple Touch Icon
+    Falls Sie das Standard-Apple-Touch-Icon austauschen wollen, legen Sie
+    einfach eine "apple-touch-icon.png"-Datei im "vector/user"-Ordner an.
+    Das Template erkennt die Datei automatisch und wird sie anstelle des
+    Standard-Icons verwenden. Falls Sie mehr Information über das Touch Icon
+    benötigen finden Sie diese in der Apple Developer Datavase ("Configuring Web
+    Applications" <http://j.mp/sx3NMT>).
 
 
 [...Ende der AUSZUGSWEISEN Übersetzung der englischsprachigen README. Für den

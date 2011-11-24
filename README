@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-11-23
+Last Update: 2011-11-24
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -118,6 +118,13 @@ II. Customizing the template
     "vector/user/tracker.php". This file exists to make it easier for you.
     You don't have to deliberate where you have to copy and paste the code,
     simply do it there.
+
+  - Own Apple Touch Icon
+    If you want to replace the default Apple Touch Icon, simply create a
+    "apple-touch-icon.png" in "vector/user". The template recognizes the file
+    automatically and will use it instead of the default one. Have a look at
+    Apple's developer database if you need more information ("Configuring Web
+    Applications" <http://j.mp/sx3NMT>).
 
 
 

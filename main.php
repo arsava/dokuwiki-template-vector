@@ -451,6 +451,15 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")) {
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."static/3rd/dokuwiki/favicon.ico\" />\n";
 }
 
+//include default or userdefined Apple Touch Icon (see <http://j.mp/sx3NMT> for
+//details)
+if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")) {
+    echo "<link rel=\"apple-touch-icon\" href=\"".DOKU_TPL."user/apple-touch-icon.png\" />\n";
+}else{
+    //default
+    echo "<link rel=\"apple-touch-icon\" href=\"".DOKU_TPL."static/3rd/dokuwiki/apple-touch-icon.png\" />\n";
+}
+
 //load userdefined js?
 if (tpl_getConf("vector_loaduserjs")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
