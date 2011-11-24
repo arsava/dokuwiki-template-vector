@@ -10,7 +10,7 @@
 
 html {
     overflow-x: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 html, body {
     background-color: __background__;
