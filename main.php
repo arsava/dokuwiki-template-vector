@@ -422,6 +422,7 @@ if ($ACT === "edit" &&
 <?php
 //show meta-tags
 tpl_metaheaders();
+echo "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />";
 
 //manually load needed CSS? this is a workaround for PHP Bug #49642. In some
 //version/os combinations PHP is not able to parse INI-file entries if there
