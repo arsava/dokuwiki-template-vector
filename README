@@ -1,6 +1,6 @@
 Title: README of the vector template for DokuWiki
 Creation date: 2010-05-29
-Last Update: 2011-05-10
+Last Update: 2011-11-23
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -265,7 +265,5 @@ VI. Creation transcript
   - After ~1 year, I switched the CSS base from DokuWiki's default template
     to <http://www.dokuwiki.org/template:starter>. See
     <http://www.freelists.org/post/dokuwiki/Core-devs-I-need-some-info-to-keep-my-templates-maintainable>
-    for more information about this. I edited
-    "vector/static/3rd/dokuwiki/_links.css|_toc.css": url() rules were edited
-    (-> "static/3rd/..."). To make this clear, a comment was added at the top of
-    the files. "static/3rd/dokuwiki/bullet|close|open.gif" were re-saved as PNG.
+    for more information about this. I edited some files, see 
+    "vector/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.

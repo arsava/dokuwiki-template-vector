@@ -19,7 +19,7 @@ html, body {
     padding: 0;
 }
 body {
-    font: normal 100%/1.4 Frutiger, "Frutiger Linotype", Univers, Calibri, Myriad, "Liberation Sans", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 100%/1.4 Frutiger, "Frutiger Linotype", Univers, Calibri, Myriad, "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
     /* default font size: 100% => 16px; 93.75% => 15px; 87.5% => 14px; 81.25% => 13px; 75% => 12px */
 }
 
@@ -28,11 +28,12 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 caption, legend {
-    font-family: Constantia, Utopia, Lucidabright, Lucida, Georgia, serif;
+    font-family: Constantia, Utopia, Lucidabright, Lucida, Georgia, "Nimbus Roman No9 L", serif;
     font-weight: bold;
     color: __text_neu__;
     background-color: inherit;
     padding: 0;
+    line-height: 1.2;
     clear: left; /* ideally 'both', but problems with toc */
 }
 
@@ -169,7 +170,7 @@ acronym, abbr {
 }
 
 pre, code, samp, kbd {
-    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Liberation Mono", Monaco, "Courier New", monospace;
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
     /* same font stack should be used for ".dokuwiki table.diff td" in _diff.css */
     font-size: 1em;
     direction: ltr;

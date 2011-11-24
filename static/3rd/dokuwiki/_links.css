@@ -1,6 +1,6 @@
 /* ATTENTION: This file was edited for the "vector template for DokuWiki".
-            - All url() rules where changed.
-             See README for details. */
+   - All url(images/[...]) rules where changed.
+   See 00_starter-tmpl-notes.txt for details. */
 
 
 /**
@@ -44,11 +44,12 @@
 .dokuwiki a.interwiki {
     background-repeat: no-repeat;
     background-position: 0 center;
-    padding: 0 0 0 17px;
+    padding: 0 0 0 20px;
 }
 /* external link */
 .dokuwiki a.urlextern {
     background-image: url(static/3rd/dokuwiki/link_icon.gif);
+    padding: 0 0 0 17px;
 }
 /* windows share */
 .dokuwiki a.windows {
@@ -65,4 +66,5 @@
 }
 /* interwiki link */
 .dokuwiki a.interwiki {
+    padding: 0 0 0 17px;
 }

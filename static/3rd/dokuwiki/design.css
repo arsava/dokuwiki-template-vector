@@ -112,7 +112,7 @@
 #dokuwiki__pagetools ul {
     /* imitate #dokuwiki__site */
     margin: 0 auto;
-    max-width: 64em;
+    max-width: __site_width__;
     padding: 0 1em;
 }
 #IE6 #dokuwiki__usertools ul {
@@ -190,6 +190,12 @@
 ********************************************************************/
 
 .dokuwiki .page {
+}
+
+#mediamanager__page h2,
+#mediamanager__page h3 {
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, Myriad, "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: __text__;
 }
 
 /*____________ misc ____________*/
