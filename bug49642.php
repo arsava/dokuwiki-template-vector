@@ -81,11 +81,7 @@ $placeholder_values = array(//main text and background colors
                             "16em");
 
 //get needed file contents: screen media CSS
-$interim =  trim(file_get_contents("./static/3rd/dokuwiki/basic.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/structure.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/design.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/content.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
+$interim =  trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_media_popup.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_media_fullscreen.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_fileuploader.css"))."\n"
@@ -99,8 +95,7 @@ $interim =  trim(file_get_contents("./static/3rd/dokuwiki/basic.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_edit.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_modal.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_forms.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/_admin.css"))."\n"
-           .trim(file_get_contents("./static/3rd/dokuwiki/includes.css"))."\n";
+           .trim(file_get_contents("./static/3rd/dokuwiki/_admin.css"))."\n";
 if (!empty($_GET["langdir"]) &&
     $_GET["langdir"] === "rtl"){
   $interim .=  trim(file_get_contents("./static/3rd/dokuwiki/rtl.css"))."\n"
