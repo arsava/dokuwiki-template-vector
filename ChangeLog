@@ -1,6 +1,6 @@
-Title: Development Changelog of the vector template for DokuWiki
+Title: Development changelog of the vector template for DokuWiki
 Creation Date: 2010-06-12
-Last Update: 2011-03-17
+Last Update: 2011-11-25
 Author: Andreas Haerter <development [ät] andreas-haerter.com>
 Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
      <http://www.dokuwiki.org/template:vector>
@@ -12,10 +12,10 @@ PLEASE NOTE: I am NO native English speaker. If you find any errors please let
              (as desired by myself). Thank you! -- Andreas Haerter
 
 
-
 ATTENTION: I will not update this file anymore. Have a look at
-           <https://github.com/andreashaerter/dokuwiki-template-vector/>
-           if you want to know what changed under the hood.
+           <https://github.com/andreashaerter/dokuwiki-template-vector/> and
+           <http://www.dokuwiki.org/template:vector#version_history> if you
+           want to know what changed under the hood.
 
 
 
