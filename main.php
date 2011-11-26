@@ -117,21 +117,21 @@ if ($rev < 1){
 //get tab config
 include DOKU_TPLINC."/conf/tabs.php";  //default
 if (file_exists(DOKU_TPLINC."/user/tabs.php")){
-   include DOKU_TPLINC."/user/tabs.php"; //add user defined
+    include DOKU_TPLINC."/user/tabs.php"; //add user defined
 }
 
 
 //get boxes config
 include DOKU_TPLINC."/conf/boxes.php"; //default
 if (file_exists(DOKU_TPLINC."/user/boxes.php")){
-   include DOKU_TPLINC."/user/boxes.php"; //add user defined
+    include DOKU_TPLINC."/user/boxes.php"; //add user defined
 }
 
 
 //get button config
 include DOKU_TPLINC."/conf/buttons.php"; //default
 if (file_exists(DOKU_TPLINC."/user/buttons.php")){
-   include DOKU_TPLINC."/user/buttons.php"; //add user defined
+    include DOKU_TPLINC."/user/buttons.php"; //add user defined
 }
 
 

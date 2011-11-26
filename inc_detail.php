@@ -1,10 +1,12 @@
 <?php
 
 /**
- * DokuWiki Image Detail Template
+ * Image detail page
  *
  * See "detail.php" if you don't know how this is getting included within the
  * "main.php".
+ *
+ * NOTE: Based on the detail.php out of the "starter" template by Anika Henke.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -22,59 +24,68 @@
 if (!defined("DOKU_INC")){
     die();
 }
-
-//the following is a copy of some contents out of the "detail.php", coming from
-//Andreas Gohr's "default" template. I simply deleted stuff not needed for
-//this template. Compare the files, you will see what I mean -> everything
-//outside the <div class="page">.
 ?>
 
-  <div class="page">
-    <?php if($ERROR){ print $ERROR; }else{ ?>
+    <div id="dokuwiki__detail" class="dokuwiki">
+        <?php html_msgarea() ?>
 
-    <h1><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?></h1>
+        <?php if($ERROR){ print $ERROR; }else{ ?>
 
-    <div class="img_big">
-      <?php tpl_img(900,700) ?>
+            <h1><?php echo hsc(tpl_img_getTag('IPTC.Headline',$IMG))?></h1>
+
+            <div class="content">
+                <?php tpl_img(900,700) ?>
+
+                <div class="img_detail">
+                    <h2><?php print nl2br(hsc(tpl_img_getTag('simple.title'))); ?></h2>
+
+                    <dl>
+                        <?php
+                            $config_files = getConfigFiles('mediameta');
+                            foreach ($config_files as $config_file) {
+                                if(@file_exists($config_file)) {
+                                    include($config_file);
+                                }
+                            }
+
+                            foreach($fields as $key => $tag){
+                                $t = array();
+                                if (!empty($tag[0])) {
+                                    $t = array($tag[0]);
+                                }
+                                if(is_array($tag[3])) {
+                                    $t = array_merge($t,$tag[3]);
+                                }
+                                $value = tpl_img_getTag($t);
+                                if ($value) {
+                                    echo '<dt>'.$lang[$tag[1]].':</dt><dd>';
+                                    if ($tag[2] == 'date') {
+                                        echo dformat($value);
+                                    } else {
+                                        echo hsc($value);
+                                    }
+                                    echo '</dd>';
+                                }
+                            }
+                        ?>
+                    </dl>
+                    <?php //Comment in for Debug// dbg(tpl_img_getTag('Simple.Raw'));?>
+                </div>
+                <div class="clearer"></div>
+            </div><!-- /.content -->
+
+            <p class="back">
+                <?php
+                    $imgNS = getNS($IMG);
+                    $authNS = auth_quickaclcheck("$imgNS:*");
+                    if (($authNS >= AUTH_UPLOAD) && function_exists('media_managerURL')) {
+                        $mmURL = media_managerURL(array('ns' => $imgNS, 'image' => $IMG));
+                        echo '<a href="'.$mmURL.'">'.$lang['img_manager'].'</a><br />';
+                    }
+                ?>
+                &larr; <?php echo $lang['img_backto']?> <?php tpl_pagelink($ID)?>
+            </p>
+
+        <?php } ?>
     </div>
 
-    <div class="img_detail">
-      <p class="img_caption">
-        <?php print nl2br(hsc(tpl_img_getTag('simple.title'))); ?>
-      </p>
-
-      <p>&larr; <?php echo $lang['img_backto']?> <?php tpl_pagelink($ID)?></p>
-
-      <dl class="img_tags">
-        <?php
-          $t = tpl_img_getTag('Date.EarliestTime');
-          if($t) print '<dt>'.$lang['img_date'].':</dt><dd>'.dformat($t).'</dd>';
-
-          $t = tpl_img_getTag('File.Name');
-          if($t) print '<dt>'.$lang['img_fname'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag(array('Iptc.Byline','Exif.TIFFArtist','Exif.Artist','Iptc.Credit'));
-          if($t) print '<dt>'.$lang['img_artist'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag(array('Iptc.CopyrightNotice','Exif.TIFFCopyright','Exif.Copyright'));
-          if($t) print '<dt>'.$lang['img_copyr'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag('File.Format');
-          if($t) print '<dt>'.$lang['img_format'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag('File.NiceSize');
-          if($t) print '<dt>'.$lang['img_fsize'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag('Simple.Camera');
-          if($t) print '<dt>'.$lang['img_camera'].':</dt><dd>'.hsc($t).'</dd>';
-
-          $t = tpl_img_getTag(array('IPTC.Keywords','IPTC.Category','xmp.dc:subject'));
-          if($t) print '<dt>'.$lang['img_keywords'].':</dt><dd>'.hsc($t).'</dd>';
-
-        ?>
-      </dl>
-      <?php //Comment in for Debug// dbg(tpl_img_getTag('Simple.Raw'));?>
-    </div>
-
-  <?php } ?>
-  </div>

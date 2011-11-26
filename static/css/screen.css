@@ -1160,31 +1160,6 @@ div.dokuwiki .section_highlight {
   background-color: __background_alt__ !important;
 }
 
-/* --------------- image details ----------------- */
-div.dokuwiki div.img_big {
-  float: left;
-  margin-right: 0.5em;
-}
-
-div.dokuwiki dl.img_tags dt {
-  font-weight: bold;
-  background-color: __background_alt__;
-}
-div.dokuwiki dl.img_tags dd {
-  background-color: __background_neu__;
-}
-
-div.dokuwiki div.imagemeta {
-  color: __text_neu__;
-  font-size: 70%;
-  line-height: 95%;
-}
-
-div.dokuwiki div.imagemeta img.thumb {
-  float: left;
-  margin-right: 0.1em;
-}
-
 /* --------------- JS popup ----------------- */
 .JSpopup {
   background-color: __background__;
