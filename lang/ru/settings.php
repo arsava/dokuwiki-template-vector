@@ -73,7 +73,6 @@ $lang['vector_donate_url']                = 'Если не&nbsp;задейств
 $lang['vector_toc_position']              = 'Расположение списка содержания страниц (TOC)';
 
 //прочее
-$lang['vector_mediamanager_embedded']     = 'Показывать медиаменеджер встроенным в&nbsp;общий стиль?';
 $lang['vector_breadcrumbs_position']      = 'Позиция навигационной цепочки (если включено):';
 $lang['vector_youarehere_position']       = 'Расположение панели &laquo;Вы&nbsp;находитесь здесь&raquo; (если включено):';
 $lang['vector_cite_author']               = 'Имя автора в&nbsp;&laquo;Цитировать страницу&raquo;:';

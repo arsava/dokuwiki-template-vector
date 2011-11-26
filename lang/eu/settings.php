@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "Ez bada lehenetsia, erabili hurrengo URL-a do
 $lang["vector_toc_position"] = "Edukien taularen (TOC) posizioa";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Erakutsi mediamanger embedded itxura arruntarekin?";
 $lang["vector_breadcrumbs_position"]  = "Breadcrumb-aren posizioa nabigazioan (gaituta badago):";
 $lang["vector_youarehere_position"]   = "'Hemen zaude'-ren posizioa nabigazioan (gaituta badago):";
 $lang["vector_cite_author"]           = "Jarri autorearen izena 'Artikuluaren aipamenean':";

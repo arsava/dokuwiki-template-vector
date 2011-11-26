@@ -1086,29 +1086,87 @@ div.dokuwiki form#dw__login label.simple {
 }
 
 
-/* --------------- media manager --------------- */
-#media__manager {
-  min-height: 550px;
+/* --------------- media manager popup --------------- */
+html.popup {
+  background-color: #fff;
 }
-* html #media__manager {
-  height: 550px; /* fix MSIE 6 */
+html.popup body {
+  font: 13px/17px sans-serif;
+  background-image: none;
+  background-color: #fff;
 }
-#media__manager h1,
-#media__manager h2,
-#media__popup h1,
-#media__popup h2 {
+html.popup #media__manager {
+  min-height: 465px;
+}
+* html.popup #media__manager {
+  height: 465px; /* fix MSIE 6 */
+}
+html.popup #media__manager h1,
+html.popup #media__manager h2,
+html.popup #media__popup h1,
+html.popup #media__popup h2 {
   font-size: 1em !important;
   line-height: 1em !important;
   font-weight: bold !important;
 }
-/* make a "non-embedded"/fullpage manager possible trough hiding some stuff */
-body.mmanagernotembedded .noprint,
-body.mmanagernotembedded #siteNotice,
-body.mmanagernotembedded #footer {
-  display: none !important;
+html.popup #media__opts {
+  padding-left: 1em;
+  margin-bottom: 0.5em;
 }
-body.mmanagernotembedded #content {
+html.popup #media__opts input {
+  float: left;
+  display: block;
+  margin-top: 4px;
+  position: absolute;
+}
+*+html.popup #media__opts input,
+* html.popup #media__opts input {
+  position: static;
+}
+html.popup #media__opts label {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+*+html.popup #media__opts label,
+* html.popup #media__opts label {
+  margin-left: 10px;
+}
+html.popup #media__opts br {
+  clear: left;
+}
+
+
+/* --------------- media manager page --------------- */
+#mediamanager__page h2,
+#mediamanager__page h3 {
+  font-size: 1em !important;
+  line-height: 1.5em !important;
+  font-weight: normal !important;
+  padding: 3px 10px !important;
+}
+#mediamanager__page div.namespaces h2 {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+#mediamanager__page div.namespaces div.panelHeader {
+  padding-top: 11px;
+}
+#mediamanager__page h3,
+#mediamanager__page ul.tabs li {
   margin: 0 !important;
+  padding: 0 !important;
+}
+#mediamanager__page .panelHeader ul {
+  list-style-image: none !important;
+}
+#mediamanager__page .panelHeader ul .ui-buttonset {
+  font-size: 12px;
+}
+#mediamanager__page .panelHeader ul li.ui-buttonset {
+  background-position: 3px 0;
+  padding-bottom: 3px;
 }
 
 
@@ -1171,6 +1229,21 @@ div.dokuwiki .section_highlight {
 .JSpopup ul,
 .JSpopup ol {
   padding-left: 0;
+}
+
+/* --------------- diff view ----------------- */
+.dokuwiki table.diff td {
+  font-size: 12px;
+  line-height: 17px;
+}
+.dokuwiki table.diff th {
+  font-size: 12px;
+}
+.dokuwiki table.diff td.diff-addedline,
+.dokuwiki table.diff td.diff-deletedline,
+.dokuwiki table.diff td.diff-context {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 

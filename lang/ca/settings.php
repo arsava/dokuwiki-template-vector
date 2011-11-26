@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "URL de donacions:";
 $lang["vector_toc_position"] = "Posició de la taule de continguts";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Mostra el gestor de fitxers incrustat";
 $lang["vector_breadcrumbs_position"]  = "Posició del camí de navegació";
 $lang["vector_youarehere_position"]   = "Posició de la navegació 'sou aquí'";
 $lang["vector_cite_author"]           = "Nom de l'autor a 'cita aquest article'";

@@ -4,7 +4,7 @@
 #      The reason for protecting these files is to to keep searchengines/foo
 #      away from indexing files containing version information, names and/or not
 #      necessarily public template parts by default.
-<FilesMatch "^inc_(detail|cite|mediamanager)\.php$">
+<FilesMatch "^inc_(detail|cite)\.php$">
   Order Deny,Allow
   Deny from all
 </FilesMatch>

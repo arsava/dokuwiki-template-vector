@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "si no usar predeterminado, usar la siguiente 
 $lang["vector_toc_position"] = "Posición de la Tabla de Contenidos";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Mostar mediamanger empotrado en el diseño estandar?";
 $lang["vector_breadcrumbs_position"]  = "Posición de breadcrumb en navegación (si habilitada):";
 $lang["vector_youarehere_position"]   = "Posicion de  'Tu estás aquí' en navegación (si habilitada):";
 $lang["vector_cite_author"]           = "Nombre del author en  'Cita este Artículo':";

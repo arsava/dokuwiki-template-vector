@@ -73,7 +73,6 @@ $meta["vector_donate_url"]      = array("string", "_pattern" => "/^.{1,6}:\/{2}.
 $meta["vector_toc_position"] = array("multichoice", "_choices" => array("article", "sidebar"));
 
 //other stuff
-$meta["vector_mediamanager_embedded"] = array("onoff");
 $meta["vector_breadcrumbs_position"]  = array("multichoice", "_choices" => array("top", "bottom"));
 $meta["vector_youarehere_position"]   = array("multichoice", "_choices" => array("top", "bottom"));
 $meta["vector_cite_author"]           = array("string");

@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "If not default, use following URL for donatio
 $lang["vector_toc_position"] = "Table of contents (TOC) position";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Display mediamanger embedded within the common layout?";
 $lang["vector_breadcrumbs_position"]  = "Position of breadcrumb navigation (if enabled):";
 $lang["vector_youarehere_position"]   = "Position of 'You are here' navigation (if enabled):";
 $lang["vector_cite_author"]           = "Author name in 'Cite this Article':";

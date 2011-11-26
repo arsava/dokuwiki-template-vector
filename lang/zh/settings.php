@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "如果不是默认，使用下列URL作为捐
 $lang["vector_toc_position"] = "目录位置";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "在通用布局中嵌入显示媒体管理器？";
 $lang["vector_breadcrumbs_position"]  = "足迹导航的位置（如果激活的话）：";
 $lang["vector_youarehere_position"]   = "“您在这里“导航的位置（如果激活的话）：";
 $lang["vector_cite_author"]           = "“引用此文“中的作者姓名：";

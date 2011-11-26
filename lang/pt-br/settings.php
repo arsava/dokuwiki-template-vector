@@ -67,7 +67,6 @@ $lang["vector_donate_url"]      = "Se não usar o padrão, usar a seguinte URL p
 $lang["vector_toc_position"] = "Tabela de conteúdo de posição (TOC)";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Mostrar o item 'Upload de arquivo' no layout?";
 $lang["vector_breadcrumbs_position"]  = "Posição do indicador de navegação (se ativado):";
 $lang["vector_youarehere_position"]   = "Posição da navegação para 'Você está em' (se ativado):";
 $lang["vector_cite_author"]           = "Nome do Autor em 'Citar este artigo':";

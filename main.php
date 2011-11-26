@@ -32,8 +32,8 @@ if (!defined("DOKU_INC")){
  * template has to know, what we are doing right now - and that is what this
  * var is for.
  *
- * Please have a look at the "mediamanager.php" and "detail.php" file in the
- * same folder, they are also influencing the var's value.
+ * Please have a look at the "detail.php" file in the same folder, it is also
+ * influencing the var's value.
  *
  * @var string
  * @author Andreas Haerter <development@andreas-haerter.com>
@@ -55,7 +55,6 @@ if (!empty($vector_action) &&
     $vector_action !== "article" &&
     $vector_action !== "print" &&
     $vector_action !== "detail" &&
-    $vector_action !== "mediamanager" &&
     $vector_action !== "cite"){
     //ignore unknown values
     $vector_action = "article";
@@ -414,7 +413,7 @@ if ($ACT === "edit" &&
 }
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo hsc($conf["lang"]); ?>" lang="<?php echo hsc($conf["lang"]); ?>" dir="<?php echo hsc($lang["direction"]); ?>">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -438,11 +437,11 @@ if (!file_exists(DOKU_TPLINC."style.ini")){
 //note: since 2011-04-22 "Rincewind RC1", there is a core function named
 //      "tpl_getFavicon()". But its functionality is not really fitting the
 //      behaviour of this template, therefore I don't use it here.
-if (file_exists(DOKU_TPLINC."user/favicon.ico")) {
+if (file_exists(DOKU_TPLINC."user/favicon.ico")){
     //user defined - you might find http://tools.dynamicdrive.com/favicon/
     //useful to generate one
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.ico\" />\n";
-} elseif (file_exists(DOKU_TPLINC."user/favicon.png")) {
+} elseif (file_exists(DOKU_TPLINC."user/favicon.png")){
     //note: I do NOT recommend PNG for favicons (cause it is not supported by
     //all browsers), but some users requested this feature.
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.png\" />\n";
@@ -453,7 +452,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")) {
 
 //include default or userdefined Apple Touch Icon (see <http://j.mp/sx3NMT> for
 //details)
-if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")) {
+if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
     echo "<link rel=\"apple-touch-icon\" href=\"".DOKU_TPL."user/apple-touch-icon.png\" />\n";
 }else{
     //default
@@ -474,6 +473,7 @@ if ($vector_action === "print"){
        ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n"
        ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
 }
+
 //load language specific css hacks?
 if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   $interim = trim(file_get_contents(DOKU_TPLINC."lang/".$conf["lang"]."/style.css"));
@@ -489,8 +489,8 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
              switch (true){
                   //special: tech
                   case ($vector_action === "detail"):
-                  case ($vector_action === "mediamanager"):
                   case ($vector_action === "cite"):
+                  case ($ACT === "media"): //var comes from DokuWiki
                   case ($ACT === "search"): //var comes from DokuWiki
                     echo "mediawiki ltr ns-1 ns-special ";
                     break;
@@ -510,12 +510,6 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
                   default:
                     echo "mediawiki ltr capitalize-all-nouns ns-0 ns-subject ";
                     break;
-              }
-              //add additional CSS class to hide some elements when
-              //we have to show the (not) embedded mediamanager
-              if ($vector_action === "mediamanager" &&
-                  !tpl_getConf("vector_mediamanager_embedded")){
-                  echo "mmanagernotembedded ";
               } ?>skin-vector">
 <div id="page-container">
 <div id="page-base" class="noprint"></div>
@@ -556,7 +550,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show breadcrumps if enabled and position = top
   if ($conf["breadcrumbs"] == true &&
-      $vector_action !== "mediamanager" &&
+      $ACT !== "media" && //var comes from DokuWiki
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -567,7 +561,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = top
   if ($conf["youarehere"] == true &&
-      $vector_action !== "mediamanager" &&
+      $ACT !== "media" && //var comes from DokuWiki
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -594,10 +588,6 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
         case "detail":
             include DOKU_TPLINC."inc_detail.php";
             break;
-        //file browser/"mediamanager"
-        case "mediamanager":
-            include DOKU_TPLINC."inc_mediamanager.php";
-            break;
         //"cite this article"
         case "cite":
             include DOKU_TPLINC."inc_cite.php";
@@ -616,7 +606,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   <?php
   //show breadcrumps if enabled and position = bottom
   if ($conf["breadcrumbs"] == true &&
-      $vector_action !== "mediamanager" &&
+      $ACT !== "media" && //var comes from DokuWiki
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&
@@ -627,7 +617,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   }
   //show hierarchical breadcrumps if enabled and position = bottom
   if ($conf["youarehere"] == true &&
-      $vector_action !== "mediamanager" &&
+      $ACT !== "media" && //var comes from DokuWiki
       (empty($conf["useacl"]) || //are there any users?
        $loginname !== "" || //user is logged in?
        !tpl_getConf("vector_closedwiki")) &&

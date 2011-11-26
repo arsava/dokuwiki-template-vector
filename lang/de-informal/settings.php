@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "Falls nicht Standard-Spendenziel, folgende UR
 $lang["vector_toc_position"] = "Position des Inhaltsverzeichnisses";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Mediamanager eingebettet im gewöhnliche Layout anzeigen?";
 $lang["vector_breadcrumbs_position"]  = "Position der breadcrumb-Navigation (sofern aktiviert):";
 $lang["vector_youarehere_position"]   = "Position der 'Sie befinden sich hier'-Navigation (sofern aktiviert):";
 $lang["vector_cite_author"]           = "Zu nutzender Autorenname in 'Artikel zitieren':";

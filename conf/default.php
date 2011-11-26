@@ -73,7 +73,6 @@ $conf["vector_donate_url"]      = "http://andreas-haerter.com/donate/dokuwiki-te
 $conf["vector_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column
 
 //other stuff
-$conf["vector_mediamanager_embedded"] =  false; //TRUE: Show media manager surrounded by the common navigation/tabs and stuff
 $conf["vector_breadcrumbs_position"]  = "bottom"; //position of breadcrumbs navigation ("top" or "bottom")
 $conf["vector_youarehere_position"]   = "top"; //position of "you are here" navigation ("top" or "bottom")
 if (!empty($_SERVER["HTTP_HOST"])){

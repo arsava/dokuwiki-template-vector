@@ -76,7 +76,6 @@ $lang["vector_donate_url"]      = "Se non predefinito, usa il seguente indirizzo
 $lang["vector_toc_position"] = "Posizione indice dei contenuti";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Visualizzare mediamanager incluso nello schema dello stile?";
 $lang["vector_breadcrumbs_position"]  = "Posizione del pannello breadcrumb (se abilitato):";
 $lang["vector_youarehere_position"]   = "Posizione del pannello 'Tu sei qui' (se abilitato):";
 $lang["vector_cite_author"]           = "Nome autore in 'Cita questo articolo':";

@@ -68,7 +68,6 @@ $lang["vector_donate_url"]      = "Indien niet standaard, gebruik de volgende UR
 $lang["vector_toc_position"] = "Positionering van de inhoudopgave";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Toon de mediamanger geintegreerd in de normale layout?";
 $lang["vector_breadcrumbs_position"]  = "Positie van broodkruimel navigatie (indien ingeschakeld):";
 $lang["vector_youarehere_position"]   = "Positie van 'U bent hier' navigatie (indien ingeschakeld):";
 $lang["vector_cite_author"]           = "Naam van de auteur in 'Citeer dit artikel':";

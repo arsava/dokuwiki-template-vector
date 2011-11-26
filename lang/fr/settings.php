@@ -71,7 +71,6 @@ $lang["vector_donate_url"]      = "Si non, utilisez l'URL suivante our les donat
 $lang["vector_toc_position"] = "Sommaire position";
 
 //other stuff
-$lang["vector_mediamanager_embedded"] = "Afficher le media manager embarqué avec le layout commun ?";
 $lang["vector_breadcrumbs_position"]  = "Position du fil d'ariane (si actif) :";
 $lang["vector_youarehere_position"]   = "Position du 'Vous êtes ici' (si actif) :";
 $lang["vector_cite_author"]           = "Nom de l'auteur dans 'Citer cet article' :";
