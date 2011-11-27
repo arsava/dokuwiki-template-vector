@@ -151,7 +151,9 @@ if (empty($conf["useacl"]) || //are there any users?
             if (actionOK("recent")){ //check if action is disabled
                 $_vector_boxes["p-tb"]["xhtml"] .= "        <li id=\"t-recentchanges\"><a href=\"".wl("", array("do" => "recent"))."\" rel=\"nofollow\">".hsc($lang["btn_recent"])."</a></li>\n"; //language comes from DokuWiki core
             }
-            $_vector_boxes["p-tb"]["xhtml"] .= "        <li id=\"t-upload\"><a href=\"".wl("", array("do" => "media"))."\" rel=\"nofollow\">".hsc($lang["btn_media"])."</a></li>\n"; //language comes from DokuWiki core
+            if (actionOK("media")){ //check if action is disabled
+                $_vector_boxes["p-tb"]["xhtml"] .= "        <li id=\"t-upload\"><a href=\"".wl("", array("do" => "media"))."\" rel=\"nofollow\">".hsc($lang["btn_media"])."</a></li>\n"; //language comes from DokuWiki core
+            }
             if (actionOK("index")){ //check if action is disabled
                 $_vector_boxes["p-tb"]["xhtml"] .= "        <li id=\"t-special\"><a href=\"".wl("", array("do" => "index"))."\" rel=\"nofollow\">".hsc($lang["vector_toolbxdef_siteindex"])."</a></li>\n";
             }

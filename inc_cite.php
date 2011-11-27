@@ -172,10 +172,10 @@ $permurl = DOKU_URL.DOKU_SCRIPT."?id=".getID()."&rev=".$rev; //no wl() here to g
 <div class="level3">
   <dl>
     <dt><?php echo hsc($lang["vector_cite_markup"]); ?></dt>
-    <dd>[[<?php echo getID(); ?>|<?php tpl_pagetitle(); ?>]] ([[<?php echo hsc($permurl); ?>|<?php echo hsc($lang["vector_cite_thisversion"]); ?>]])</dd>
+    <dd>[[<?php echo hsc(getID()); ?>|<?php tpl_pagetitle(); ?>]] ([[<?php echo hsc(getID()."?rev=".$rev); ?>|<?php echo hsc($lang["vector_cite_thisversion"]); ?>]])</dd>
   </dl>
   <dl>
     <dt><?php echo hsc($lang["vector_cite_result"]); ?></dt>
-    <dd><a rel="nofollow" class="wikilink1" href="<?php echo hsc(wl(cleanID(getId()))); ?>"><?php tpl_pagetitle(); ?></a> (<a rel="nofollow" class="urlextern" href="<?php echo hsc($permurl); ?>"><?php echo hsc($lang["vector_cite_thisversion"]); ?></a>)</dd>
+    <dd><a rel="nofollow" class="wikilink1" href="<?php echo hsc(wl(cleanID(getId()))); ?>"><?php tpl_pagetitle(); ?></a> (<a rel="nofollow" class="wikilink1" href="<?php echo hsc($permurl); ?>"><?php echo hsc($lang["vector_cite_thisversion"]); ?></a>)</dd>
   </dl>
 </div>

@@ -52,7 +52,7 @@ if (file_exists(DOKU_TPLINC."user/favicon.ico")){
     //user defined - you might find http://tools.dynamicdrive.com/favicon/
     //useful to generate one
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.ico\" />\n";
-} elseif (file_exists(DOKU_TPLINC."user/favicon.png")){
+}elseif (file_exists(DOKU_TPLINC."user/favicon.png")){
     //note: I do NOT recommend PNG for favicons (cause it is not supported by
     //all browsers), but some users requested this feature.
     echo "\n<link rel=\"shortcut icon\" href=\"".DOKU_TPL."user/favicon.png\" />\n";

@@ -120,7 +120,9 @@ input[type=checkbox],
 input.check {
   padding: 0;
 }
-input[type=submit], input.button, button {
+input[type=submit],
+input.button,
+button {
   cursor: pointer;
 }
 input[disabled],
@@ -713,8 +715,8 @@ div.dokuwiki div.fn {
 
 /* insitu-footnotes */
 div.insitu-footnote {
-  font-size: 85%;
-  padding: 4px;
+  font-size: 0.938em; /* 12px */
+  padding: 4px 7px 4px 10px;
 }
 div.insitu-footnote code,
 div.insitu-footnote pre {
