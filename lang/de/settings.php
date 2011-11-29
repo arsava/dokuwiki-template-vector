@@ -44,8 +44,9 @@ $lang["vector_sitenotice"]          = "Seitenübergreifenden Hinweis einblenden?
 $lang["vector_sitenotice_location"] = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
 
 //navigation
-$lang["vector_navigation"]          = "Navigation anzeigen?";
-$lang["vector_navigation_location"] = "Falls ja, folgende wiki-Seite als Navigation verwenden:";
+$lang["vector_navigation"]           = "Navigation anzeigen?";
+$lang["vector_navigation_location"]  = "Falls ja, folgende wiki-Seite als Navigation verwenden:";
+$lang["vector_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'vector_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
 
 //exportbox ("print/export")
 $lang["vector_exportbox"]          = "'Drucken/exportieren'-Box anzeigen?";

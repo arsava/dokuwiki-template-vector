@@ -46,8 +46,9 @@ $meta["vector_sitenotice"]          = array("onoff");
 $meta["vector_sitenotice_location"] = array("string");
 
 //navigation
-$meta["vector_navigation"]          = array("onoff");
-$meta["vector_navigation_location"] = array("string");
+$meta["vector_navigation"]           = array("onoff");
+$meta["vector_navigation_location"]  = array("string");
+$meta["vector_navigation_translate"] = array("onoff");
 
 //exportbox ("print/export")
 $meta["vector_exportbox"]          = array("onoff");

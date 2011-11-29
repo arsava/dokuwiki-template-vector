@@ -46,8 +46,9 @@ $conf["vector_sitenotice"]          = true; //TRUE: use/show sitenotice
 $conf["vector_sitenotice_location"] = ":wiki:site_notice"; //page/article used to store the sitenotice
 
 //navigation
-$conf["vector_navigation"]          = true; //TRUE: use/show navigation
-$conf["vector_navigation_location"] = ":wiki:navigation"; //page/article used to store the navigation
+$conf["vector_navigation"]           = true; //TRUE: use/show navigation
+$conf["vector_navigation_location"]  = ":wiki:navigation"; //page/article used to store the navigation
+$conf["vector_navigation_translate"] = true; //TRUE: load translated navigation if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //exportbox ("print/export")
 $conf["vector_exportbox"]          = true; //TRUE: use/show exportbox

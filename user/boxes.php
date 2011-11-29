@@ -34,11 +34,10 @@ if (!defined("DOKU_INC")){
 
 //Languages/translations provided via Andreas Gohr's translation plugin,
 //see <http://www.dokuwiki.org/plugin:translation>
-if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
-    !plugin_isdisabled("translation")){
-    $translation = &plugin_load("syntax", "translation");
+if (!empty($transplugin) && //$transplugin object was created in /conf/boxes.php
+    is_object($transplugin)){
     $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
-    $_vector_boxes["p-lang"]["xhtml"]    = $translation->_showTranslations();
+    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
 }
 
 

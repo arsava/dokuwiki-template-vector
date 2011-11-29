@@ -57,7 +57,7 @@ $lang['vector_printexport']               = 'Печать/экспорт';
 $lang['vector_personnaltools']            = 'Личные инструменты';
 
 //кнопки
-$lang['vector_btn_go']                    = '>>';
+$lang['vector_btn_go']                    = '»';
 $lang['vector_btn_search']                = 'Искать';
 $lang['vector_btn_search_title']          = 'Найти страницы, содержащие указанный текст';
 

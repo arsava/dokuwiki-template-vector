@@ -44,8 +44,9 @@ $lang["vector_sitenotice"]          = "Show site wide notice?";
 $lang["vector_sitenotice_location"] = "If yes, use following wiki page for the site wide notice:";
 
 //navigation
-$lang["vector_navigation"]          = "Show navigation?";
-$lang["vector_navigation_location"] = "If yes, use following wiki page as navigation:";
+$lang["vector_navigation"]           = "Show navigation?";
+$lang["vector_navigation_location"]  = "If yes, use following wiki page as navigation:";
+$lang["vector_navigation_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific navigation?<br />The wiki page of the translated navigation(s) is [value of 'vector_navigation_location']_[iso lang code] (e.g. ':wiki:navigation_de').";
 
 //exportbox ("print/export")
 $lang["vector_exportbox"]          = "Show 'print/export' box?";
