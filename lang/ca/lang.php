@@ -48,10 +48,10 @@ $lang["vector_translations"] = "Llengües";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "Navegació";
-$lang["vector_toolbox"] = "Quadre d'eines";
-$lang["vector_exportbox"] = "Imprimeix/exporta";
+$lang["vector_toolbox"] = "Eines";
+$lang["vector_exportbox"] = "Exportació";
 $lang["vector_inotherlanguages"] = "Llengües";
-$lang["vector_printexport"] = "Imprimeix/exporta";
+$lang["vector_printexport"] = "Exportació";
 $lang["vector_personnaltools"] = "Eines personals";
 
 //buttons
