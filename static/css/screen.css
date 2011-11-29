@@ -1170,6 +1170,23 @@ html.popup #media__opts br {
   background-position: 3px 0;
   padding-bottom: 3px;
 }
+#mediamanager__page .panelHeader div.no input.button {
+  padding: 1px;
+  line-height: 1em;
+}
+#mediamanager__page .panelContent li {
+  #list-style: none !important;
+  #list-style-image: none !important;
+}
+
+
+/* --------------- link wizard --------------- */
+#link__wiz {
+  text-align: center;
+}
+#link__wiz_result div.even {
+  background-color: #f5f5f5;
+}
 
 
 /* --------------- search result formating --------------- */
