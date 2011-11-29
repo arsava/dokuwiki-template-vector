@@ -66,6 +66,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "Télécharger en PDF";
 
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "Page amont liées";
+$lang["vector_toolbxdef_upload"] = "Evoyer un fichier";
 $lang["vector_toolbxdef_siteindex"] = "Site index";
 $lang["vector_toolboxdef_permanent"] = "Lien permanent";
 $lang["vector_toolboxdef_cite"] = "Citer cette page";

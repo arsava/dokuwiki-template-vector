@@ -68,6 +68,7 @@ $lang['vector_exportbxdef_downloadpdf']   = 'Скачать как PDF';
 
 //инструменты по умолчанию
 $lang['vector_toolbxdef_whatlinkshere']   = 'Ссылки сюда';
+$lang['vector_toolbxdef_upload']          = 'Загрузить файл';
 $lang['vector_toolbxdef_siteindex']       = 'Все страницы';
 $lang['vector_toolboxdef_permanent']      = 'Постоянная ссылка';
 $lang['vector_toolboxdef_cite']           = 'Цитировать страницу';

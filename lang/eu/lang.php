@@ -66,6 +66,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "Jaitsi PDF formatuan";
 
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "Orri honetaranzko lotura dutenak";
+$lang["vector_toolbxdef_upload"] = "Fitxategia igo";
 $lang["vector_toolbxdef_siteindex"] = "Gunearen aurkibidea";
 $lang["vector_toolboxdef_permanent"] = "Lotura iraunkorra";
 $lang["vector_toolboxdef_cite"] = "Sortu orrialde hau";

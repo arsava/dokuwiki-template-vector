@@ -66,6 +66,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "做为PDF下载";
 
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "反向链接";
+$lang["vector_toolbxdef_upload"] = "上传文件";
 $lang["vector_toolbxdef_siteindex"] = "站点索引";
 $lang["vector_toolboxdef_permanent"] = "永久链接";
 $lang["vector_toolboxdef_cite"] = "引用此文";
