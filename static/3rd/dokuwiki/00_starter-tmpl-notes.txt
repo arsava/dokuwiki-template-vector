@@ -9,7 +9,7 @@ II) Modifications
     make this clear, a comment was added at the top of the files.
   - "static/3rd/dokuwiki/bullet|close|open.gif" were re-saved as PNG.
 
-_fileuploader
+
 III) Notes
   The css files were taken from the "starter template". See the following for
   more information:
