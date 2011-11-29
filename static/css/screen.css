@@ -741,6 +741,8 @@ div.picker {
   width: 250px;
   border: 1px solid __border__;
   background-color: __background_alt__;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 div.pk_hl {
@@ -1174,10 +1176,6 @@ html.popup #media__opts br {
   padding: 1px;
   line-height: 1em;
 }
-#mediamanager__page .panelContent li {
-  #list-style: none !important;
-  #list-style-image: none !important;
-}
 
 
 /* --------------- link wizard --------------- */
@@ -1237,6 +1235,7 @@ div.dokuwiki .section_highlight {
   background-color: __background_alt__ !important;
 }
 
+
 /* --------------- JS popup ----------------- */
 .JSpopup {
   background-color: __background__;
@@ -1249,6 +1248,7 @@ div.dokuwiki .section_highlight {
 .JSpopup ol {
   padding-left: 0;
 }
+
 
 /* --------------- diff view ----------------- */
 .dokuwiki table.diff td {
@@ -1280,6 +1280,11 @@ textarea,
   /* overwrite original vector with fixes for IE6/7 */
   #width: 100% !important;
   border: auto;
+}
+/* MSIE 7: media manager */
+*:first-child+html #mediamanager__page .panelContent li {
+  list-style: none !important;
+  list-style-image: none !important;
 }
 /* ajax quicksearch: MSIE 6/7 */
 * html #qsearch__out {
