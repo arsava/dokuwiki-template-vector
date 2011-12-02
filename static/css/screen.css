@@ -219,7 +219,7 @@ ol ol ol ol ol { list-style-type: lower-roman; }
 
 /* general classes */
 div.clearer {
-  /* additional to what's already in lib/styles/style.css: */
+  /* additional to what's already in DokuWiki's lib/styles/all.css: */
   font-size: 1px;
   visibility: hidden;
 }
@@ -236,7 +236,7 @@ div.clearer {
 
 /* --------------- content styling --------------- */
 
-/* embedded images (styles are already partly set in lib/styles/style.css) */
+/* embedded images (styles are already partly set in DokuWiki's lib/styles/all.css) */
 .dokuwiki img.media       { }
 .dokuwiki img.medialeft   { margin: .5em 1.5em .5em 0; }
 .dokuwiki img.mediaright  { margin: .5em 0 .5em 1.5em; }
