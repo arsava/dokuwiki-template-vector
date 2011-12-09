@@ -48,6 +48,12 @@ html {
 body {
   font: normal 100%/1.4 sans-serif;
 }
+hr {
+  border: 0 none;
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
 caption,
 legend {
   color: __text_neu__;
