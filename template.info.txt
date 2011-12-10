@@ -1,7 +1,7 @@
 ﻿base     vector
 author   Andreas Haerter
 email    development@andreas-haerter.com
-date     2011-11-29
+date     2011-12-10
 name     vector template
 desc     vector brings you the current MediaWiki/Wikipedia look and feel for DokuWiki.
 url      http://andreas-haerter.com/projects/dokuwiki-template-vector
