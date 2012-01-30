@@ -46,6 +46,7 @@ $lang["vector_sitenotice_location"] = "Pàgina de l'avís del lloc";
 //navigation
 $lang["vector_navigation"]          = "Mostra la navegació";
 $lang["vector_navigation_location"] = "Pàgina de la navegació";
+$lang["vector_navigation_translate"] = "Utilitza la navegació traduïda si el <a href=\"http://www.dokuwiki.org/plugin:translation\">connector Translation</a> està disponible.<br/>La pàgina de navegació traduïda és [valor de 'vector_navigation_location']_[codi de llengüa ISO] (per exemple, ':wiki:navigation_de').";
 
 //exportbox ("print/export")
 $lang["vector_exportbox"]          = "Mostra el quadre 'imprimeix/exporta'";
