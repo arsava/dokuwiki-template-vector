@@ -18,7 +18,7 @@
     downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
     template in the Config Manager by adjusting the template option.
 
-    See the vector template website for instructions[2].
+    See the vector template website for update instructions[2].
 
     NOTE: If everything will be displayed unformatted, your PHP environment is
           probably affected by PHP bug #49692[3]. You may find errors like
@@ -213,13 +213,13 @@
     Some developers may find this interesting. Additionally, I am very oblivious
     :-P.
 
-    - Downloaded the nightly MediaWiki build (cause only the SVN version is
+    - Downloaded the nightly MediaWiki build (because only the SVN version is
       containing the vector skin as I'm writing this) from
       <http://toolserver.org/~vvv/mw-nightly/>.
 
     - Installed DokuWiki (Release "2009-12-25c", "Lemming") for testing purpose.
 
-    - Copied all "monobook for DokuWiki" sources cause it already fits some of
+    - Copied all "monobook for DokuWiki" sources because it already fits some of
       my needs regarding config options and non-layout features. Means: I used
       the source of the "monobook for DokuWiki" template as base for "vector for
       DokuWiki".

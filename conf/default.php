@@ -11,7 +11,7 @@
  *   menu of DokuWiki, have a look at the file
  *   "/lib/tpl/vector/lang/<your lang>/settings.php". If it does not exists,
  *   copy and translate the English one. And don't forget to mail the
- *   translation to me, Andreas Haerter <development@andreas-haerter.com> :-D.
+ *   translation to me, Andreas Haerter <ah@bitkollektiv.org> :-D.
  * - To change the [tabs|boxes|buttons] configuration, have a look at
  *   "/user/[tabs|boxes|buttons].php".
  *
@@ -21,8 +21,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-vector
+ * @author Andreas Haerter <ah@bitkollektiv.org>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -68,7 +67,7 @@ $conf["vector_copyright_location"] = ":wiki:copyright"; //page/article used to s
 //donation link/button
 $conf["vector_donate"]          = true; //TRUE: use/show donation link/button
 $conf["vector_donate_default"]  = true; //TRUE: use default donation link/button (if donation link is enabled at all)
-$conf["vector_donate_url"]      = "http://andreas-haerter.com/donate/dokuwiki-template-vector"; //custom donation URL instead of the default one
+$conf["vector_donate_url"]      = "http://bitkollektiv.org/donate/dokuwiki-template-vector/"; //custom donation URL instead of the default one
 
 //TOC
 $conf["vector_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

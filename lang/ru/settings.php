@@ -10,7 +10,7 @@
  * Если их не существует, копируйте и переведите английские файлы 
  * (подсказка: загляните на <http://[ваш язык].wikipedia.org/>).
  * И не забудьте прислать мне перевод электронной почтой:
- * Андреас Хертер <development@andreas-haerter.com>. Спасибо :-D
+ * Андреас Хертер <ah@bitkollektiv.org>. Спасибо :-D
  *
  *
  * ЛИЦЕНЗИЯ: этот файл является программным обеспечением с открытым кодом
@@ -21,7 +21,6 @@
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author anarchist IVANOV <ivanov@anarhist.org>
  * @author Aleksandr Selivanov <alexgearbox@gmail.com>
- * @link http://andreas-haerter.com/projects/dokuwiki-template-vector
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/config:lang
  * @link http://www.dokuwiki.org/devel:configuration
