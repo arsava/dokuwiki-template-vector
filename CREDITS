@@ -1,60 +1,82 @@
-Title: Credits of the vector template for DokuWiki
-Creation date: 2010-06-11
-Last Update: 2012-03-09
-Author: Andreas Haerter <development [ät] andreas-haerter.com>
-Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
-     <http://www.dokuwiki.org/template:vector>
+
+  I. Andreas Haerter <ah@bitkollektiv.org>
+
+    This DokuWiki template is maintained by Andreas Haerter / Bitkollektiv[1].
+    If you like our projects, you might buy us a coffee[2], or get some cool
+    QR Code merchandise[3]. Thank you! :-)
+
+    [1] <http://bitkollektiv.org/>
+    [2] <http://bitkollektiv.org/donate/dokuwiki-template-vector/>
+    [3] <http://goqr.me/>
 
 
-This file lists contributors and contributions to this template for DokuWiki
 
- * Theo Klein
-   Theo Klein contributed the Dutch language files and some ideas. Thank you for
-   this!
+  II. Theo Klein
 
-
- * Fabio Reis
-   Fabio Reis contributed the Brazilian Portuguese language files and reported
-   a bug. Thank you for this!
+    Theo Klein contributed the Dutch language files and some ideas.
 
 
- * Luigi Micco <l.micco [ät] tiscali.it> <http://www.luigimicco.altervista.org>
-   Luigi contributed the Italian language files an reported a few bugs. Thank
-   you for this!
+
+  III. Fabio Reis
+
+    Fabio Reis contributed the Brazilian Portuguese language files and reported
+    a bug.
 
 
- * LAINME <lainme993 [ät] gmail.com>
-   LAINME contributed the Chinese translation (simplified) language files. Thank
-   you for this!
+
+  IV. Luigi Micco <l.micco [ät] tiscali.it>
+
+    Luigi Micco[1] contributed the Italian language files an reported a few
+    bugs.
+
+    [1] <http://www.luigimicco.altervista.org>
 
 
- * Julien Revault d'Allonnes <jrevault [ät] gmail.com>
-   Julien Revault d'Allonne contributed the French language files. Thank you for
-   this!
+
+  V. LAINME <lainme993 [ät] gmail.com>
+
+    LAINME contributed the Chinese translation (simplified) language files.
 
 
- * ander
-   ander contributed the Basque language files. Thank you for this!
+
+  VI. Julien Revault d'Allonnes <jrevault [ät] gmail.com>
+
+    Julien Revault d'Allonne contributed the French language files.
 
 
- * Albert Gasset
-   Albert Gasset contributed the Catalan language files. Thank you for this!
+
+  VII. ander
+
+    ander contributed the Basque language files.
 
 
- * Jesús Muñoz Martínez <kisumum [ät] gmail.com>, Felipe Ruiz
-   Jesús Muñoz Martínez and Felipe Ruiz contributed the Spanish language files.
-   Thank you for this!
+
+  VIII. Albert Gasset
+
+    Albert Gasset contributed the Catalan language files.
 
 
- * Aleksandr Selivanov, anarchist IVANOV
-   Aleksandr Selivanov and anarchist IVANOV contributed the Russion language
-   files. Thank you for this!
+
+  IX. Jesús Muñoz Martínez <kisumum [ät] gmail.com>, Felipe Ruiz
+
+    Jesús Muñoz Martínez and Felipe Ruiz contributed the Spanish language files.
 
 
- * David Roesel <http://david.roesel.cz/>
-   David Roesel contributed the Czech language files. Thank you for this!
+
+  X. Aleksandr Selivanov, anarchist IVANOV
+
+    Aleksandr Selivanov and anarchist IVANOV contributed the Russion language
+    files.
 
 
- * Peter Bezemek
-   Peter Bezemek contributed the Slovak language files. Thank you for this!
+
+  XI. David Roesel <http://david.roesel.cz/>
+
+    David Roesel contributed the Czech language files.
+
+
+
+  XII. Peter Bezemek
+
+    Peter Bezemek contributed the Slovak language files.
 
