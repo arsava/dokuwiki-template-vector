@@ -1,276 +1,284 @@
-Title: README of the vector template for DokuWiki
-Creation date: 2010-05-29
-Last Update: 2011-11-24
-Author: Andreas Haerter <development [ät] andreas-haerter.com>
-Web: <http://andreas-haerter.com/projects/dokuwiki-template-vector>
-     <http://www.dokuwiki.org/template:vector>
+
+  I. About
+
+    "vector"[1] is a template to offer the MediaWiki/Wikipedia 2010 Look&Feel
+    for DokuWiki.
+
+    It is a mostly optical port of the original MediaWiki skin and was created
+    by me (Andreas Haerter[2]).
+
+    [1] <http://www.dokuwiki.org/template:vector>
+    [2] <http://andreas-haerter.com/>
 
 
 
-PLEASE NOTE: I am NO native English speaker. If you find any errors please let
-             me know (e.g. by mail). Otherwise, my English is not getting better
-             (as desired by myself). Thank you! -- Andreas Haerter
+  II. Installation and update
+
+    The installation works as described[1] on DokuWiki.org. Extract the
+    downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
+    template in the Config Manager by adjusting the template option.
+
+    See the vector template website for instructions[2].
+
+    NOTE: If everything will be displayed unformatted, your PHP environment is
+          probably affected by PHP bug #49692[3]. You may find errors like
+          "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini on
+          line XX" in your PHP logs when this is the case. vector provides a
+          workaround for this, simply delete vector's "style.ini" to trigger
+          the template to use it.
+
+    [1] <http://www.dokuwiki.org/template>
+    [2] <http://www.dokuwiki.org/template:vector#update>
+    [3] <http://bugs.php.net/bug.php?id=49692>
 
 
 
-I. Using/Installing the template
-  Using "vector" is simple and works just as described at
-  <http://www.dokuwiki.org/template>: extract the downloaded archive into
-  your DokuWiki's "lib/tpl/" folder. Then select the template in the Config
-  Manager by adjusting the template option. Done. :-)
+  III. Customizing the template
 
-  If you are updating an existing vector-installation: please have a look at
-  <http://www.dokuwiki.org/template:vector>, you should find all needed
-  information there.
+    In order to make updates of your installed "vector" template easy, follow
+    these hints for customizing the template:
 
-  NOTE: If everything will be displayed unformatted, your PHP environment is
-        probably affected by PHP bug #49692 (see bugreport at
-        <http://bugs.php.net/bug.php?id=49692> for details). You may find errors
-        like "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini
-        on line XX" in your PHP logs when this is the case. vector provides
-        a workaround for this, simply delete vector's "style.ini" to trigger the
-        template to use it.
+    - Place your files in "vector/user"
+      The place for *all* userdefined, custom stuff is "vector/user".
+      Reason: this folder will not be touched on updates. Therefore you may
+      delete everything except "vector/user" and copy all new files into
+      "vector/" to update without loosing your changes. Do not forget to
+      empty your browser's cache afterwards.
 
+    - Own logo
+      If you want to replace the default logo showed in the upper left, simply
+      create a "logo.[png|gif|jpg]" in "vector/user". The template recognizes
+      the file automatically and will use it instead of the default text. Do not
+      forget to empty your browser's cache afterwards.
 
+    - Own favicon
+      If you want to replace the default favicon, simply create a "favicon.ico"
+      in "vector/user". The template recognizes the file automatically and
+      will use it instead of the default one. Do not forget to empty your
+      browser's cache afterwards. By the way: you might find the online
+      FavIcon Generator[1] useful.
+      Note: "favicon.png" is also possible but not recommended (because it is
+            not supported by older MSIE versions).
 
-II. Customizing the template
-  In order to make updates of your installed "vector" template easy, follow
-  these hints for customizing the template:
+    - Own CSS
+      To apply additional CSS rules, edit "vector/user/screen.css"
+      (influences normal layout) and/or "vector/user/print.css" (influences
+      print layout) and/or "vector/user/rtl.css" (influences "right-to-left"
+      languages like Hebrew). These files will be included automatically (as the
+      last ones for the relevant media, therefore you are able to overrule
+      existing styles). Do not forget to empty your browser's cache afterwards.
 
-  - Place your files in "vector/user"
-    The place for *all* userdefined, custom stuff is "vector/user".
-    Reason: this folder will not be touched on updates. Therefore you may delete
-    everything except "vector/user" and copy all new files into "vector/" to
-    update without loosing your changes. Do not forget to empty your browser's
-    cache afterwards.
+    - Own JavaScript
+      To load additional JavaScript, edit "vector/user/user.js". Do not
+      forget to empty your browser's cache afterwards.
+      ATTENTION: You have to activate the template option "vector_loaduserjs"
+                 (->"Load 'vector/user/user.js'?") in the DokuWiki Config
+                 Manager!
 
-  - Own logo
-    If you want to replace the default logo showed in the upper left, simply
-    create a "logo.[png|gif|jpg]" in "vector/user". The template recognizes
-    the file automatically and will use it instead of the default logo.
-    Do not forget to empty your browser's cache afterwards.
+    - Own CSS, language specific
+      To apply additional CSS rules only for a specific language, edit/create
+      "vector/lang/<your-language>/style.css". This file will be included
+      automatically if DokuWiki runs/shows a page in the language of choice (as
+      the last one, therefore you are able to overrule existing styles). Do
+      not forget to empty your browser's cache afterwards.
 
-  - Own favicon
-    If you want to replace the default favicon, simply create a "favicon.ico" in
-    "vector/user". The template recognizes the file automatically and will use
-    it instead of the default one. Do not forget to empty your browser's cache
-    afterwards. By the way: you might find the following online tool useful:
-    <http://tools.dynamicdrive.com/favicon/>
-    Note: "favicon.png" is also possible but not recommended (cause it is not
-          supported by most MSIE versions).
+    - Own tabs
+      To apply own tabs, have a look at "vector/user/tabs.php". Don't worry:
+      you will find some examples how to define the tabs. If you still have
+      questions after playing with the examples, see "IV. Support" on how to get
+      help. If "vector/user/tabs.php" does not exist, simply copy it out of
+      the current actual installation archive.
 
-  - Own CSS
-    To apply additional CSS rules, edit "vector/user/screen.css" (influences
-    normal layout) and/or "vector/user/print.css" (influences print layout)
-    and/or "vector/user/rtl.css" (influences "right-to-left" languages like
-    hebrew). These files will be included automatically (as the last ones for
-    the relevant media, therefore you are able to overrule existing styles). Do
-    not forget to empty your browser's cache afterwards.
+    - Own footer buttons
+      To apply own buttons/graphics in the footer (-> these small 80x15 pics),
+      have a look at "vector/user/buttons.php". Don't worry: you will find
+      some examples how to define the buttons. If you still have questions
+      after playing with the examples, see "IV. Support" on how to get help.
+      If "vector/user/buttons.php" does not exist, simply copy it out of the
+      current actual installation archive.
 
-  - Own JavaScript
-    To load additional JavaScript, edit "vector/user/user.js". Do not forget
-    to empty your browser's cache afterwards.
-    ATTENTION: Do not forget to activate the template option
-               "vector_loaduserjs" (->"Load 'vector/user/user.js'?") in the
-               DokuWiki Config Manager!
+    - Own boxes
+      To apply own boxes in the left column/sidebar, have a look at
+      "vector/user/boxes.php". Don't worry: you will find some examples how to
+      define the boxes. If you still have questions after playing with the
+      examples, see "IV. Support" on how to get help.
+      If "vector/user/boxes.php" does not exist, simply copy it out of the
+      current actual installation archive.
 
-  - Own CSS, language specific
-    To apply additional CSS rules only for a specific language, edit/create
-    "vector/lang/<your-language>/style.css". This file will be included
-    automatically if DokuWiki runs/shows a page in the language of choice (as
-    the last one, therefore you are able to overrule existing styles). Do
-    not forget to empty your browser's cache afterwards.
+    - Web analytics software (Piwik, Google Analytics etc.)
+      Tools like Piwik and Google Analytics normally provide a small code
+      snippet ("tag") which you have to include at your website to make
+      everything work. If you want to use such software with this template, have
+      a look at "vector/user/tracker.php". This file exists to make it easier
+      for you. You don't have to deliberate where you have to copy and paste the
+      code, simply do it there.
 
-  - Own tabs
-    To apply own tabs, have a look at "vector/user/tabs.php". Don't worry:
-    you will find some examples how to define the tabs. If you still have
-    questions after playing with the examples, search
-    <http://dokuwiki.org/template:vector> and/or the DokuWiki Forum at
-    <http://forum.dokuwiki.org> and/or ask the community if you can't get it
-    work.
-    If "vector/user/tabs.php" does not exist, simply copy it out of the
-    current actual installation archive.
+    - Own Apple Touch Icon
+      If you want to replace the default Apple Touch Icon, simply create a
+      "apple-touch-icon.png" in "vector/user". The template recognizes the
+      file automatically and will use it instead of the default one. Have a
+      look at Apple's developer database (cf. "Configuring Web Applications"[2])
+      if you need more information.
 
-  - Own footer buttons
-    To apply own buttons/graphics in the footer (-> these small 80x15 pics),
-    have a look at "vector/user/buttons.php". Don't worry: you will find some
-    examples how to define the buttons. If you still have questions after
-    playing with the examples, search <http://dokuwiki.org/template:vector>
-    and/or the DokuWiki Forum at <http://forum.dokuwiki.org> and/or ask the
-    community if you can't get it work.
-    If "vector/user/buttons.php" does not exist, simply copy it out of the
-    current actual installation archive.
-
-  - Own boxes
-    To apply own boxes in the left column/sidebar, have a look at
-    "vector/user/boxes.php". Don't worry: you will find some examples how to
-    define the boxes. If you still have questions after
-    playing with the examples, search <http://dokuwiki.org/template:vector>
-    and/or the DokuWiki Forum at <http://forum.dokuwiki.org> and/or ask the
-    community if you can't get it work.
-    If "vector/user/boxes.php" does not exist, simply copy it out of the
-    current actual installation archive.
-
-  - Web analytics software (Piwik, Google Analytics etc.)
-    Tools like Piwik and Google Analytics normally provide a small code snippet
-    ("tag") which you have to include at your website to make everything work.
-    If you want to use such software with this template, have a look at
-    "vector/user/tracker.php". This file exists to make it easier for you.
-    You don't have to deliberate where you have to copy and paste the code,
-    simply do it there.
-
-  - Own Apple Touch Icon
-    If you want to replace the default Apple Touch Icon, simply create a
-    "apple-touch-icon.png" in "vector/user". The template recognizes the file
-    automatically and will use it instead of the default one. Have a look at
-    Apple's developer database if you need more information ("Configuring Web
-    Applications" <http://j.mp/sx3NMT>).
+    [1] <http://tools.dynamicdrive.com/favicon/>
+    [2] <http://j.mp/sx3NMT>
 
 
 
-III. Some notes about the dirs of this template
-  * "vector/conf"
-    Contains some configuration files (do NOT edit them!), especially
-    default.php:  default settings, see
-                  <http://www.dokuwiki.org/devel:configuration#default_settings>
-    metadata.php: configuration metadata, see
-                  <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
-  * "vector/lang"
-    Language files (subdir names = language code). You may copy the English
-    language files and translate them if your language is missing. Simply mail
-    me, Andreas Haerter, the translated files and I will include them in the
-    next release :-D.
-  * "vector/static"
-    Static files (images, CSS, JavaScript). The interesting stuff is located
-    in subdirs (as described below).
-    - "3rd"
-      Static files originally taken from a third party like MediaWiki or
-      DokuWiki. The subdir "dokuwiki" contains files originally taken from the
-      DokuWiki "default" or "starter" template. The subdir "vector" contains
-      files taken from the MediaWiki "vector" skin.
-    - "css"
-      All non-3rd-party Cascading Style Sheets (CSS). See <http://j.mp/eq8zSo>
-      for more information about how the CSS is handled.
-    - "img"
-      All non-3rd-party images files.
-    - "js"
-      All non-3rd-party JavaScript files.
-  * "vector/user"
-    Place for userdefined stuff. E.g. if you want to replace the default-logo,
-    simply copy a logo.[png|gif|jpg] in here. See "II. Customizing the template"
-    for details.
+  IV. Support
+
+    If you need help, check the FAQ[1] and try to find useful information by
+    using the DokuWiki Search page[2]. If you found nothing helpful, ask your
+    question at the DokuWiki forum[3] (preferred) or IRC channel[4].
+
+    [1] <http://www.dokuwiki.org/template:vector#faq>
+    [2] <http://search.dokuwiki.org/>
+    [3] <http://forum.dokuwiki.org/>
+    [4] <http://www.dokuwiki.org/irc>
 
 
 
-IV. Other notes
-  - Even if it is not required: If you like the template, think about a small
-    donation (see <http://andreas-haerter.com/donate/dokuwiki-template-vector>)
-    and/or a link to <http://andreas-haerter.com/projects/dokuwiki-template-vector>.
-    Thanks :-).
+  V. Contact
 
-  - This template follows the DokuWiki coding style (see
-    <http://www.dokuwiki.org/devel:coding_style>). If you want to submit any
-    patches, please respect its rules (even if you don't like it - I also don't
-    love it but this simply does not matter).
+    If you think you found a bug or you got a useful idea (a.k.a. "feature
+    request"), create an issue[1] on GitHub (preferred), or contact me by
+    mail[2].
 
-  - Feel free to send patches or suggestions via mail (or post on
-    <http://www.dokuwiki.org/template:vector>).
+    Feel free to submit patches as GitHub pull requests (preferred) or by mail
+    as well. However, please try to respect the DokuWiki coding style[3] as this
+    template follows its rules.
 
-  - Please don't delete the "index.html" and ".htaccess" files for security
-    reasons, even if you don't know why they are there. These files should
-    prevent others from listing directory contents (a built in feature of most
-    webservers) and providing additional access protection for some files. Even
-    if everything should be secure without, I prefer some additional
-    precautions.
+    [1] <https://github.com/bitkollektiv/dokuwiki-template-vector/issues>
+    [2] Andreas Haerter <ah@bitkollektiv.org>
+    [3] <http://www.dokuwiki.org/devel:coding_style>
 
 
 
-V. About
-  "vector" is a template to offer the new MediaWiki/Wikipedia Look&Feel
-  (introduced in 2010) to DokuWiki. It is a (mostly) optical port of the
-  MediaWiki skin and maintained/developed by me, Andreas Haerter.
-  If you have any suggestions and/or bug reports, feel free to post on
-  <http://www.dokuwiki.org/template:vector>, send me an email or have a look at
-  <http://andreas-haerter.com/contact>.
+  VI. Other notes
+
+    If you like this free project, you might buy me a coffee[1], or get some
+    cool QR Code merchandise[2]. Thank you! :-)
+
+    I am no native English speaker. If you find any errors please let me
+    know[3]. Otherwise, my English is not getting better (as desired by myself).
+
+    [1] <http://bitkollektiv.org/donate/dokuwiki-template-vector/>
+    [2] <http://goqr.me/>
+    [3] Andreas Haerter <ah@bitkollektiv.org>
 
 
 
-VI. Creation transcript
-  Some developers may find this interesting. Additionally, I am very oblivious
-  :-P.
+  VII. Explanatory notes about the dirs of this template
 
-  - Downloaded the nightly MediaWiki build (cause only the SVN version is
-    containing the vector skin as I'm writing this) from
-    <http://toolserver.org/~vvv/mw-nightly/>.
+    - "vector/conf"
+      Contains some configuration files (do NOT edit them!), especially
+        - default.php: default settings[1]
+        - metadata.php: configuration metadata[2]
 
-  - Installed DokuWiki (Release "2009-12-25c", "Lemming") for testing purpose.
+    - "vector/lang"
+      Language files (subdir names = language code). You may copy the English
+      language files and translate them if your language is missing. Simply send
+      me the translated files (cf. "V. Contact") and I will include them in the
+      next release :-D.
 
-  - Copied all "monobook for DokuWiki" sources cause it already fits some of
-    my needs regarding config options and non-layout features. Means: I used the
-    source of the "monobook for DokuWiki" template as base for
-    "vector for DokuWiki".
+    - "vector/static"
+      Static files (images, CSS, JavaScript). The interesting stuff is located
+      in subdirs (as described below).
+      - "3rd"
+        Static files originally taken from a third party like MediaWiki or
+        DokuWiki. The subdir "dokuwiki" contains files originally taken from the
+        DokuWiki "default" or "starter" template. The subdir "vector" contains
+        files taken from the MediaWiki "vector" skin.
+      - "css"
+        All non-3rd-party Cascading Style Sheets (CSS). See my tutorial[3] for
+        more information about how the CSS is handled.
+      - "img"
+        All non-3rd-party images files.
+      - "js"
+        All non-3rd-party JavaScript files.
 
-  - replaced "monobook" through "vector" in:
-    - /conf/*
-    - /lang/*
-    - /bug49642.php
-    - /detail.php
-    - /inc_cite.php
-    - /inc_detail.php
-    - /inc_mediamanager.php
-    - /main.php
-    - /mediamanager.php
+    - "vector/user"
+      Place for userdefined stuff. E.g. if you want use an own logo, simply copy
+      a logo.[png|gif|jpg] in here. See "III. Customizing the template" for
+      details.
 
-  - After investigation, some 3rd-party files were copied into the provided
-    places within "/vector/static/3rd".
-    - The following files were copied from the original vector skin:
-      - /skins/vector/csshover.htc
-      - /skins/vector/main-ltr.css
-      - /skins/vector/main-rtl.css
-      - /skins/vector/images/*
-    - The following files were copied from Andreas Gohr's "default" template:
-      * /default/*.css (see <http://j.mp/eq8zSo> why I did that)
-      * /default/images/closed.gif
-      * /default/images/favicon.ico
-      * /default/images/link_icon.gif
-      * /default/images/mail_icon.gif
-      * /default/images/open.gif
-      * /default/images/tocdot2.gif
-      * /default/images/windows.gif
+    [1] <http://www.dokuwiki.org/devel:configuration#default_settings>
+    [2] <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
+    [3] <http://j.mp/eq8zSo>
 
-  - Edited:
-    - "/vector/static/3rd/vector/main-ltr.css"
-      "/vector/static/3rd/vector/main-rtl.css"
-      All url() rules were edited (-> replaced "url(images/" through
-      "url(static/3rd/vector/", deleted "?1" and "?2 postfixes").
-      To make this clear, a comment was added at the top of the files:
-      /* ATTENTION: This file was edited for the "vector template for DokuWiki".
-                    - All url() rules where changed.
-                     See README for details. */
 
-    - "/vector/static/3rd/dokuwiki/design.css"
-      All url() rules were edited (-> replaced "url(images/" through
-      "url(static/3rd/dokuwiki/").
-      To make this clear, a comment was added at the top of the files:
-      /* ATTENTION: This file was edited for the "vector template for DokuWiki".
-                    - All url() rules where changed.
-                     See README for details. */
 
-  - Visited <http://en.wikipedia.org/w/index.php?title=ASCII>, copied the XHTML
-    source and let Tidy do the dirty work to get a valid clean and correctly
-    indented base markup (after core removal, for sure). This markup was then
-    compared with the current main.php and needed changes where done.
+  VIII. Creation transcript
 
-  - Created new files:
-    * "vector/static/css/print.css"
-    * "vector/static/css/rtl.css"
-    * "vector/static/css/screen.css"
-    All relevant information should be found within the inline comments.
+    Some developers may find this interesting. Additionally, I am very oblivious
+    :-P.
 
-  - Worked worked worked a few days.... and done! :-P
+    - Downloaded the nightly MediaWiki build (cause only the SVN version is
+      containing the vector skin as I'm writing this) from
+      <http://toolserver.org/~vvv/mw-nightly/>.
 
-  - After ~1 year, I switched the CSS base from DokuWiki's default template
-    to <http://www.dokuwiki.org/template:starter>. See
-    <http://www.freelists.org/post/dokuwiki/Core-devs-I-need-some-info-to-keep-my-templates-maintainable>
-    for more information about this. I edited some files, see 
-    "vector/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.
+    - Installed DokuWiki (Release "2009-12-25c", "Lemming") for testing purpose.
+
+    - Copied all "monobook for DokuWiki" sources cause it already fits some of
+      my needs regarding config options and non-layout features. Means: I used
+      the source of the "monobook for DokuWiki" template as base for "vector for
+      DokuWiki".
+
+    - replaced "monobook" through "vector" in:
+      - /conf/*
+      - /lang/*
+      - /bug49642.php
+      - /detail.php
+      - /inc_cite.php
+      - /inc_detail.php
+      - /inc_mediamanager.php
+      - /main.php
+      - /mediamanager.php
+
+    - After investigation, some 3rd-party files were copied into the provided
+      places within "/vector/static/3rd".
+      - The following files were copied from the original vector skin:
+        - /skins/vector/csshover.htc
+        - /skins/vector/main-ltr.css
+        - /skins/vector/main-rtl.css
+        - /skins/vector/images/*
+      - The following files were copied from Andreas Gohr's "default" template:
+        - /default/*.css (see <http://j.mp/eq8zSo> why I did that)
+        - /default/images/closed.gif
+        - /default/images/favicon.ico
+        - /default/images/link_icon.gif
+        - /default/images/mail_icon.gif
+        - /default/images/open.gif
+        - /default/images/tocdot2.gif
+        - /default/images/windows.gif
+
+    - Edited:
+      - "/vector/static/3rd/vector/main-ltr.css"
+        "/vector/static/3rd/vector/main-rtl.css"
+        All url() rules were edited (-> replaced "url(images/" through
+        "url(static/3rd/vector/", deleted "?1" and "?2 postfixes").
+        To make this clear, a comment was added at the top of the files.
+
+      - "/vector/static/3rd/dokuwiki/design.css"
+        All url() rules were edited (-> replaced "url(images/" through
+        "url(static/3rd/dokuwiki/").
+        To make this clear, a comment was added at the top of the files.
+
+    - Visited <http://en.wikipedia.org/w/index.php?title=ASCII>, copied the
+      XHTML source and let Tidy do the dirty work to get a valid clean and
+      correctly indented base markup (after core removal, for sure). This markup
+      was then compared with the current main.php and needed changes where done.
+
+    - Created new files:
+      - "vector/static/css/print.css"
+      - "vector/static/css/rtl.css"
+      - "vector/static/css/screen.css"
+      All relevant information should be found within the inline comments.
+
+    - Worked worked worked a few days.... and done! :-P
+
+    - After ~1 year, I switched the CSS base from DokuWiki's default template
+      to <http://www.dokuwiki.org/template:starter>. See <http://j.mp/f7V4ES>
+      for more information about this. I edited some files, see
+      "vector/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.
+
