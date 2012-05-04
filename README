@@ -12,14 +12,14 @@
 
   II. Installation and update
 
-    The installation works as described[1] on DokuWiki.org. Extract the
+    The installation works as described [1] on DokuWiki.org. Extract the
     downloaded archive into your DokuWiki's "lib/tpl/" folder. Then select the
     template in the Config Manager by adjusting the template option.
 
-    See the vector template website for update instructions[2].
+    See the vector template website for update instructions [2].
 
     NOTE: If everything will be displayed unformatted, your PHP environment is
-          probably affected by PHP bug #49692[3]. You may find errors like
+          probably affected by PHP bug #49692 [3]. You may find errors like
           "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini on
           line XX" in your PHP logs when this is the case. vector provides a
           workaround for this, simply delete vector's "style.ini" to trigger
@@ -54,7 +54,7 @@
       in "vector/user". The template recognizes the file automatically and
       will use it instead of the default one. Do not forget to empty your
       browser's cache afterwards. By the way: you might find the online
-      FavIcon Generator[1] useful.
+      FavIcon Generator [1] useful.
       Note: "favicon.png" is also possible but not recommended (because it is
             not supported by older MSIE versions).
 
@@ -125,9 +125,9 @@
 
   IV. Support
 
-    If you need help, check the FAQ[1] and try to find useful information by
-    using the DokuWiki Search page[2]. If you found nothing helpful, ask your
-    question at the DokuWiki forum[3] (preferred) or IRC channel[4].
+    If you need help, check the FAQ [1] and try to find useful information by
+    using the DokuWiki Search page [2]. If you found nothing helpful, ask your
+    question at the DokuWiki forum [3] (preferred) or IRC channel [4].
 
     [1] <http://www.dokuwiki.org/template:vector#faq>
     [2] <http://search.dokuwiki.org/>
@@ -138,13 +138,13 @@
 
   V. Contact
 
-    If you think you found a bug or you got a useful idea (a.k.a. "feature
-    request"), create an issue[1] on GitHub (preferred), or contact me by
-    mail[2].
+    If you think you have found a bug or have a useful idea (a.k.a. "feature
+    request"), create an issue [1] on GitHub (preferred), or contact me by
+    mail [2].
 
     Feel free to submit patches as GitHub pull requests (preferred) or by mail
-    as well. However, please try to respect the DokuWiki coding style[3] as this
-    template follows its rules.
+    as well. However, please try to respect the DokuWiki coding style [3] as
+    this template follows its rules.
 
     [1] <https://github.com/bitkollektiv/dokuwiki-template-vector/issues>
     [2] Andreas Haerter <ah@bitkollektiv.org>
@@ -154,11 +154,12 @@
 
   VI. Other notes
 
-    If you like this free project, you might buy me a coffee[1], or get some
-    cool QR Code merchandise[2]. Thank you! :-)
+    If you like this free project, you might buy me a coffee [1], or get some
+    cool QR Code merchandise [2]. Thank you! :-)
 
     I am no native English speaker. If you find any errors please let me
-    know[3]. Otherwise, my English is not getting better (as desired by myself).
+    know [3]. Otherwise, my English is not getting better (as desired by
+    myself).
 
     [1] <http://bitkollektiv.org/donate/dokuwiki-template-vector/>
     [2] <http://goqr.me/>
@@ -170,8 +171,8 @@
 
     - "vector/conf"
       Contains some configuration files (do NOT edit them!), especially
-        - default.php: default settings[1]
-        - metadata.php: configuration metadata[2]
+        - default.php: default settings [1]
+        - metadata.php: configuration metadata [2]
 
     - "vector/lang"
       Language files (subdir names = language code). You may copy the English
@@ -188,7 +189,7 @@
         DokuWiki "default" or "starter" template. The subdir "vector" contains
         files taken from the MediaWiki "vector" skin.
       - "css"
-        All non-3rd-party Cascading Style Sheets (CSS). See my tutorial[3] for
+        All non-3rd-party Cascading Style Sheets (CSS). See my tutorial [3] for
         more information about how the CSS is handled.
       - "img"
         All non-3rd-party images files.
