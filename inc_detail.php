@@ -66,6 +66,10 @@ if (!defined("DOKU_INC")){
                                     echo '</dd>';
                                 }
                             }
+    					    $t_array = media_inuse(tpl_img_getTag('IPTC.File.Name',$IMG));      
+							if(isset($t_array[0])) echo '<dt>'.$lang['reference'].':</dt>';
+							foreach($t_array as $t){ 
+								echo '<dd>'.html_wikilink($t,$t).'</dd>';  
                         ?>
                     </dl>
                     <?php //Comment in for Debug// dbg(tpl_img_getTag('Simple.Raw'));?>
