@@ -454,7 +454,7 @@ div#bodyContent a.mail {
 
 /* windows share */
 div.dokuwiki a.windows {
-  background: transparent url(static/3rd/dokuwiki/windows.gif) center right no-repeat;
+  background: transparent url(static/3rd/dokuwiki/unc.png) center right no-repeat;
   padding: 0 18px 1px 0;
 }
 

@@ -23,9 +23,15 @@
     text-align: left;
     line-height: 1;
 }
+[dir=rtl] #link__wiz_result {
+    text-align: right;
+}
 
 #link__wiz_result div {
     padding: 3px 3px 3px 0;
+}
+[dir=rtl] #link__wiz_result div {
+    padding: 3px 0 3px 3px;
 }
 
 #link__wiz_result div a {
@@ -33,6 +39,10 @@
     padding-left: 22px;
     min-height: 16px;
     background: transparent 3px center no-repeat;
+}
+[dir=rtl] #link__wiz_result div a {
+    padding-right: 22px;
+    background-position: right 0;
 }
 
 #link__wiz_result div.type_u a {
@@ -58,6 +68,10 @@
     color: __text_neu__;
     margin-left: 22px;
 }
+[dir=rtl] #link__wiz_result span {
+    margin-left: 0;
+    margin-right: 22px;
+}
 
 
 /* media option wizard (opens when inserting media in the media popup)
@@ -75,6 +89,10 @@
 #media__popup_content label {
     margin-right: .5em;
     cursor: default;
+}
+[dir=rtl] #media__popup_content label {
+    margin-right: 0;
+    margin-left: .5em;
 }
 
 #media__popup_content .button {

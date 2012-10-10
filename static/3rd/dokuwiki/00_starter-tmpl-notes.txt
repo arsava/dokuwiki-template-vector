@@ -1,10 +1,10 @@
 I) starter template CSS version
   <https://github.com/selfthinker/dokuwiki_template_starter/zipball/master> at
-  2011-11-23 22:35
+  2012-10-10 22:05 GMT+1
 
 
 II) Modifications
-  - I edited _fileuploader.css, _links.css, _media_fullscreen.css, _toc.css:
+  - I edited _links.css, _media_fullscreen.css, _toc.css:
     All url(images/[...]) rules were changed (-> "static/3rd/dokuwiki/"). To
     make this clear, a comment was added at the top of the files.
   - "static/3rd/dokuwiki/bullet|close|open.gif" were re-saved as PNG.

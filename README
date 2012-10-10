@@ -245,11 +245,12 @@
         - /default/*.css (see <http://j.mp/eq8zSo> why I did that)
         - /default/images/closed.gif
         - /default/images/favicon.ico
-        - /default/images/link_icon.gif
-        - /default/images/mail_icon.gif
         - /default/images/open.gif
         - /default/images/tocdot2.gif
-        - /default/images/windows.gif
+      - The following files were copied from Anika Henke's's "starter" template:
+        - /starter/images/external-link.png
+        - /starter/images/unc.png
+        - /starter/images/email.png
 
     - Edited:
       - "/vector/static/3rd/vector/main-ltr.css"

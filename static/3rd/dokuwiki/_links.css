@@ -44,20 +44,19 @@
 .dokuwiki a.interwiki {
     background-repeat: no-repeat;
     background-position: 0 center;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 18px;
 }
 /* external link */
 .dokuwiki a.urlextern {
-    background-image: url(static/3rd/dokuwiki/link_icon.gif);
-    padding: 0 0 0 17px;
+    background-image: url(static/3rd/dokuwiki/external-link.png);
 }
 /* windows share */
 .dokuwiki a.windows {
-    background-image: url(static/3rd/dokuwiki/windows.gif);
+    background-image: url(static/3rd/dokuwiki/unc.png);
 }
 /* email link */
 .dokuwiki a.mail {
-    background-image: url(static/3rd/dokuwiki/mail_icon.gif);
+    background-image: url(static/3rd/dokuwiki/email.png);
 }
 
 /* icons of the following are set by dokuwiki in lib/exe/css.php */
@@ -66,5 +65,15 @@
 }
 /* interwiki link */
 .dokuwiki a.interwiki {
-    padding: 0 0 0 17px;
+}
+
+/* RTL corrections */
+[dir=rtl] .dokuwiki a.urlextern,
+[dir=rtl] .dokuwiki a.windows,
+[dir=rtl] .dokuwiki a.mail,
+[dir=rtl] .dokuwiki a.interwiki,
+[dir=rtl] .dokuwiki a.mediafile {
+    background-position: right center;
+    padding: 0 18px 0 0;
+    display: inline-block; /* needed for IE7 */
 }

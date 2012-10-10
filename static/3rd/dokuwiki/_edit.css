@@ -6,17 +6,29 @@
 /* edit view
 ********************************************************************/
 
+.dokuwiki div.editBox {
+}
+
 /*____________ toolbar ____________*/
 
 .dokuwiki div.toolbar {
     margin-bottom: .5em;
+    overflow: hidden;
 }
-.dokuwiki div.toolbar #draft__status {
+#draft__status {
     float: right;
     color: __text_alt__;
     background-color: inherit;
 }
-.dokuwiki div.toolbar #tool__bar {
+[dir=rtl] #draft__status {
+    float: left;
+}
+
+#tool__bar {
+    float: left;
+}
+[dir=rtl] #tool__bar {
+    float: right;
 }
 
 /* buttons inside of toolbar */
@@ -34,7 +46,10 @@ div.picker.pk_hl {
     width: auto;
 }
 /* buttons inside of picker */
-div.picker button.pickerbutton {
+div.picker button.pickerbutton,
+div.picker button.toolbutton {
+    padding: .1em .35em;
+    border-width: 0;
 }
 
 /*____________ edit textarea ____________*/
@@ -49,42 +64,58 @@ div.picker button.pickerbutton {
 
 /*____________ below the textarea ____________*/
 
-.dokuwiki #wiki__editbar {
+.dokuwiki #wiki__editbar, /* old, until 2012-01-25 */
+.dokuwiki div.editBar /* new */ {
     overflow: hidden;
     margin-bottom: .5em;
 }
 
 /* size and wrap controls */
-.dokuwiki #wiki__editbar #size__ctl {
+#size__ctl {
     float: right;
 }
-.dokuwiki #wiki__editbar #size__ctl img {
+[dir=rtl] #size__ctl {
+    float: left;
+}
+#size__ctl img {
     cursor: pointer;
 }
 
 /* edit buttons */
-.dokuwiki #wiki__editbar .editButtons {
+.dokuwiki #wiki__editbar .editButtons, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .editButtons /* new */ {
     display: inline;
     margin-right: 1em;
 }
-.dokuwiki #wiki__editbar .editButtons input {
+[dir=rtl] .dokuwiki #wiki__editbar .editButtons, /* old, until 2012-01-25 */
+[dir=rtl] .dokuwiki .editBar .editButtons /* new */ {
+    margin-right: 0;
+    margin-left: 1em;
+}
+.dokuwiki #wiki__editbar .editButtons input, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .editButtons input /* new */ {
 }
 
 /* summary input and minor changes checkbox */
-.dokuwiki #wiki__editbar .summary {
+.dokuwiki #wiki__editbar .summary, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .summary /* new */ {
     display: inline;
 }
-.dokuwiki #wiki__editbar .summary label {
+.dokuwiki #wiki__editbar .summary label, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .summary label /* new */ {
     vertical-align: middle;
     white-space: nowrap;
 }
-.dokuwiki #wiki__editbar .summary label span {
+.dokuwiki #wiki__editbar .summary label span, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .summary label span /* new */ {
     vertical-align: middle;
 }
-.dokuwiki #wiki__editbar .summary input {
+.dokuwiki #wiki__editbar .summary input, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .summary input /* new */ {
 }
 /* change background colour if summary is missing */
-.dokuwiki #wiki__editbar .summary input.missing {
+.dokuwiki #wiki__editbar .summary input.missing, /* old, until 2012-01-25 */
+.dokuwiki div.editBar .summary input.missing /* new */ {
     color: __text__;
     background-color: #ffcccc;
 }
@@ -93,7 +124,7 @@ div.picker button.pickerbutton {
 ********************************************************************/
 
 .dokuwiki div.preview {
-    border: dashed __border__;
+    border: dotted __border__;
     border-width: .2em 0;
     padding: 1.4em 0;
     margin-bottom: 1.4em;
@@ -106,10 +137,20 @@ div.picker button.pickerbutton {
     float: right;
     margin-top: -1.4em;
 }
+[dir=rtl] .dokuwiki .secedit {
+    float: left;
+}
 .dokuwiki .secedit input.button {
     font-size: 75%;
 }
+
+/* generic style for section highlighting (including headings) */
 .dokuwiki .section_highlight {
-    background-color: __background_alt__ !important;
-    color: inherit;
+}
+/* style for section highlighting (only sections below headings) */
+.dokuwiki div.section_highlight {
+    margin: -3em -1em -.01em -1em; /* negative side margin = side padding + side border */
+    padding: 3em .5em .01em .5em;
+    border: solid __background_alt__;
+    border-width: 0 .5em;
 }

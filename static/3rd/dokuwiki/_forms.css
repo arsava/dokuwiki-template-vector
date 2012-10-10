@@ -1,5 +1,5 @@
 
-/* TODO */
+/* TODO: this file is not up to the best standards and will be fixed after an overhaul of the form code */
 
 /**
  * This file provides styles for forms in general and specifically
@@ -13,32 +13,39 @@
 
 /* ---------------- forms ------------------------ */
 
-div.dokuwiki form {
+.dokuwiki form {
   border: none;
   display: inline;
 }
 
-div.dokuwiki label.block {
+.dokuwiki label.block {
   display: block;
   text-align: right;
   font-weight: bold;
 }
+[dir=rtl] .dokuwiki label.block {
+  text-align: left;
+}
 
-div.dokuwiki label.simple {
+.dokuwiki label.simple {
   display: block;
   text-align: left;
   font-weight: normal;
 }
+[dir=rtl] .dokuwiki label.simple {
+  text-align: right;
+}
 
-div.dokuwiki label.block input.edit {
+.dokuwiki label.block select,
+.dokuwiki label.block input.edit {
   width: 50%;
 }
 
-div.dokuwiki label span {
+.dokuwiki label span {
     vertical-align: middle;
 }
 
-div.dokuwiki fieldset {
+.dokuwiki fieldset {
   width: 400px;
   text-align: center;
   border: 1px solid __border__;
@@ -47,11 +54,11 @@ div.dokuwiki fieldset {
 }
 
 
-div.dokuwiki input.edit,
-div.dokuwiki select.edit {
+.dokuwiki input.edit,
+.dokuwiki select.edit {
   vertical-align: middle;
 }
-div.dokuwiki select.edit {
+.dokuwiki select.edit {
   padding: 0.1em 0;
 }
 
@@ -65,18 +72,21 @@ div.dokuwiki select.edit {
  * Styles for the subscription page
  */
 
-form#subscribe__form {
+#subscribe__form {
     display: block;
     width: 400px;
     text-align: center;
 }
 
-form#subscribe__form fieldset {
+#subscribe__form fieldset {
     text-align: left;
     margin: 0.5em 0;
 }
+[dir=rtl] #subscribe__form fieldset {
+    text-align: right;
+}
 
-form#subscribe__form label {
+#subscribe__form label {
     display: block;
     margin: 0 0.5em 0.5em;
 }

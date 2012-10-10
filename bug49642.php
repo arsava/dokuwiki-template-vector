@@ -97,18 +97,12 @@ $interim =  trim(file_get_contents("./static/3rd/dokuwiki/_imgdetail.css"))."\n"
            .trim(file_get_contents("./static/3rd/dokuwiki/_admin.css"))."\n";
 if (!empty($_GET["langdir"]) &&
     $_GET["langdir"] === "rtl"){
-  $interim .=  trim(file_get_contents("./static/3rd/dokuwiki/rtl.css"))."\n"
-              .trim(file_get_contents("./static/3rd/vector/main-rtl.css"))."\n";
+  $interim .= trim(file_get_contents("./static/3rd/vector/main-rtl.css"))."\n";
 } else {
   $interim .= trim(file_get_contents("./static/3rd/vector/main-ltr.css"))."\n";
 }
 $interim .=  trim(file_get_contents("./static/css/screen.css"))."\n"
             .trim(file_get_contents("./user/screen.css"))."\n";
-if (!empty($_GET["langdir"]) &&
-    $_GET["langdir"] === "rtl"){
-  $interim .=  trim(file_get_contents("./static/css/rtl.css"))."\n"
-              .trim(file_get_contents("./user/rtl.css"))."\n";
-}
 //replace the placeholders with the corresponding values and send the needed CSS
 echo "@media screen {\n".str_replace(//search
                                      $placeholder_names,
