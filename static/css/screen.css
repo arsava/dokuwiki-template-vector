@@ -328,7 +328,8 @@ div.dokuwiki select.edit[disabled] {
 
 /* edit form */
 div.dokuwiki div.toolbar,
-div.dokuwiki div#wiki__editbar {
+div.dokuwiki div#wiki__editbar, /* old, until 2012-01-25 */
+div.dokuwiki div.editBar {      /* new, since 2012-09-10 */
   margin: 2px 0;
   text-align: left;
 }
@@ -340,11 +341,13 @@ div.dokuwiki div#size__ctl {
 div.dokuwiki #size__ctl img {
   cursor: pointer;
 }
-div.dokuwiki div#wiki__editbar div.editButtons {
+div.dokuwiki div#wiki__editbar div.editButtons, /* old, until 2012-01-25 */
+div.dokuwiki div.editBar div.editButtons {      /* new, since 2012-09-10 */
   float: left;
   padding: 0 1.0em 0.7em 0;
 }
-div.dokuwiki div#wiki__editbar div.summary {
+div.dokuwiki div#wiki__editbar div.summary, /* old, until 2012-01-25 */
+div.dokuwiki div.editBar div.summary {      /* new, since 2012-09-10 */
   float: left;
 }
 div.dokuwiki .nowrap {
@@ -458,7 +461,7 @@ div.dokuwiki a.windows {
   padding: 0 18px 1px 0;
 }
 
-/* interwiki link */ 
+/* interwiki link */
 div.dokuwiki a.interwiki {
   background-position: center right;
   padding: 0 17px 0 0;
@@ -959,7 +962,7 @@ div#footer #footer-info li#footer-info-copyright .license a.urlextern {
 }
 
 
-/* --------------- Table of contents (TOC) ---------------  */
+/* --------------- Table of contents (TOC) old, until 2012-01-25 ---------------  */
 div.dokuwiki div.toc {
   margin: 1.2em 0 0 2em;
   float: right;
@@ -968,7 +971,7 @@ div.dokuwiki div.toc {
   clear: both;
 }
 
-div.dokuwiki div.tocheader {
+div.dokuwiki div.toc div.tocheader {
   border: 1px solid __border__;
   background-color: __background_alt__;
   text-align: left;
@@ -978,37 +981,37 @@ div.dokuwiki div.tocheader {
   line-height: 1.45em;
 }
 
-div.dokuwiki span.toc_open,
-div.dokuwiki span.toc_close {
+div.dokuwiki div.toc span.toc_open,
+div.dokuwiki div.toc span.toc_close {
   border: 0.4em solid __background_alt__;
   float: right;
   display: block;
   margin: 0.4em 3px 0 0;
 }
 
-div.dokuwiki span.toc_open span,
-div.dokuwiki span.toc_close span {
+div.dokuwiki div.toc span.toc_open span,
+div.dokuwiki div.toc span.toc_close span {
   display: none;
 }
 
-div.dokuwiki span.toc_open {
+div.dokuwiki div.toc span.toc_open {
   margin-top: 0.4em;
   border-top: 0.4em solid __text__;
 }
 
-div.dokuwiki span.toc_close {
+div.dokuwiki div.toc span.toc_close {
   margin-top: 0;
   border-bottom: 0.4em solid __text__;
 }
 
-div.dokuwiki #toc__inside {
+div.dokuwiki div.toc #toc__inside {
   border: 1px solid __border__;
   background-color: __background__;
   text-align: left;
   padding: 0.5em 0 0.7em 0;
 }
 
-div.dokuwiki ul.toc {
+div.dokuwiki div.toc ul.toc {
   list-style-type: none;
   list-style-image: none;
   line-height: 1.2em;
@@ -1016,7 +1019,7 @@ div.dokuwiki ul.toc {
   margin: 0.3em 0 0 1.5em !important;
 }
 
-div.dokuwiki ul.toc li {
+div.dokuwiki div.toc ul.toc li {
   list-style-image: none;
   list-style-type: none;
   background: transparent url(static/3rd/dokuwiki/tocdot2.gif) 0 0.6em no-repeat;
@@ -1024,30 +1027,30 @@ div.dokuwiki ul.toc li {
   margin-bottom: 0.1em !important;
 }
 
-div.dokuwiki ul.toc li.clear {
+div.dokuwiki div.toc ul.toc li.clear {
   background-image: none;
   padding-left: 0.4em;
 }
 
-div.dokuwiki a.toc:link,
-div.dokuwiki a.toc:visited {
+div.dokuwiki div.toc a.toc:link,
+div.dokuwiki div.toc a.toc:visited {
   color: #436976;
 }
 
-div.dokuwiki a.toc:hover,
-div.dokuwiki a.toc:active {
+div.dokuwiki div.toc a.toc:hover,
+div.dokuwiki div.toc a.toc:active {
   color: __text__;
 }
 
 div.toc,
-div.dokuwiki a.toc,
-div.dokuwiki ul.toc {
+div.dokuwiki div.toc a.toc,
+div.dokuwiki div.toc ul.toc {
   border: 0 none;
   background: transparent none;
   font-size: 100%;
 }
 
-div.dokuwiki ul.toc {
+div.dokuwiki div.toc ul.toc {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 1em !important;
@@ -1056,8 +1059,52 @@ div.dokuwiki ul.toc {
   margin: 0 !important;
 }
 
-div.dokuwiki a.toc {
+div.dokuwiki div.toc a.toc {
   padding: 0;
+}
+
+
+/* --------------- Table of contents (TOC) new, since 2012-09-10 ---------------  */
+div.dokuwiki #dw__toc {
+  margin: 1.2em 0 0 2em;
+  float: right;
+  width: 200px;
+  font-size: 90%;
+  clear: both;
+  background-color: __background__;
+}
+
+div.dokuwiki #dw__toc h3 {
+  border: 1px solid __border__ !important;
+  background-color: __background_alt__ !important;
+  text-align: left;
+  font-weight: bold !important;
+  padding: 3px !important;
+  margin-bottom: 2px !important;
+  line-height: 1.45em;
+  font-size: 90% !important;
+}
+
+div.dokuwiki #dw__toc h3 strong {
+  margin-top: 0.2em;
+}
+
+div.dokuwiki #dw__toc h3 ~ div {
+  border: 1px solid __border__;
+  padding-left: 10px;
+}
+
+div.dokuwiki #dw__toc ul.toc {
+  background-color: __background__ !important;
+  border: 0 none;
+}
+
+div.dokuwiki #dw__toc ul.toc li {
+  list-style-image: none;
+  list-style-type: none;
+  background: transparent url(static/3rd/dokuwiki/tocdot2.gif) 0 0.6em no-repeat;
+  padding-left: 0.4em !important;
+  margin-bottom: 0.1em !important;
 }
 
 
@@ -1194,12 +1241,14 @@ html.popup #media__opts br {
 
 
 /* --------------- search result formating --------------- */
-div.dokuwiki .search_result {
+div.dokuwiki div.search_result,  /* old, until 2012-01-25 */
+div.dokuwiki dl.search_results { /* new, since 2012-09-10 */
   margin-bottom: 6px;
   padding: 0 10px 0 30px;
 }
 
-div.dokuwiki .search_snippet {
+div.dokuwiki .search_snippet,       /* old, until 2012-01-25 */
+div.dokuwiki dl.search_results dd { /* new, since 2012-09-10 */
   font-size: 12px;
   margin-left: 20px;
 }
@@ -1311,8 +1360,9 @@ textarea,
 div#panel div.portal div.body ul {
   #list-style: none outside none !important;
 }
-form#page__revisions ul,
-form#dw__recent ul {
+form#page__revisions ul, /* old, until 2012-01-25 */
+form#dw__recent ul,      /* old, until 2012-01-25 */
+form.changes {           /* new, since 2012-09-10 */
   #list-style: none outside none !important;
 }
 

@@ -105,9 +105,13 @@ if (empty($conf["useacl"]) || //are there any users?
             //content
             $_vector_boxes["p-toc"]["xhtml"] = //get rid of some styles and the embedded headline
                                                str_replace(//search
-                                                           array("<div class=\"tocheader toctoggle\" id=\"toc__header\">".$lang["toc"]."</div>", //language comes from DokuWiki core
+                                                           array(//old TOC, until 2012-01-25
+                                                                 "<div class=\"tocheader toctoggle\" id=\"toc__header\">".$lang["toc"]."</div>", //language comes from DokuWiki core
                                                                  " class=\"toc\"",
-                                                                 " id=\"toc__inside\""),
+                                                                 " id=\"toc__inside\"",
+                                                                 //new TOC, since 2012-09-10
+                                                                 " id=\"dw__toc\"",
+                                                                 "<h3 class=\"toggle\">".$lang["toc"]."</h3>"), //language comes from DokuWiki core
                                                            //replace
                                                            "",
                                                            //haystack
