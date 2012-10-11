@@ -1095,7 +1095,7 @@ div.dokuwiki #dw__toc h3 ~ div {
 }
 
 div.dokuwiki #dw__toc ul.toc {
-  background-color: __background__ !important;
+  background-color: transparent !important;
   border: 0 none;
 }
 
