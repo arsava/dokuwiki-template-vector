@@ -65,8 +65,8 @@ $meta["vector_copyright_default"]  = array("onoff");
 $meta["vector_copyright_location"] = array("string");
 
 //donation link/button
-$meta["vector_donate"]          = array("onoff");
-$meta["vector_donate_url"]      = array("string", "_pattern" => "/^.{1,6}:\/{2}.+$/");
+$meta["vector_donate"]     = array("onoff");
+$meta["vector_donate_url"] = array("string", "_pattern" => "/^.{1,6}:\/{2}.+$/");
 
 //TOC
 $meta["vector_toc_position"] = array("multichoice", "_choices" => array("article", "sidebar"));

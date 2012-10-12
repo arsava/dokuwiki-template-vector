@@ -58,7 +58,7 @@ $_vector_btns["vecfdw"]["nofollow"] = false;
 //donation button
 if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["img"]      = DOKU_TPL."static/img/button-donate.gif";
-    $_vector_btns["donate"]["href"]     = tpl_getConf("vector_donate_url"); //custom url
+    $_vector_btns["donate"]["href"]     = tpl_getConf("vector_donate_url");
     $_vector_btns["donate"]["width"]    = 80;
     $_vector_btns["donate"]["height"]   = 15;
     $_vector_btns["donate"]["title"]    = $lang["vector_donate"];
