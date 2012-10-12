@@ -41,8 +41,9 @@ $conf["vector_discuss"]    = true; //TRUE: use/show discussion pages
 $conf["vector_discuss_ns"] = ":talk:"; //namespace to use for discussion page storage
 
 //site notice
-$conf["vector_sitenotice"]          = true; //TRUE: use/show sitenotice
-$conf["vector_sitenotice_location"] = ":wiki:site_notice"; //page/article used to store the sitenotice
+$conf["vector_sitenotice"]           = true; //TRUE: use/show sitenotice
+$conf["vector_sitenotice_location"]  = ":wiki:site_notice"; //page/article used to store the sitenotice
+$conf["vector_sitenotice_translate"] = true; //TRUE: load translated sitenotice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //navigation
 $conf["vector_navigation"]           = true; //TRUE: use/show navigation
@@ -60,9 +61,10 @@ $conf["vector_toolbox_default"]  = true; //TRUE: use default toolbox (if toolbox
 $conf["vector_toolbox_location"] = ":wiki:toolbox"; //page/article used to store a custom toolbox
 
 //custom copyright notice
-$conf["vector_copyright"]          = true; //TRUE: use/show copyright notice
-$conf["vector_copyright_default"]  = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
-$conf["vector_copyright_location"] = ":wiki:copyright"; //page/article used to store a custom copyright notice
+$conf["vector_copyright"]           = true; //TRUE: use/show copyright notice
+$conf["vector_copyright_default"]   = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)
+$conf["vector_copyright_location"]  = ":wiki:copyright"; //page/article used to store a custom copyright notice
+$conf["vector_copyright_translate"] = true; //TRUE: load translated copyright notice if translation plugin is available (see <http://www.dokuwiki.org/plugin:translation>)
 
 //donation link/button
 $conf["vector_donate"]     = true; //TRUE: use/show donation link/button

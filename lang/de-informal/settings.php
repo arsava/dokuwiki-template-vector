@@ -39,8 +39,9 @@ $lang["vector_discuss"]    = "Diskussions-Tabs/Seiten benutzen?";
 $lang["vector_discuss_ns"] = "Falls ja, folgenden ':namensraum:' als Wurzel für Diskussionen nutzen:";
 
 //site notice
-$lang["vector_sitenotice"]          = "Seitenübergreifenden Hinweis einblenden?";
-$lang["vector_sitenotice_location"] = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
+$lang["vector_sitenotice"]           = "Seitenübergreifenden Hinweis einblenden?";
+$lang["vector_sitenotice_location"]  = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
+$lang["vector_sitenotice_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Seiten-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Seiten-Hinweis(e) lautet [Wert von 'vector_sitenotice_location']_[iso-sprach-code] (z.B. ':wiki:site_notice_en').";
 
 //navigation
 $lang["vector_navigation"]           = "Navigation anzeigen?";
@@ -58,9 +59,10 @@ $lang["vector_toolbox_default"]       = "Falls ja, Standard-Toolbox nutzen?";
 $lang["vector_toolbox_location"]      = "Falls nicht die Standard-Toolbox, folgende wiki-Seite als Toolbox verwenden:";
 
 //custom copyright notice
-$lang["vector_copyright"]          = "Copyright-Hinweis einblenden?";
-$lang["vector_copyright_default"]  = "Falls ja, Standard-Copyright-Hinweis nutzen?";
-$lang["vector_copyright_location"] = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
+$lang["vector_copyright"]           = "Copyright-Hinweis einblenden?";
+$lang["vector_copyright_default"]   = "Falls ja, Standard-Copyright-Hinweis nutzen?";
+$lang["vector_copyright_location"]  = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
+$lang["vector_copyright_translate"] = "Falls nicht den Standard-Copyright-Hinweis und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'vector_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
 
 //donation link/button
 $lang["vector_donate"]          = "'Spenden'-Link/button anzeigen?";

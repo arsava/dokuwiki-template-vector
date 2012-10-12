@@ -526,18 +526,40 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
   html_msgarea();
   //show site notice
   if (tpl_getConf("vector_sitenotice")){
-      //we have to show a custom sitenotice
+      //detect wiki page to load as content
+      if (!empty($transplugin) && //var comes from conf/boxes.php
+          is_object($transplugin) &&
+          tpl_getConf("vector_sitenotice_translate")){
+          //translated site notice?
+          $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+          $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
+          if (empty($transplugin_langs) ||
+              empty($transplugin_langcur) ||
+              !is_array($transplugin_langs) ||
+              !in_array($transplugin_langcur, $transplugin_langs)) {
+              //current page is no translation or something is wrong, load default site notice
+              $sitenotice_location = tpl_getConf("vector_sitenotice_location");
+          } else {
+              //load language specific site notice
+              $sitenotice_location = tpl_getConf("vector_sitenotice_location")."_".$transplugin_langcur;
+          }
+      }else{
+          //default site notice, no translation
+          $sitenotice_location = tpl_getConf("vector_sitenotice_location");
+      }
+
+      //we have to show a custom site notice
       if (empty($conf["useacl"]) ||
-          auth_quickaclcheck(cleanID(tpl_getConf("vector_sitenotice_location"))) >= AUTH_READ){ //current user got access?
+          auth_quickaclcheck(cleanID($sitenotice_location)) >= AUTH_READ){ //current user got access?
           echo "\n  <div id=\"siteNotice\" class=\"noprint\">\n";
           //get the rendered content of the defined wiki article to use as
-          //custom sitenotice.
-          $interim = tpl_include_page(tpl_getConf("vector_sitenotice_location"), false);
+          //custom site notice.
+          $interim = tpl_include_page($sitenotice_location, false);
           if ($interim === "" ||
               $interim === false){
               //show creation/edit link if the defined page got no content
               echo "[&#160;";
-              tpl_pagelink(tpl_getConf("vector_sitenotice_location"), hsc($lang["vector_fillplaceholder"]." (".tpl_getConf("vector_sitenotice_location").")"));
+              tpl_pagelink($sitenotice_location, hsc($lang["vector_fillplaceholder"]." (".hsc($sitenotice_location).")"));
               echo "&#160;]<br />";
           }else{
               //show the rendered page content
@@ -774,16 +796,38 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
             echo "</div>\n    </li>\n";
         //show custom notice.
         }else{
+            //detect wiki page to load as content
+            if (!empty($transplugin) && //var comes from conf/boxes.php
+                is_object($transplugin) &&
+                tpl_getConf("vector_copyright_translate")){
+                //translated copyright notice?
+                $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+                $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
+                if (empty($transplugin_langs) ||
+                    empty($transplugin_langcur) ||
+                    !is_array($transplugin_langs) ||
+                    !in_array($transplugin_langcur, $transplugin_langs)) {
+                    //current page is no translation or something is wrong, load default copyright notice
+                    $copyright_location = tpl_getConf("vector_copyright_location");
+                } else {
+                    //load language specific copyright notice
+                    $copyright_location = tpl_getConf("vector_copyright_location")."_".$transplugin_langcur;
+                }
+            }else{
+                //default copyright notice, no translation
+                $copyright_location = tpl_getConf("vector_copyright_location");
+            }
+
             if (empty($conf["useacl"]) ||
-                auth_quickaclcheck(cleanID(tpl_getConf("vector_copyright_location"))) >= AUTH_READ){ //current user got access?
+                auth_quickaclcheck(cleanID($copyright_location)) >= AUTH_READ){ //current user got access?
                 echo "<li id=\"footer-info-copyright\">\n        ";
                 //get the rendered content of the defined wiki article to use as custom notice
-                $interim = tpl_include_page(tpl_getConf("vector_copyright_location"), false);
+                $interim = tpl_include_page($copyright_location, false);
                 if ($interim === "" ||
                     $interim === false){
                     //show creation/edit link if the defined page got no content
                     echo "[&#160;";
-                    tpl_pagelink(tpl_getConf("vector_copyright_location"), hsc($lang["vector_fillplaceholder"]." (".tpl_getConf("vector_copyright_location").")"));
+                    tpl_pagelink($copyright_location, hsc($lang["vector_fillplaceholder"]." (".hsc($copyright_location).")"));
                     echo "&#160;]<br />";
                 }else{
                     //show the rendered page content

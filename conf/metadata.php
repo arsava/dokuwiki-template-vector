@@ -41,8 +41,9 @@ $meta["vector_discuss"]    = array("onoff");
 $meta["vector_discuss_ns"] = array("string", "_pattern" => "/^:.{1,}:$/");
 
 //site notice
-$meta["vector_sitenotice"]          = array("onoff");
-$meta["vector_sitenotice_location"] = array("string");
+$meta["vector_sitenotice"]           = array("onoff");
+$meta["vector_sitenotice_location"]  = array("string");
+$meta["vector_sitenotice_translate"] = array("onoff");
 
 //navigation
 $meta["vector_navigation"]           = array("onoff");
@@ -60,9 +61,10 @@ $meta["vector_toolbox_default"]  = array("onoff");
 $meta["vector_toolbox_location"] = array("string");
 
 //custom copyright notice
-$meta["vector_copyright"]          = array("onoff");
-$meta["vector_copyright_default"]  = array("onoff");
-$meta["vector_copyright_location"] = array("string");
+$meta["vector_copyright"]           = array("onoff");
+$meta["vector_copyright_default"]   = array("onoff");
+$meta["vector_copyright_location"]  = array("string");
+$meta["vector_copyright_translate"] = array("onoff");
 
 //donation link/button
 $meta["vector_donate"]     = array("onoff");

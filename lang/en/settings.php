@@ -39,8 +39,9 @@ $lang["vector_discuss"]    = "Use discussion tabs/sites?";
 $lang["vector_discuss_ns"] = "If yes, use following ':namespace:' as root for discussions:";
 
 //site notice
-$lang["vector_sitenotice"]          = "Show site wide notice?";
-$lang["vector_sitenotice_location"] = "If yes, use following wiki page for the site wide notice:";
+$lang["vector_sitenotice"]           = "Show site wide notice?";
+$lang["vector_sitenotice_location"]  = "If yes, use following wiki page for the site wide notice:";
+$lang["vector_sitenotice_translate"] = "If yes and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific site wide notice?<br />The wiki page of the translated site notice(s) is [value of 'vector_sitenotice_location']_[iso lang code] (e.g. ':wiki:site_notice_de').";
 
 //navigation
 $lang["vector_navigation"]           = "Show navigation?";
@@ -58,9 +59,10 @@ $lang["vector_toolbox_default"]  = "If yes, use default toolbox?";
 $lang["vector_toolbox_location"] = "If not default, use following wiki page as toolbox location:";
 
 //custom copyright notice
-$lang["vector_copyright"]          = "Show copyright notice?";
-$lang["vector_copyright_default"]  = "If yes, use default copyright notice?";
-$lang["vector_copyright_location"] = "If not default, use following wiki page as copyright notice:";
+$lang["vector_copyright"]           = "Show copyright notice?";
+$lang["vector_copyright_default"]   = "If yes, use default copyright notice?";
+$lang["vector_copyright_location"]  = "If not default, use following wiki page as copyright notice:";
+$lang["vector_copyright_translate"] = "If not default and <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> available: load language specific copyright notice?<br />The wiki page of the translated copyright notice(s) is [value of 'vector_copyright_location']_[iso lang code] (e.g. ':wiki:copyright_de').";
 
 //donation link/button
 $lang["vector_donate"]          = "Show donation link/button?";
