@@ -63,7 +63,6 @@ $lang["vector_copyright_location"] = "Ez bada lehenetsia, erabili hurrengo wiki 
 
 //donation link/button
 $lang["vector_donate"]          = "Erakutsi dohaintza lotura/botoia?";
-$lang["vector_donate_default"]  = "Bai bada, erabili berezko URL-a dohaintzetarako?";
 $lang["vector_donate_url"]      = "Ez bada lehenetsia, erabili hurrengo URL-a dohaintzetarako:";
 
 //TOC

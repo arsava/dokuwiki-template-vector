@@ -66,8 +66,7 @@ $conf["vector_copyright_location"] = ":wiki:copyright"; //page/article used to s
 
 //donation link/button
 $conf["vector_donate"]          = true; //TRUE: use/show donation link/button
-$conf["vector_donate_default"]  = true; //TRUE: use default donation link/button (if donation link is enabled at all)
-$conf["vector_donate_url"]      = "http://bitkollektiv.org/donate/dokuwiki-template-vector/"; //custom donation URL instead of the default one
+$conf["vector_donate_url"]      = "http://bitkollektiv.org/donate/dokuwiki-template-vector/"; //custom donation URL
 
 //TOC
 $conf["vector_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

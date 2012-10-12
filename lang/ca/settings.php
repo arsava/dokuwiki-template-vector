@@ -64,7 +64,6 @@ $lang["vector_copyright_location"] = "Pàgina de l'avís de drets d'autor";
 
 //donation link/button
 $lang["vector_donate"]          = "Mostra l'enllaç/botó de donacions";
-$lang["vector_donate_default"]  = "URL de donacions predeterminat";
 $lang["vector_donate_url"]      = "URL de donacions:";
 
 //TOC

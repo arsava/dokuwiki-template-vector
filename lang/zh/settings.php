@@ -63,7 +63,6 @@ $lang["vector_copyright_location"] = "如果不是默认，使用下列wiki页�
 
 //donation link/button
 $lang["vector_donate"]          = "显示捐赠链接/按钮？";
-$lang["vector_donate_default"]  = "如果是，使用默认捐赠目标URL？";
 $lang["vector_donate_url"]      = "如果不是默认，使用下列URL作为捐赠地址：";
 
 //TOC

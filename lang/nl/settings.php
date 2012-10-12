@@ -60,8 +60,7 @@ $lang["vector_copyright_location"] = "Wanneer de standaard niet gebruikt wordt, 
 
 //donation link/button
 $lang["vector_donate"]          = "Toon donatie button?";
-$lang["vector_donate_default"]  = "Indien ja, gebruik de standaard donatie URL?";
-$lang["vector_donate_url"]      = "Indien niet standaard, gebruik de volgende URL voor donaties:";
+$lang["vector_donate_url"]      = "Gebruik de volgende URL voor donaties:";
 
 //TOC
 $lang["vector_toc_position"] = "Positionering van de inhoudopgave";

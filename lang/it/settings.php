@@ -68,7 +68,6 @@ $lang["vector_search"] = "Mostra casella di ricerca?";
 
 //donation link/button
 $lang["vector_donate"]          = "Mostra link/pulsante per le donazioni?";
-$lang["vector_donate_default"]  = "Se si, usa l'indirizzo URL predefinito?";
 $lang["vector_donate_url"]      = "Se non predefinito, usa il seguente indirizzo URL per le donazioni:";
 
 //TOC

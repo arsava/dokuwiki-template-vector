@@ -63,7 +63,6 @@ $lang["vector_copyright_location"] = "Pokud ne ty původní, potom používat n�
 
 //donation link/button
 $lang["vector_donate"]          = "Zobrazovat možnost \"Přispět\"?";
-$lang["vector_donate_default"]  = "Pokud ano, používat původní odkaz na přispívání?";
 $lang["vector_donate_url"]      = "Pokud ne ten původní, potom tento odkaz:";
 
 //TOC

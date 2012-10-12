@@ -64,8 +64,7 @@ $lang["vector_copyright_location"] = "If not default, use following wiki page as
 
 //donation link/button
 $lang["vector_donate"]          = "Show donation link/button?";
-$lang["vector_donate_default"]  = "If yes, use default donation target URL?";
-$lang["vector_donate_url"]      = "If not default, use following URL for donations:";
+$lang["vector_donate_url"]      = "Use following URL for donations:";
 
 //TOC
 $lang["vector_toc_position"] = "Table of contents (TOC) position";

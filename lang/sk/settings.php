@@ -64,7 +64,6 @@ $lang["vector_copyright_location"] = "Ak nie základné, používať pre definí
 
 //donation link/button
 $lang["vector_donate"]          = "Zobrazovať odkaz/tlačidlo pre dary/dotácie?";
-$lang["vector_donate_default"]  = "Ak áno, používať základné nastavenie darovacie URL?";
 $lang["vector_donate_url"]      = "Ak nie základné, používať pre dary nasledujúce URL:";
 
 //TOC

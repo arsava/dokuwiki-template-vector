@@ -64,8 +64,7 @@ $lang["vector_copyright_location"] = "Falls nicht den Standard-Copyright-Hinweis
 
 //donation link/button
 $lang["vector_donate"]          = "'Spenden'-Link/button anzeigen?";
-$lang["vector_donate_default"]  = "Falls ja, Standard-Spendenziel nutzen?";
-$lang["vector_donate_url"]      = "Falls nicht Standard-Spendenziel, folgende URL für Spenden benutzen:";
+$lang["vector_donate_url"]      = "Folgende URL als Spendenziel benutzen:";
 
 //TOC
 $lang["vector_toc_position"] = "Position des Inhaltsverzeichnisses";

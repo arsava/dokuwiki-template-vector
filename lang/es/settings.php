@@ -63,7 +63,6 @@ $lang["vector_copyright_location"] = "si no usar predeterminado, usar la siguien
 
 //donation link/button
 $lang["vector_donate"]          = "Mostrar enlace/botón de donación?";
-$lang["vector_donate_default"]  = "Sí, usar URL predeterminada para las donaciones";
 $lang["vector_donate_url"]      = "si no usar predeterminado, usar la siguiente URL para las donaciones:";
 
 //TOC

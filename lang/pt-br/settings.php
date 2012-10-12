@@ -59,7 +59,6 @@ $lang["vector_copyright_location"] = "Se não usar o padrão, usar a seguinte p�
 
 //donation link/button
 $lang["vector_donate"]          = "Exibir o link/botão de doação?";
-$lang["vector_donate_default"]  = "Se sim, usar o padrão da URL de destino para doação?";
 $lang["vector_donate_url"]      = "Se não usar o padrão, usar a seguinte URL para doações:";
 
 //TOC

@@ -63,7 +63,6 @@ $lang["vector_copyright_location"] = "Si non, utilisez la page wiki suivante :";
 
 //donation link/button
 $lang["vector_donate"]          = "Afficher le lien de dons ?";
-$lang["vector_donate_default"]  = "Si oui, utilisez l'URL par default ?";
 $lang["vector_donate_url"]      = "Si non, utilisez l'URL suivante our les donations :";
 
 //TOC
