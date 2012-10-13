@@ -828,14 +828,14 @@ div#panel .body .dokuwiki ol {
   margin: 0 0 0 1.65em;
 }
 /* QR Code */
-div#panel #p-qrcode img {
+div#panel #t-qrcode img {
   margin: 0.5em 0 0.3em -0.2em;
 }
-div#panel #p-qrcode a,
-div#panel #p-qrcode a:link,
-div#panel #p-qrcode a:active,
-div#panel #p-qrcode a:hover,
-div#panel #p-qrcode a:visited {
+div#panel #t-qrcode a,
+div#panel #t-qrcode a:link,
+div#panel #t-qrcode a:active,
+div#panel #t-qrcode a:hover,
+div#panel #t-qrcode a:visited {
   border: 0 none;
   cursor: default;
   text-decoration: none;
