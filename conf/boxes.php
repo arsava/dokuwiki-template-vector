@@ -229,7 +229,7 @@ if (empty($conf["useacl"]) || //are there any users?
         $_vector_boxes["p-qrcode"]["headline"] = $lang["vector_qrcodebox"];
 
         //content
-        $_vector_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\"><a href=\"http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "")."\" target=\"_blank\"><img src=\"http://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["vector_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["vector_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["vector_qrcodebox_urlofcurrentpage"])."\" /></a></span>";
+        $_vector_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\"><a href=\"http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "")."\" target=\"_blank\"><img src=\"http://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0&#38;bgcolor=f3f3f3\" alt=\"".hsc($lang["vector_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["vector_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["vector_qrcodebox_urlofcurrentpage"])."\" /></a></span>";
     }
 
 }else{

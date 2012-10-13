@@ -982,6 +982,7 @@ div.dokuwiki div.toc {
   width: 200px;
   font-size: 80%;
   clear: both;
+  background-color: transparent;
 }
 
 div.dokuwiki div.toc div.tocheader {
@@ -1161,7 +1162,7 @@ html.popup {
   background-color: #fff;
 }
 html.popup body {
-  font: 13px/17px sans-serif;
+  font: 13px sans-serif;
   background-image: none;
   background-color: #fff;
 }
