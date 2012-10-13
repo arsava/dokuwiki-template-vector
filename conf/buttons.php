@@ -62,8 +62,18 @@ if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["width"]    = 80;
     $_vector_btns["donate"]["height"]   = 15;
     $_vector_btns["donate"]["title"]    = $lang["vector_donate"];
-    $_vector_btns["donate"]["nofollow"] = true;
+    $_vector_btns["donate"]["nofollow"] = false;
 }
+
+
+//QR Code button
+//Note: You are NOT allowed to remove this button. Please respect this!
+$_vector_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
+$_vector_btns["qrcode"]["href"]     = "http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "");
+$_vector_btns["qrcode"]["width"]    = 80;
+$_vector_btns["qrcode"]["height"]   = 15;
+$_vector_btns["qrcode"]["title"]    = $lang["vector_qrcodebtn"];
+$_vector_btns["qrcode"]["nofollow"] = false;
 
 
 //DokuWiki button

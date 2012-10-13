@@ -60,6 +60,9 @@ $conf["vector_toolbox"]          = true; //TRUE: use/show toolbox
 $conf["vector_toolbox_default"]  = true; //TRUE: use default toolbox (if toolbox is enabled at all)
 $conf["vector_toolbox_location"] = ":wiki:toolbox"; //page/article used to store a custom toolbox
 
+//qr code box
+$conf["vector_qrcodebox"] = true; //TRUE: use/show box with QR Code of current page's URL
+
 //custom copyright notice
 $conf["vector_copyright"]           = true; //TRUE: use/show copyright notice
 $conf["vector_copyright_default"]   = true; //TRUE: use default copyright notice (if copyright notice is enabled at all)

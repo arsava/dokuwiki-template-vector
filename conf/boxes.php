@@ -223,6 +223,15 @@ if (empty($conf["useacl"]) || //are there any users?
         }
     }
 
+    //QR Code of current page's URL (powered by <http://qrserver.com/api/>)
+    if (tpl_getConf("vector_qrcodebox")){
+        //headline
+        $_vector_boxes["p-qrcode"]["headline"] = $lang["vector_qrcodebox"];
+
+        //content
+        $_vector_boxes["p-qrcode"]["xhtml"] = "        <span id=\"p-qrcode\"><a href=\"http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "")."\" target=\"_blank\"><img src=\"http://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0\" alt=\"".hsc($lang["vector_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["vector_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["vector_qrcodebox_urlofcurrentpage"])."\" /></a></span>";
+    }
+
 }else{
 
     //headline

@@ -58,6 +58,9 @@ $lang["vector_toolbox"]          = "Show toolbox?";
 $lang["vector_toolbox_default"]  = "If yes, use default toolbox?";
 $lang["vector_toolbox_location"] = "If not default, use following wiki page as toolbox location:";
 
+//qr code box
+$lang["vector_qrcodebox"] = "Show box with QR Code of current wiki page URL (for easy URL transfer to mobile browser)?";
+
 //custom copyright notice
 $lang["vector_copyright"]           = "Show copyright notice?";
 $lang["vector_copyright_default"]   = "If yes, use default copyright notice?";

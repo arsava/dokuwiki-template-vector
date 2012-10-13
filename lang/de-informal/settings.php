@@ -58,6 +58,9 @@ $lang["vector_toolbox"]               = "Toolbox/Werkzeuge anzeigen?";
 $lang["vector_toolbox_default"]       = "Falls ja, Standard-Toolbox nutzen?";
 $lang["vector_toolbox_location"]      = "Falls nicht die Standard-Toolbox, folgende wiki-Seite als Toolbox verwenden:";
 
+//qr code box
+$lang["vector_qrcodebox"] = "Box mit QR-Code der aktuellen Wiki-Seiten-URL anzeigen (für einfache Übertragung der URL auf Mobiltelefone)?";
+
 //custom copyright notice
 $lang["vector_copyright"]           = "Copyright-Hinweis einblenden?";
 $lang["vector_copyright_default"]   = "Falls ja, Standard-Copyright-Hinweis nutzen?";
@@ -65,8 +68,8 @@ $lang["vector_copyright_location"]  = "Falls nicht den Standard-Copyright-Hinwei
 $lang["vector_copyright_translate"] = "Falls nicht den Standard-Copyright-Hinweis und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'vector_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
 
 //donation link/button
-$lang["vector_donate"]          = "'Spenden'-Link/button anzeigen?";
-$lang["vector_donate_url"]      = "Folgende URL als Spendenziel benutzen:";
+$lang["vector_donate"]     = "'Spenden'-Link/button anzeigen?";
+$lang["vector_donate_url"] = "Folgende URL als Spendenziel benutzen:";
 
 //TOC
 $lang["vector_toc_position"] = "Position des Inhaltsverzeichnisses";

@@ -50,13 +50,6 @@ $_vector_boxes["example1"]["xhtml"] = "DokuWiki with vector... <em>rules</em>!";
 
 
 /*
-//QR-Code of the current page (powered by <http://QR-Server.com/api/>)
-$_vector_boxes["qrcode"]["headline"] = "QR-Code";
-$_vector_boxes["qrcode"]["xhtml"] = '<img src="http://api.qrserver.com/v1/create-qr-code/?data='.urlencode(wl(cleanID(getId()), false, true, "&")).'&amp;size=135x135" style="margin:0.5em 0 0.3em -0.2em;" alt="QR-Code: '.wl(cleanID(getId()), false, true).'" title="QR-Code: '.wl(cleanID(getId()), false, true).'" /><p style="font-size:6px !important;margin:0;padding:0;color:#aaa;"><a href="http://goqr.me/" style="color:#aaa;">QR Code</a> by <a href="http://qrserver.com/" style="color:#aaa;">QR-Server</a></p>';
-*/
-
-
-/*
 $_vector_boxes["example2"]["headline"] = "Some links";
 $_vector_boxes["example2"]["xhtml"] =  "<ul>\n"
                                       ."  <li><a href=\"".wl(cleanID(getId()), array("do" => "backlink"))."\" rel=\"nofollow\">".hsc($lang["vector_toolbxdef_whatlinkshere"])."</a></li>\n" //we might use tpl_actionlink("backlink", "", "", hsc($lang["vector_toolbxdef_whatlinkshere"]), true), but it would be the only toolbox link where this is possible... therefor I don't use it to be consistent

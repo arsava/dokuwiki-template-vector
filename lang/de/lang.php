@@ -49,6 +49,7 @@ $lang["vector_translations"] = "In anderen Sprachen";
 $lang["vector_navigation"] = "Navigation";
 $lang["vector_toolbox"] = "Werkzeuge";
 $lang["vector_exportbox"] = "Drucken/exportieren";
+$lang["vector_qrcodebox"] = "QR-Code";
 $lang["vector_inotherlanguages"] = "In anderen Sprachen";
 $lang["vector_printexport"] = "Drucken/exportieren";
 $lang["vector_personnaltools"] = "Eigene Werkzeuge";
@@ -69,6 +70,11 @@ $lang["vector_toolbxdef_upload"] = "Hochladen";
 $lang["vector_toolbxdef_siteindex"] = "Seitenindex";
 $lang["vector_toolboxdef_permanent"] = "Permanenter link";
 $lang["vector_toolboxdef_cite"] = "Seite zitieren";
+
+//qr code box
+$lang["vector_qrcodebox_qrcode"] = "QR-Code";
+$lang["vector_qrcodebox_genforcurrentpage"] = "erstellt für aktuelle Seite";
+$lang["vector_qrcodebox_urlofcurrentpage"] = "Aktuelle Seite als QR Code (scannen für einfachen, mobilen Zugriff)";
 
 //cite this article
 $lang["vector_cite_bibdetailsfor"] = "Bibliografische Details für";
@@ -100,5 +106,6 @@ $lang["vector_accessdenied"] = "Zugriff verweigert";
 $lang["vector_fillplaceholder"] = "Diesen Platzhalter bitte füllen";
 $lang["vector_donate"] = "Spenden";
 $lang["vector_mdtemplatefordw"] = "vector-Template für DokuWiki";
+$lang["vector_qrcodebtn"] = "QR-Code-Generator";
 $lang["vector_recentchanges"] = "Neuste Änderungen";
 

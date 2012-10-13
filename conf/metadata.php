@@ -60,6 +60,9 @@ $meta["vector_toolbox"]          = array("onoff");
 $meta["vector_toolbox_default"]  = array("onoff");
 $meta["vector_toolbox_location"] = array("string");
 
+//qr code box
+$meta["vector_qrcodebox"] = array("onoff");
+
 //custom copyright notice
 $meta["vector_copyright"]           = array("onoff");
 $meta["vector_copyright_default"]   = array("onoff");
