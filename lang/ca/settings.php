@@ -39,8 +39,9 @@ $lang["vector_discuss"]    = "Habilita les discussions";
 $lang["vector_discuss_ns"] = "Espai arrel de les discussions";
 
 //site notice
-$lang["vector_sitenotice"]          = "Mostra l'avís del lloc";
-$lang["vector_sitenotice_location"] = "Pàgina de l'avís del lloc";
+$lang["vector_sitenotice"]           = "Mostra l'avís del lloc";
+$lang["vector_sitenotice_location"]  = "Pàgina de l'avís del lloc";
+$lang["vector_sitenotice_translate"] = "Utilitza l'avís del lloc traduït si el <a href=\"http://www.dokuwiki.org/plugin:translation\">connector Translation</a> està disponible.<br />La pàgina de l'avís del lloc traduït és [valor de 'vector_sitenotice_location']_[icodi llengüa ISO] (per exemple. ':wiki:site_notice_de').";
 
 //navigation
 $lang["vector_navigation"]          = "Mostra la navegació";
@@ -57,10 +58,14 @@ $lang["vector_toolbox"]          = "Mostra el quadre d'eines";
 $lang["vector_toolbox_default"]  = "Quadre d'eines predeterminat";
 $lang["vector_toolbox_location"] = "Pàgina del quadre d'eines";
 
+//qr code box
+$lang["vector_qrcodebox"] = "Mostra el codi QR de la pàgina actual (per a transferir fàcilment l'URL a navegadors mòbils)";
+
 //custom copyright notice
-$lang["vector_copyright"]          = "Mostra l'avís de drets d'autor";
-$lang["vector_copyright_default"]  = "Avís de drets d'autor predeterminat";
-$lang["vector_copyright_location"] = "Pàgina de l'avís de drets d'autor";
+$lang["vector_copyright"]           = "Mostra l'avís de drets d'autor";
+$lang["vector_copyright_default"]   = "Avís de drets d'autor predeterminat";
+$lang["vector_copyright_location"]  = "Pàgina de l'avís de drets d'autor";
+$lang["vector_copyright_translate"] = "Utilitza l'avís de drets d'autor traduït si el <a href=\"http://www.dokuwiki.org/plugin:translation\">connector Translation</a> està disponible.<br />La pàgina de l'avís de drets d'autor traduït és [valor de 'vector_copyright_location']_[icodi llengüa ISO] (per exemple. ':wiki:copyright_de').";
 
 //donation link/button
 $lang["vector_donate"]          = "Mostra l'enllaç/botó de donacions";

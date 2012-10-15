@@ -49,6 +49,7 @@ $lang["vector_translations"] = "Llengües";
 $lang["vector_navigation"] = "Navegació";
 $lang["vector_toolbox"] = "Eines";
 $lang["vector_exportbox"] = "Exportació";
+$lang["vector_qrcodebox"] = "Codi QR";
 $lang["vector_inotherlanguages"] = "Llengües";
 $lang["vector_printexport"] = "Exportació";
 $lang["vector_personnaltools"] = "Eines personals";
@@ -69,6 +70,11 @@ $lang["vector_toolbxdef_upload"] = "Gestor de fitxers";
 $lang["vector_toolbxdef_siteindex"] = "Índex del lloc";
 $lang["vector_toolboxdef_permanent"] = "Enllaç permanent";
 $lang["vector_toolboxdef_cite"] = "Cita aquesta pàgina";
+
+//qr code box
+$lang["vector_qrcodebox_qrcode"] = "Codi QR";
+$lang["vector_qrcodebox_genforcurrentpage"] = "generat per a la pàgina actual";
+$lang["vector_qrcodebox_urlofcurrentpage"] = "Pàgina actual en codi QR (per accedir fàcilment des de mòbils)";
 
 //cite this article
 $lang["vector_cite_bibdetailsfor"] = "Detalls bibliogràfics per a";
@@ -100,4 +106,5 @@ $lang["vector_accessdenied"] = "Accés denegat";
 $lang["vector_fillplaceholder"] = "Si us plau, ompliu aquest text variable";
 $lang["vector_donate"] = "Fes una donació";
 $lang["vector_mdtemplatefordw"] = "Plantilla vector per a DokuWiki";
+$lang["vector_qrcodebtn"] = "Generador de codis QR";
 $lang["vector_recentchanges"] = "Canvis recents";
