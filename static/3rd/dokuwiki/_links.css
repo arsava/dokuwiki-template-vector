@@ -2,7 +2,6 @@
    - All url(images/[...]) rules where changed.
    See 00_starter-tmpl-notes.txt for details. */
 
-
 /**
  * This file provides styles for all types of links.
  */
@@ -11,13 +10,9 @@
 
 /* existing wikipage */
 .dokuwiki a.wikilink1 {
-    color: __existing__;
-    background-color: inherit;
 }
 /* not existing wikipage */
 .dokuwiki a.wikilink2 {
-    color: __missing__;
-    background-color: inherit;
     text-decoration: none;
 }
 .dokuwiki a.wikilink2:link,
@@ -49,14 +44,26 @@
 /* external link */
 .dokuwiki a.urlextern {
     background-image: url(static/3rd/dokuwiki/external-link.png);
+    /*
+    @deprecated, change since Adora Belle:
+    background-image: url(../../images/external-link.png);
+    */
 }
 /* windows share */
 .dokuwiki a.windows {
     background-image: url(static/3rd/dokuwiki/unc.png);
+    /*
+    @deprecated, change since Adora Belle:
+    background-image: url(../../images/unc.png);
+    */
 }
 /* email link */
 .dokuwiki a.mail {
     background-image: url(static/3rd/dokuwiki/email.png);
+    /*
+    @deprecated, change since Adora Belle:
+    background-image: url(../../images/email.png);
+    */
 }
 
 /* icons of the following are set by dokuwiki in lib/exe/css.php */

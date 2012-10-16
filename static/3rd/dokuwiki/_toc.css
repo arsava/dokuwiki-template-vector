@@ -2,7 +2,6 @@
    - All url(images/[...]) rules where changed.
    See 00_starter-tmpl-notes.txt for details. */
 
-
 /**
  * This file provides styles for the TOC (table of contents), the
  * sitemap (?do=index) and backlinks (?do=backlink).
@@ -105,13 +104,29 @@
 }
 .dokuwiki ul.idx li {
     list-style-image: url(static/3rd/dokuwiki/bullet.png);
+    /*
+    @deprecated, change since Adora Belle:
+    list-style-image: url(../../images/bullet.png);
+    */
 }
 .dokuwiki ul.idx li.open {
     list-style-image: url(static/3rd/dokuwiki/open.png);
+    /*
+    @deprecated, change since Adora Belle:
+    list-style-image: url(../../images/open.png);
+    */
 }
 .dokuwiki ul.idx li.closed {
     list-style-image: url(static/3rd/dokuwiki/closed.png);
+    /*
+    @deprecated, change since Adora Belle:
+    list-style-image: url(../../images/closed.png);
+    */
 }
 [dir=rtl] .dokuwiki ul.idx li.closed {
     list-style-image: url(static/3rd/dokuwiki/closed-rtl.png);
+    /*
+    @deprecated, change since Adora Belle:
+    list-style-image: url(../../images/closed-rtl.png);
+    */
 }
