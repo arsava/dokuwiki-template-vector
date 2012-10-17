@@ -103,7 +103,7 @@ $lang["vector_cite_thisversion"] = "this version";
 //other
 $lang["vector_search"] = "Search";
 $lang["vector_accessdenied"] = "Access denied";
-$lang["vector_fillplaceholder"] = "Please fill this placeholder";
+$lang["vector_fillplaceholder"] = "Please fill or disable this placeholder";
 $lang["vector_donate"] = "Donate";
 $lang["vector_mdtemplatefordw"] = "vector template for DokuWiki";
 $lang["vector_qrcodebtn"] = "QR Code generator";
