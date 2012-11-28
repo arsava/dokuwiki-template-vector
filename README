@@ -5,7 +5,7 @@
     It is a mostly optical port of the original MediaWiki "vector" skin.
 
     Website:     <http://www.dokuwiki.org/template:vector>
-    Maintainer:  Andreas Haerter <http://andreas-haerter.com/>
+    Maintainer:  SYN Systems <http://syn-systems.com/>
     Contact:     See "IV. Support" and "V. Contact".
 
 
@@ -139,31 +139,30 @@
   V. Contact
 
     If you think you have found a bug or have a useful idea (a.k.a. "feature
-    request"), create an issue [1] on GitHub (preferred), or contact me by
+    request"), create an issue [1] on GitHub (preferred), or contact us by
     mail [2].
 
     Feel free to submit patches as GitHub pull requests (preferred) or by mail
     as well. However, please try to respect the DokuWiki coding style [3] as
     this template follows its rules.
 
-    [1] <https://github.com/bitkollektiv/dokuwiki-template-vector/issues>
-    [2] Andreas Haerter <ah@bitkollektiv.org>
+    [1] <https://github.com/syn-systems/dokuwiki-template-vector/issues>
+    [2] SYN Systems <dokuwiki@dev.syn-systems.com>
     [3] <http://www.dokuwiki.org/devel:coding_style>
 
 
 
   VI. Other notes
 
-    If you like this free project, you might buy me a coffee [1], or get some
+    If you like this free project, you might buy us a coffee [1], or get some
     cool QR Code merchandise [2]. Thank you! :-)
 
-    I am no native English speaker. If you find any errors please let me
-    know [3]. Otherwise, my English is not getting better (as desired by
-    myself).
+    Do not hesitate to contact SYN Systems [3] if you need professional support
+    or if you think we are the ones to get your project done.
 
-    [1] <http://bitkollektiv.org/donate/dokuwiki-template-vector/>
+    [1] <http://syn-systems.com/donate/dokuwiki-template-vector/>
     [2] <http://goqr.me/>
-    [3] Andreas Haerter <ah@bitkollektiv.org>
+    [3] <http://syn-systems.com/>
 
 
 
@@ -177,7 +176,7 @@
     - "vector/lang"
       Language files (subdir names = language code). You may copy the English
       language files and translate them if your language is missing. Simply send
-      me the translated files (cf. "V. Contact") and I will include them in the
+      us the translated files (cf. "V. Contact") and I will include them in the
       next release :-D.
 
     - "vector/static"

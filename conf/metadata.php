@@ -11,7 +11,7 @@
  *   menu of DokuWiki, have a look at the file
  *   "/lib/tpl/vector/lang/<your lang>/settings.php". If it does not exists,
  *   copy and translate the English one. And don't forget to mail the
- *   translation to me, Andreas Haerter <ah@bitkollektiv.org> :-D.
+ *   translation to us, SYN Systems <dokuwiki@dev.syn-systems.com> :-D.
  * - To change the tab configuration, have a look at the "tabs.php" in the
  *   same directory as this file.
  *
@@ -21,7 +21,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@bitkollektiv.org>
+ * @author Andreas Haerter <ah@syn-systems.com>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
  */
