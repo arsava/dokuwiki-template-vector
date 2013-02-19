@@ -780,7 +780,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 <!-- end page-container -->
 
 <!-- start footer -->
-<div id="footer">
+<div id="footer" class="noprint">
   <ul id="footer-info">
     <li id="footer-info-lastmod">
       <?php tpl_pageinfo()?><br />
@@ -840,7 +840,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
     }
     ?>
   </ul>
-  <ul id="footer-places" class="noprint">
+  <ul id="footer-places">
     <li><?php
         //show buttons, see vector/user/buttons.php to configure them
         if (!empty($_vector_btns) &&

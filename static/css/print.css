@@ -53,19 +53,17 @@ div#content .dokuwiki dl.file dt {
 
 /* misc tweaks */
 div#content,
-div#footer,
 div#bodyContent {
   margin-left: 0;
   border: 0 none;
   font-size: 1em;
 }
-div#footer {
-  border-top: 1px solid black;
-  margin-top: 0.5em;
-  padding: 0.75em;
-  background: none;
-}
 body {
   background-image: none;
   background-color: #fff;
+}
+
+/* hide tag row from tag plugin */
+div.tags {
+  display: none;
 }

@@ -46,7 +46,7 @@ $_vector_btns["rss"]["nofollow"] = true;
 
 
 //"vector for DokuWiki" button
-//Note: You are NOT allowed to remove this button. Please respect this!
+//Note: do NOT remove this button. Please respect this. :-)
 $_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
 $_vector_btns["vecfdw"]["href"]     = "http://syn-systems.com/";
 $_vector_btns["vecfdw"]["width"]    = 80;
@@ -67,8 +67,9 @@ if (tpl_getConf("vector_donate")){
 
 
 //QR Code button
+//Note: do NOT remove this button. Please respect this. :-)
 $_vector_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
-$_vector_btns["qrcode"]["href"]     = "http://goqr.me/".(($conf["lang"] == "de") ? "de/" : "");
+$_vector_btns["qrcode"]["href"]     = "http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/";
 $_vector_btns["qrcode"]["width"]    = 80;
 $_vector_btns["qrcode"]["height"]   = 15;
 $_vector_btns["qrcode"]["title"]    = $lang["vector_qrcodebtn"];
