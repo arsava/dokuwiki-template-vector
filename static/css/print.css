@@ -6,6 +6,36 @@
   template and "/user/print.css". You have been warned!
  *****************************************************************************/
 
+body {
+  font: normal 80%/1.4 sans-serif;
+}
+div#content .dokuwiki h1,
+div#content .dokuwiki h2,
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  border-bottom: 0 none;
+}
+div#content .dokuwiki h1,
+div#content .dokuwiki h2 {
+  font-weight: bold;
+}
+div#content .dokuwiki h1 {
+  font-weight: 135%;
+}
+div#content .dokuwiki h2 {
+  font-weight: 130%;
+}
+div#content .dokuwiki h3,
+div#content .dokuwiki h4,
+div#content .dokuwiki h5,
+div#content .dokuwiki h6 {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+
 /* define the "noprint" class used by the original MediaWiki vector skin */
 .noprint {
   display: none;
@@ -63,7 +93,40 @@ body {
   background-color: #fff;
 }
 
-/* hide tag row from tag plugin */
+/* tag plugin: hide tag row */
 div.tags {
   display: none;
+}
+
+/* pagelist plugin: hide table borders and some rows */
+div#content .dokuwiki table.ul,
+div#content .dokuwiki table.ul tr,
+div#content .dokuwiki table.ul td {
+  border: 0 none;
+}
+div#content .dokuwiki table.ul td.date,
+div#content .dokuwiki table.ul td.user {
+  display: none;
+}
+
+
+/* wrap plugin: modify some inline styles */
+div#content .dokuwiki span.wrap_box,
+div#content .dokuwiki span.wrap_danger,
+div#content .dokuwiki span.wrap_warning,
+div#content .dokuwiki span.wrap_caution,
+div#content .dokuwiki span.wrap_notice,
+div#content .dokuwiki span.wrap_safety,
+div#content .dokuwiki span.wrap_info,
+div#content .dokuwiki span.wrap_important,
+div#content .dokuwiki span.wrap_alert,
+div#content .dokuwiki span.wrap_tip,
+div#content .dokuwiki span.wrap_help,
+div#content .dokuwiki span.wrap_todo,
+div#content .dokuwiki span.wrap_download {
+  border-top: 0 none;
+  border-right: 0 none;
+  border-left: 0 none;
+  border-bottom: 1px dashed;
+  padding: 0;
 }
