@@ -35,7 +35,6 @@ div#content .dokuwiki h6 {
   text-decoration: underline;
 }
 
-
 /* define the "noprint" class used by the original MediaWiki vector skin */
 .noprint {
   display: none;
@@ -98,7 +97,7 @@ div.tags {
   display: none;
 }
 
-/* pagelist plugin: hide table borders and some rows */
+/* pagelist plugin: listing tables */
 div#content .dokuwiki table.ul,
 div#content .dokuwiki table.ul tr,
 div#content .dokuwiki table.ul td {
@@ -108,7 +107,14 @@ div#content .dokuwiki table.ul td.date,
 div#content .dokuwiki table.ul td.user {
   display: none;
 }
-
+div#content .dokuwiki table.ul ul,
+div#content .dokuwiki table.ul ol,
+div#content .dokuwiki table.ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /* wrap plugin: modify some inline styles */
 div#content .dokuwiki span.wrap_box,
