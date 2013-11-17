@@ -3,18 +3,21 @@
 /**
  * Russian language for the "Vector" DokuWiki template
  *
- * Если перевод на ваш язык не сделан, сделан частично, вы нашли ошибку
- * или опечатку, вы можете посмотреть следующие файлы:
- *   - "/lib/tpl/vector/lang/<ваш язык>/lang.php"
- *   - "/lib/tpl/vector/lang/<ваш язык>/settings.php"
- * Если их не существует, копируйте и переведите английские файлы
- * (подсказка: загляните на <http://[ваш язык].wikipedia.org/>).
+ * If your language is not/only partially translated or you found an error/typo,
+ * have a look at the following files:
+ * - "/lib/tpl/vector/lang/<your lang>/lang.php"
+ * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * If they are not existing, copy and translate the English ones (hint: looking
+ * at <http://[your lang].wikipedia.org> might be helpful).
+ *
+ * Don't forget to mail your translation to
+ *   Andreas Haerter <development@andreas-haerter.com>
+ * Thanks :-D.
  *
  *
- * ЛИЦЕНЗИЯ: этот файл является программным обеспечением с открытым кодом
- *           (Open Source Software) и может быть копирован на определенных
- *           условиях. См. файл COPYING для подробностей или попробуйте
- *           связаться с автором(ами) данного файла, если имеются сомнения.
+ * LICENSE: This file is open source software (OSS) and may be copied under
+ *          certain conditions. See COPYING file for details or try to contact
+ *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author anarchist IVANOV <ivanov@anarhist.org>

@@ -8,9 +8,11 @@
  * - "/lib/tpl/vector/lang/<your lang>/lang.php"
  * - "/lib/tpl/vector/lang/<your lang>/settings.php"
  * If they are not existing, copy and translate the English ones (hint: looking
- * at <http://[your lang].wikipedia.org> might be helpful). And don't forget to
- * mail the translation to us, SYN Systems <dokuwiki@dev.syn-systems.com>.
- * Thanks :-D..
+ * at <http://[your lang].wikipedia.org> might be helpful).
+ *
+ * Don't forget to mail your translation to
+ *   Andreas Haerter <development@andreas-haerter.com>
+ * Thanks :-D.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under

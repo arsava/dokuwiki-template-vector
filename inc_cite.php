@@ -11,7 +11,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:templates
  */

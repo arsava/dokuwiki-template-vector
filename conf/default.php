@@ -4,14 +4,16 @@
  * Default options for the "vector" DokuWiki template
  *
  * Notes:
- * - In general, use the admin webinterface of DokuWiki to change config.
+ * - In general, use the admin webinterface of DokuWiki to change the config.
  * - To change the type of a config value, have a look at "metadata.php" in
  *   the same directory as this file.
  * - To change/translate the descriptions showed in the admin/configuration
  *   menu of DokuWiki, have a look at the file
  *   "/lib/tpl/vector/lang/<your lang>/settings.php". If it does not exists,
- *   copy and translate the English one. And don't forget to mail the
- *   translation to us, SYN Systems <dokuwiki@dev.syn-systems.com> :-D.
+ *   copy and translate the English one. Don't forget to mail your translation
+ *   to
+ *     Andreas Haerter <development@andreas-haerter.com>
+ *   Thanks :-D.
  * - To change the [tabs|boxes|buttons] configuration, have a look at
  *   "/user/[tabs|boxes|buttons].php".
  *
@@ -21,7 +23,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -71,7 +73,7 @@ $conf["vector_copyright_translate"] = true; //TRUE: load translated copyright no
 
 //donation link/button
 $conf["vector_donate"]     = true; //TRUE: use/show donation link/button
-$conf["vector_donate_url"] = "http://syn-systems.com/donate/dokuwiki-template-vector/"; //custom donation URL
+$conf["vector_donate_url"] = "http://donate.andreas-haerter.com/dokuwiki-template-vector/"; //custom donation URL
 
 //TOC
 $conf["vector_toc_position"] = "article"; //article: show TOC embedded within the article; "sidebar": show TOC near the navigation, left column

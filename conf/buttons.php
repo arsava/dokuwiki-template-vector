@@ -9,7 +9,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -46,13 +46,13 @@ $_vector_btns["rss"]["nofollow"] = true;
 
 
 //"vector for DokuWiki" button
-//Note: do NOT remove this button. Please respect this. :-)
+//Note: please do NOT remove this button. Thank you. :-)
 $_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
-$_vector_btns["vecfdw"]["href"]     = "http://syn-systems.com/";
+$_vector_btns["vecfdw"]["href"]     = "http://andreas-haerter.com/";
 $_vector_btns["vecfdw"]["width"]    = 80;
 $_vector_btns["vecfdw"]["height"]   = 15;
 $_vector_btns["vecfdw"]["title"]    = $lang["vector_mdtemplatefordw"];
-$_vector_btns["vecfdw"]["nofollow"] = false;
+$_vector_btns["vecfdw"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
 //donation button
@@ -62,18 +62,18 @@ if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["width"]    = 80;
     $_vector_btns["donate"]["height"]   = 15;
     $_vector_btns["donate"]["title"]    = $lang["vector_donate"];
-    $_vector_btns["donate"]["nofollow"] = false;
+    $_vector_btns["donate"]["nofollow"] = !(cleanID(getID()) === "start");
 }
 
 
 //QR Code button
-//Note: do NOT remove this button. Please respect this. :-)
+//Note: please do NOT remove this button. Thank you. :-)
 $_vector_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
 $_vector_btns["qrcode"]["href"]     = "http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/";
 $_vector_btns["qrcode"]["width"]    = 80;
 $_vector_btns["qrcode"]["height"]   = 15;
 $_vector_btns["qrcode"]["title"]    = $lang["vector_qrcodebtn"];
-$_vector_btns["qrcode"]["nofollow"] = false;
+$_vector_btns["qrcode"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
 //DokuWiki button

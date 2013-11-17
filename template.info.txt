@@ -1,6 +1,6 @@
 ﻿base     vector
-author   SYN Systems
-email    dokuwiki@dev.syn-systems.com
+author   Andreas Haerter
+email    development@andreas-haerter.com
 date     2013-02-19
 name     vector template
 desc     vector brings you the year 2010 MediaWiki/Wikipedia look and feel for DokuWiki.

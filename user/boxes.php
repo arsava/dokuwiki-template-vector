@@ -14,7 +14,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://www.dokuwiki.org/template:vector
  * @link http://www.dokuwiki.org/devel:configuration
  */
@@ -61,7 +61,7 @@ $_vector_boxes["example2"]["xhtml"] =  "<ul>\n"
 
 /*
 $_vector_boxes["example3"]["headline"] = "Buttons";
-$_vector_boxes["example3"]["xhtml"] = "<a href=\"http://syn-systems.com/donate/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
+$_vector_boxes["example3"]["xhtml"] = "<a href=\"http://donate.andreas-haerter.com/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
 */
 
 

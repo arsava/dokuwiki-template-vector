@@ -23,7 +23,7 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <ah@syn-systems.com>
+ * @author Andreas Haerter <development@andreas-haerter.com>
  * @link http://bugs.php.net/bug.php?id=49692
  * @link http://forum.dokuwiki.org/thread/4827
  * @link http://www.dokuwiki.org/template:vector
