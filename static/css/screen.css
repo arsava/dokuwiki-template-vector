@@ -383,7 +383,6 @@ div.dokuwiki button.button {
   padding: 0.125em 0.4em;
   font-weight: normal;
   line-height: 1.333em;
-  #line-height: 1em; /* fix MSIE 6, 7 */
 }
 div.dokuwiki button.toolbutton {
   height: 20px;
@@ -391,7 +390,6 @@ div.dokuwiki button.toolbutton {
   padding: 1px 3px;
   line-height: 16px;
   text-align: center;
-  height: 22px\9; /* fix MSIE 6, 7, 8 */
 }
 /* nice alphatransparency background except for IE <7 */
 html>body div.dokuwiki input.button,
@@ -1169,9 +1167,6 @@ html.popup body {
 html.popup #media__manager {
   min-height: 465px;
 }
-* html.popup #media__manager {
-  height: 465px; /* fix MSIE 6 */
-}
 html.popup #media__manager h1,
 html.popup #media__manager h2,
 html.popup #media__popup h1,
@@ -1338,50 +1333,4 @@ div.dokuwiki .section_highlight {
 .dokuwiki table.diff td.diff-context {
   padding-left: 2px;
   padding-right: 2px;
-}
-
-
-/******************************************************************************
- ********************* Browser Hacks and corrections **************************
- ******************************************************************************/
-/* MSIE: fix textarea in admin menu (incl. jumping bug MSIE8) */
-textarea,
-.dokuwiki #dw__editform textarea.edit {
-  /* fix scrollbar flickers in IE8 standards mode, see
-     http://j.mp/bHExde and http://j.mp/ad7Abj for details */
-  width: 450px\9;
-  max-width: 100%\9;
-  min-width: 100%\9;
-  /* overwrite original vector with fixes for IE6/7 */
-  #width: 100% !important;
-  border: auto;
-}
-/* MSIE 7: media manager */
-*:first-child+html #mediamanager__page .panelContent li {
-  list-style: none !important;
-  list-style-image: none !important;
-}
-/* ajax quicksearch: MSIE 6/7 */
-* html #qsearch__out {
-  width: 206px;
-}
-#qsearch__out ul {
-  #list-style: none !important;
-  #list-style-image: none !important;
-}
-#qsearch__out li {
-  #width: 206px;
-}
-/* admin menu icons: MSIE 6/7 */
-.dokuwiki ul.admin_tasks li div.li {
-  #border-left: 1px dashed __background__; /* invisible border triggers IE to render the stuff */
-}
-/* list style: MSIE 6/7 */
-div#panel div.portal div.body ul {
-  #list-style: none outside none !important;
-}
-form#page__revisions ul, /* old, until 2012-01-25 */
-form#dw__recent ul,      /* old, until 2012-01-25 */
-form.changes {           /* new, since 2012-09-10 */
-  #list-style: none outside none !important;
 }
