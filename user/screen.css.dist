@@ -3,5 +3,8 @@
    
    de: Ort für benutzerdefinierte CSS-Regeln (screen media) - Diese Datei kann
    beim Durchführen von Updates ohne Risiko beibehalten werden. Konsultieren Sie
-   die README für Detailinformationen. */
+   die README für Detailinformationen.
+
+   Rename this file from screen.css.dist to screen.css
+*/
 

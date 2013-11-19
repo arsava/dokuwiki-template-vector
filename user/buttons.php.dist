@@ -6,6 +6,8 @@
  * If you want to add/remove some buttons, have a look at the comments/examples
  * and the DocBlock of {@link _vector_renderButtons()}, main.php
  *
+ * Rename this file from buttons.php.dist to buttons.php
+ *
  * To change the non-button related config, use the admin webinterface of
  * DokuWiki.
  *

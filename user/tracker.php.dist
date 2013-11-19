@@ -8,6 +8,8 @@
  * This file exists to make this easier for you. You don't have to deliberate
  * where you have to copy and paste the code, simply do it here.
  *
+ * Rename this file from tracker.php.dist to tracker.php
+ *
  * Usage: Copy and paste the needed code/tag AFTER the closing "?>"
  *
  *
@@ -29,4 +31,4 @@ if (!defined("DOKU_INC")){
     die();
 }
 
-//place the needed source codes BELOW this line ?>
+//place the needed source codes BELOW this line

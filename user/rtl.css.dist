@@ -3,5 +3,8 @@
 
    de: Ort für benutzerdefinierte CSS-Regeln ("rechts-nach-links"-Sprachen,
    z.B. Hebräisch) - Diese Datei kann beim Durchführen von Updates ohne Risiko
-   beibehalten werden. Konsultieren Sie die README für Detailinformationen. */
+   beibehalten werden. Konsultieren Sie die README für Detailinformationen.
+
+   Rename this file from rtl.css.dist to rtl.css
+*/
 

@@ -136,7 +136,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
 /**
  * Helper to render the tabs (like a dynamic XHTML snippet)
  *
- * @param array The tab data to render within the snippet. Each element
+ * @param array $arr The tab data to render within the snippet. Each element
  *        is represented through a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
@@ -171,6 +171,8 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *        - "accesskey" (optional)
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
+ * @return bool
+ *
  * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
@@ -243,7 +245,7 @@ function _vector_renderTabs($arr)
 /**
  * Helper to render the boxes (like a dynamic XHTML snippet)
  *
- * @param array The box data to render within the snippet. Each box is
+ * @param array $arr The box data to render within the snippet. Each box is
  *        represented through a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
@@ -254,6 +256,8 @@ function _vector_renderTabs($arr)
  *          aware of XSS and stuff.
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
+ * @return bool
+ *
  * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderTabs()
@@ -310,7 +314,7 @@ function _vector_renderBoxes($arr)
 /**
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
- * @param array The button data to render within the snippet. Each element
+ * @param array $arr The button data to render within the snippet. Each element
  *        is represented through a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-vector.png",
  *                                       "href"     => "http://andreas-haerter.com/",
@@ -341,6 +345,8 @@ function _vector_renderBoxes($arr)
  *        - "title" (optional)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
+ * @return bool
+ *
  * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
@@ -459,7 +465,7 @@ if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
 }
 
 //load userdefined js?
-if (tpl_getConf("vector_loaduserjs")){
+if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPL."user/user.js")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 
@@ -469,8 +475,10 @@ if ($vector_action === "print"){
   //      don't forget to update the styles.ini, this is the really important
   //      thing! BTW: good text about this: http://is.gd/5MyG5
   echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/dokuwiki/print.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n";
+  if (file_exists(DOKU_TPL."user/print.css")){
+      echo "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+  }
 }
 
 //load language specific css hacks?
