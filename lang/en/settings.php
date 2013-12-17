@@ -56,9 +56,9 @@ $lang["vector_exportbox_default"]  = "If yes, use default 'print/export' box?";
 $lang["vector_exportbox_location"] = "If not default, use following wiki page as 'print/export' box location:";
 
 //toolbox
-$lang["vector_toolbox"]          = "Show toolbox?";
-$lang["vector_toolbox_default"]  = "If yes, use default toolbox?";
-$lang["vector_toolbox_location"] = "If not default, use following wiki page as toolbox location:";
+$lang["vector_toolbox"]          = "Show tools?";
+$lang["vector_toolbox_default"]  = "If yes, use default tools?";
+$lang["vector_toolbox_location"] = "If not default, use following wiki page as tools location:";
 
 //qr code box
 $lang["vector_qrcodebox"] = "Show box with QR Code of current wiki page URL (for easy URL transfer to mobile browser)?";

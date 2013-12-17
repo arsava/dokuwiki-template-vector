@@ -49,7 +49,7 @@ $lang["vector_translations"] = "Languages";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "Navigation";
-$lang["vector_toolbox"] = "Toolbox";
+$lang["vector_toolbox"] = "Tools";
 $lang["vector_exportbox"] = "Print/export";
 $lang["vector_qrcodebox"] = "QR Code";
 $lang["vector_inotherlanguages"] = "Languages";
@@ -69,7 +69,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "Download as PDF";
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "What links here";
 $lang["vector_toolbxdef_upload"] = "Upload file";
-$lang["vector_toolbxdef_siteindex"] = "Site index";
+$lang["vector_toolbxdef_siteindex"] = "Sitemap";
 $lang["vector_toolboxdef_permanent"] = "Permanent link";
 $lang["vector_toolboxdef_cite"] = "Cite this page";
 

@@ -54,8 +54,8 @@ $lang["vector_exportbox_default"]  = "Si oui, utilisez la boite 'imprimer/export
 $lang["vector_exportbox_location"] = "Si non, utilisez la page wiki suivante :";
 
 //toolbox
-$lang["vector_toolbox"]          = "Afficher la boite à outils ?";
-$lang["vector_toolbox_default"]  = "Si oui, utilisez la boite à outils par default ?";
+$lang["vector_toolbox"]          = "Afficher la outils ?";
+$lang["vector_toolbox_default"]  = "Si oui, utilisez la outils par default ?";
 $lang["vector_toolbox_location"] = "Si non, utilisez la page wiki suivante :";
 
 //custom copyright notice

@@ -49,7 +49,7 @@ $lang["vector_translations"] = "语言";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "导航";
-$lang["vector_toolbox"] = "工具箱";
+$lang["vector_toolbox"] = "工具";
 $lang["vector_exportbox"] = "打印/导出";
 $lang["vector_inotherlanguages"] = "语言";
 $lang["vector_printexport"] = "打印/导出";
@@ -68,7 +68,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "做为PDF下载";
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "反向链接";
 $lang["vector_toolbxdef_upload"] = "上传文件";
-$lang["vector_toolbxdef_siteindex"] = "站点索引";
+$lang["vector_toolbxdef_siteindex"] = "网站地图";
 $lang["vector_toolboxdef_permanent"] = "永久链接";
 $lang["vector_toolboxdef_cite"] = "引用此文";
 
