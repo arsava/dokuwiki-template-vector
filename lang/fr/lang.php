@@ -49,7 +49,7 @@ $lang["vector_translations"] = "Langages";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "Navigation";
-$lang["vector_toolbox"] = "Boite à outils";
+$lang["vector_toolbox"] = "Outils";
 $lang["vector_exportbox"] = "Imprimer/exporter";
 $lang["vector_inotherlanguages"] = "Langages";
 $lang["vector_printexport"] = "Imprimer/exporter";

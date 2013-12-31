@@ -54,9 +54,9 @@ $lang["vector_exportbox_default"]  = "如果是，使用默认的“打印/导�
 $lang["vector_exportbox_location"] = "如果不是默认，使用下列wiki页面作为“打印/导出“栏位置：";
 
 //toolbox
-$lang["vector_toolbox"]          = "显示工具箱？";
-$lang["vector_toolbox_default"]  = "如果是，使用默认工具箱？";
-$lang["vector_toolbox_location"] = "如果不是默认，使用下列wiki页面作为工具箱位置：";
+$lang["vector_toolbox"]          = "显示工具？";
+$lang["vector_toolbox_default"]  = "如果是，使用默认工具？";
+$lang["vector_toolbox_location"] = "如果不是默认，使用下列wiki页面作为工具位置：";
 
 //custom copyright notice
 $lang["vector_copyright"]          = "显示版权信息？";

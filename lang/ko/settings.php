@@ -56,9 +56,9 @@ $lang["vector_exportbox_default"]  = "만약 보여준다면 기본 '인쇄/내�
 $lang["vector_exportbox_location"] = "기본 모음을 사용하지 않는다면 '인쇄/내보내기' 모음 위치로 다음 위키 문서 사용:";
 
 //toolbox
-$lang["vector_toolbox"]          = "도구모음을 보여줄까요?";
-$lang["vector_toolbox_default"]  = "만약 보여준다면 기본 도구모음을 사용하겠습니까?";
-$lang["vector_toolbox_location"] = "기본 모음을 사용하지 않는다면 도구모음 위치로 다음 위키 문서 사용:";
+$lang["vector_toolbox"]          = "도구를 보여줄까요?";
+$lang["vector_toolbox_default"]  = "만약 보여준다면 기본 도구를 사용하겠습니까?";
+$lang["vector_toolbox_location"] = "기본 모음을 사용하지 않는다면 도구 위치로 다음 위키 문서 사용:";
 
 //qr code box
 $lang["vector_qrcodebox"] = "(모바일 브라우저에 쉽게 URL 전송을 위해) 현재 위키 문서 URL의 QR 코드로 된 상자를 보여줄까요?";

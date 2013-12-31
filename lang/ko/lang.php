@@ -50,7 +50,7 @@ $lang["vector_translations"] = "언어";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "둘러보기";
-$lang["vector_toolbox"] = "도구모음";
+$lang["vector_toolbox"] = "도구";
 $lang["vector_exportbox"] = "인쇄/내보내기";
 $lang["vector_qrcodebox"] = "QR 코드";
 $lang["vector_inotherlanguages"] = "언어";
@@ -59,11 +59,11 @@ $lang["vector_personnaltools"] = "개인 도구";
 
 //buttons
 $lang["vector_btn_go"] = "보기";
-$lang["vector_btn_search"] = "찾기";
-$lang["vector_btn_search_title"] = "이 문자열이 포함된 문서 찾기";
+$lang["vector_btn_search"] = "검색";
+$lang["vector_btn_search_title"] = "이 문자열이 포함된 문서 검색";
 
 //exportbox ("print/export")
-$lang["vector_exportbxdef_print"] = "인쇄용 문서";
+$lang["vector_exportbxdef_print"] = "인쇄용 판";
 $lang["vector_exportbxdef_downloadodt"] = "ODT로 다운로드";
 $lang["vector_exportbxdef_downloadpdf"] = "PDF로 다운로드";
 
@@ -104,7 +104,7 @@ $lang["vector_cite_result"] = "결과";
 $lang["vector_cite_thisversion"] = "이 판";
 
 //other
-$lang["vector_search"] = "찾기";
+$lang["vector_search"] = "검색";
 $lang["vector_accessdenied"] = "접근 거부됨";
 $lang["vector_fillplaceholder"] = "이 자리를 채우거나 비활성화하세요";
 $lang["vector_donate"] = "기부";
