@@ -6,6 +6,8 @@
  * If you want to add/remove some tabs, have a look at the comments/examples
  * and the DocBlock of {@link _vector_renderTabs()}, main.php
  *
+ * Rename this file from tabs.php.dist to tabs.php
+ *
  * To change the non-tab related config, use the admin webinterface of DokuWiki.
  *
  *

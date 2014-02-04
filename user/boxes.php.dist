@@ -6,6 +6,8 @@
  * If you want to add/remove some boxes, have a look at the comments/examples
  * and the DocBlock of {@link _vector_renderBoxes()}, main.php
  *
+ * Rename this file from boxes.php.dist to boxes.php
+ *
  * To change the non-box related config, use the admin webinterface of DokuWiki.
  *
  *

@@ -3,5 +3,8 @@
    
    de: Ort für benutzerdefinierte CSS-Regeln (print media) - Diese Datei kann
    beim Durchführen von Updates ohne Risiko beibehalten werden. Konsultieren Sie
-   die README für Detailinformationen. */
+   die README für Detailinformationen.
+
+   Rename this file print.css.dist to print.css
+*/
 
