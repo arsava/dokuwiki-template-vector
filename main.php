@@ -136,8 +136,8 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
 /**
  * Helper to render the tabs (like a dynamic XHTML snippet)
  *
- * @param array The tab data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The tab data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
  *                                       "nofollow" => true),
@@ -172,6 +172,7 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -244,7 +245,7 @@ function _vector_renderTabs($arr)
  * Helper to render the boxes (like a dynamic XHTML snippet)
  *
  * @param array The box data to render within the snippet. Each box is
- *        represented through a subarray:
+ *        represented by a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
  *        Available keys within the subarrays:
@@ -255,6 +256,7 @@ function _vector_renderTabs($arr)
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _vector_renderButtons()
  * @see _vector_renderTabs()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -310,8 +312,8 @@ function _vector_renderBoxes($arr)
 /**
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
- * @param array The button data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The button data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-vector.png",
  *                                       "href"     => "https://andreashaerter.com/",
  *                                       "width"    => 80,
@@ -342,6 +344,7 @@ function _vector_renderBoxes($arr)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
  * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @return bool
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
@@ -459,7 +462,7 @@ if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
 }
 
 //load userdefined js?
-if (tpl_getConf("vector_loaduserjs")){
+if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPL."user/user.js")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 
@@ -469,8 +472,10 @@ if ($vector_action === "print"){
   //      don't forget to update the styles.ini, this is the really important
   //      thing! BTW: good text about this: http://is.gd/5MyG5
   echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/3rd/dokuwiki/print.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n"
-       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+       ."<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."static/css/print.css\" />\n";
+  if (file_exists(DOKU_TPL."user/print.css")){
+      echo "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."user/print.css\" />\n";
+  }
 }
 
 //load language specific css hacks?

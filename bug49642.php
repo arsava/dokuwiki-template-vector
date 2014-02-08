@@ -95,8 +95,11 @@ if (!empty($_GET["langdir"]) &&
 } else {
   $interim .= trim(file_get_contents("./static/3rd/vector/main-ltr.css"))."\n";
 }
-$interim .=  trim(file_get_contents("./static/css/screen.css"))."\n"
-            .trim(file_get_contents("./user/screen.css"))."\n";
+$interim .=  trim(file_get_contents("./static/css/screen.css"))."\n";
+if (file_exists(DOKU_TPL."user/screen.css")){
+    $interim .= trim(file_get_contents("./user/screen.css"))."\n";
+}
+
 //replace the placeholders with the corresponding values and send the needed CSS
 echo "@media screen {\n".str_replace(//search
                                      $placeholder_names,
@@ -107,8 +110,11 @@ echo "@media screen {\n".str_replace(//search
 
 //get needed file contents: print media CSS
 $interim =  trim(file_get_contents("./static/3rd/dokuwiki/print.css"))."\n"
-           .trim(file_get_contents("./static/css/print.css"))."\n"
-           .trim(file_get_contents("./user/print.css"))."\n";
+           .trim(file_get_contents("./static/css/print.css"))."\n";
+if (file_exists(DOKU_TPL."user/print.css")) {
+    $interim .= trim(file_get_contents("./user/print.css"))."\n";
+}
+
 //replace the placeholders with the corresponding values and send the needed CSS
 echo "@media print {\n".str_replace(//search
                                     $placeholder_names,

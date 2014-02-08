@@ -37,38 +37,47 @@
     these hints for customizing the template:
 
     - Place your files in "vector/user"
-      The place for *all* userdefined, custom stuff is "vector/user".
-      Reason: this folder will not be touched on updates. Therefore you may
-      delete everything except "vector/user" and copy all new files into
-      "vector/" to update without loosing your changes. Do not forget to
-      empty your browser's cache afterwards.
+      The place to store *all* user-defined, custom stuff is the "vector/user"
+      directory because your files will not be touched or overwritten on
+      template updates! So you normally can copy all new files into "vector/"
+      to update the template without loosing your changes.
+      Note: There are example files helping you modifying the template.
+            The are delivered with the ".dist" extensions. Just remove the
+            ".dist" extension to use them.
 
     - Own logo
       If you want to replace the default logo showed in the upper left, simply
       create a "logo.[png|gif|jpg]" in "vector/user". The template recognizes
-      the file automatically and will use it instead of the default text. Do not
-      forget to empty your browser's cache afterwards.
+      the file automatically and will use it instead of the default logo.
+      Note: Do not forget to empty your browser's cache if you cannot see any
+            effect.
 
     - Own favicon
       If you want to replace the default favicon, simply create a "favicon.ico"
       in "vector/user". The template recognizes the file automatically and
-      will use it instead of the default one. Do not forget to empty your
-      browser's cache afterwards. By the way: you might find the online
-      FavIcon Generator [1] useful.
+      will use it instead of the default one. You might find the online FavIcon
+      Generator [1] useful.
       Note: "favicon.png" is also possible but not recommended (because it is
             not supported by older MSIE versions).
 
     - Own CSS
-      To apply additional CSS rules, edit "vector/user/screen.css"
-      (influences normal layout) and/or "vector/user/print.css" (influences
-      print layout) and/or "vector/user/rtl.css" (influences "right-to-left"
-      languages like Hebrew). These files will be included automatically (as the
-      last ones for the relevant media, therefore you are able to overrule
-      existing styles). Do not forget to empty your browser's cache afterwards.
+      To apply additional CSS rules, create a
+        - "vector/user/screen.css" file to influence the normal layout. You
+          can rename the "screen.css.dist" to "screen.css" as starting point.
+        - "vector/user/print.css" file to influence the print layout. You
+          can rename the "print.css.dist" to "print.css" as starting point.
+        - "vector/user/rtl.css" file to influences "right-to-left" languages
+          like Hebrew. You can rename the "rtl.css.dist" to "rtl.css" as
+          starting point.
+      The file(s) will be included automatically (as the last ones for the
+      relevant media, therefore you are able to overrule existing styles).
+      Note: Do not forget to empty your browser's cache if you cannot see any
+            effect.
 
     - Own JavaScript
-      To load additional JavaScript, edit "vector/user/user.js". Do not
-      forget to empty your browser's cache afterwards.
+      To load additional JavaScript, create a "vector/user/user.js" file. You
+      can rename the "user.js.dist" to "user.js" as starting point (it contains
+      some examples and useful comments how to define your own JavaScript).
       ATTENTION: You have to activate the template option "vector_loaduserjs"
                  (->"Load 'vector/user/user.js'?") in the DokuWiki Config
                  Manager!
@@ -77,46 +86,48 @@
       To apply additional CSS rules only for a specific language, edit/create
       "vector/lang/<your-language>/style.css". This file will be included
       automatically if DokuWiki runs/shows a page in the language of choice (as
-      the last one, therefore you are able to overrule existing styles). Do
-      not forget to empty your browser's cache afterwards.
+      the last one, therefore you are able to overrule existing styles).
+      Note: Do not forget to empty your browser's cache if you cannot see any
+            effect.
 
     - Own tabs
-      To apply own tabs, have a look at "vector/user/tabs.php". Don't worry:
-      you will find some examples how to define the tabs. If you still have
-      questions after playing with the examples, see "IV. Support" on how to get
-      help. If "vector/user/tabs.php" does not exist, simply copy it out of
-      the current actual installation archive.
+      To apply own tabs, create a "vector/user/tabs.php" file. You can rename
+      the "tabs.php.dist" to "tabs.php" as a good starting point (it contains
+      some examples and useful comments how to define your own tabs). If you
+      still have questions after playing with the examples, see "IV. Support"
+      on how to get help.
 
     - Own footer buttons
       To apply own buttons/graphics in the footer (-> these small 80x15 pics),
-      have a look at "vector/user/buttons.php". Don't worry: you will find
-      some examples how to define the buttons. If you still have questions
-      after playing with the examples, see "IV. Support" on how to get help.
-      If "vector/user/buttons.php" does not exist, simply copy it out of the
-      current actual installation archive.
+      create a "vector/user/buttons.php" file. You can rename the
+      "buttons.php.dist" to "buttons.php" as a good starting point (it contains
+      some examples and useful comments how to define your own buttons). If you
+      still have questions after playing with the examples, see "IV. Support"
+      on how to get help.
 
     - Own boxes
-      To apply own boxes in the left column/sidebar, have a look at
-      "vector/user/boxes.php". Don't worry: you will find some examples how to
-      define the boxes. If you still have questions after playing with the
-      examples, see "IV. Support" on how to get help.
-      If "vector/user/boxes.php" does not exist, simply copy it out of the
-      current actual installation archive.
+      To apply own boxes in the left column/sidebar, create a
+      "vector/user/boxes.php" file. You can rename the "boxes.php.dist" to
+      "boxes.php" as a good starting point (it contains some examples and useful
+      comments how to define your own boxes). If you still have questions after
+      playing with the examples, see "IV. Support" on how to get help.
 
     - Web analytics software (Piwik, Google Analytics etc.)
       Tools like Piwik and Google Analytics normally provide a small code
       snippet ("tag") which you have to include at your website to make
-      everything work. If you want to use such software with this template, have
-      a look at "vector/user/tracker.php". This file exists to make it easier
-      for you. You don't have to deliberate where you have to copy and paste the
-      code, simply do it there.
+      everything work. If you want to use such software with this template,
+      create a "vector/user/tracker.php.dist". You don't have to deliberate
+      where you have to copy and  paste the code, simply do it there. You can
+      rename the "tracker.php.dist" to "tracker.php" as a good starting point
+      (it contains some examples and useful comments how to define your own
+      boxes).
 
     - Own Apple Touch Icon
       If you want to replace the default Apple Touch Icon, simply create a
-      "apple-touch-icon.png" in "vector/user". The template recognizes the
-      file automatically and will use it instead of the default one. Have a
-      look at Apple's developer database (cf. "Configuring Web Applications"[2])
-      if you need more information.
+      "apple-touch-icon.png" in "vector/user". The template recognizes the file
+      automatically and will use it instead of the default one. Have a look at
+      Apple's developer database (cf. "Configuring Web Applications" [2]) if you
+      need more information.
 
     [1] <http://tools.dynamicdrive.com/favicon/>
     [2] <http://j.mp/sx3NMT>

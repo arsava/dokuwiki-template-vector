@@ -1,0 +1,18 @@
+/*
+   Place for user defined JavaScript - this file can safely be preserved
+   when updating. See README for details.
+
+   Note: All example files are delivered with the ".dist" extensions to make
+         sure your changes do not get overwritten when updating the template.
+         Just remove the ".dist" extension to use them.
+
+   To use own JavaScript:
+
+     1. Create a /user/user.js file. You may just want to rename this file from
+        "user.js.dist" to "user.js"
+
+     2. Do not forget to activate the template option
+        "vector_loaduserjs" (->"Load 'vector/user/user.js'?") in the
+        DokuWiki Config Manager! Otherwise, any changes to this file
+        won't have any effect!
+ */

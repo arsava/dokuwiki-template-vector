@@ -3,10 +3,18 @@
 /**
  * User defined box configuration of the "vector" DokuWiki template
  *
- * If you want to add/remove some boxes, have a look at the comments/examples
- * and the DocBlock of {@link _vector_renderBoxes()}, main.php
+ * Create a "/user/boxes.php" file if you want to add/remove some sidebar boxes.
+ * The template recognizes and loads the provided boxes data automatically.
+ * You may want to rename this file from "boxes.php.dist" to "boxes.php"
+ * to get a good starting point as it provides some examples. The comments of
+ * the {@link _vector_renderBoxes()} (main.php) may be useful, too.
  *
- * To change the non-box related config, use the admin webinterface of DokuWiki.
+ * Note: All example files are delivered with the ".dist" extensions to make
+ *       sure your changes do not get overwritten when updating the template.
+ *       Just remove the ".dist" extension to use them.
+ *
+ * Note: To change the non-box related config, use the admin webinterface of
+ *       DokuWiki.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -29,25 +37,10 @@ if (!defined("DOKU_INC")){
 //note: The boxes will be rendered in the order they were defined. Means:
 //      first box will be rendered first, last box will be rendered at last.
 
-
-
-//Languages/translations provided by Andreas Gohr's translation plugin,
-//see <https://www.dokuwiki.org/plugin:translation>
-if (!empty($transplugin) && //$transplugin object was created in /conf/boxes.php
-    is_object($transplugin)){
-    $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
-    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
-}
-
-
-
-
-//examples: remove comments to see what is happening
-/*
 $_vector_boxes["example1"]["headline"] = "Hello World!";
 $_vector_boxes["example1"]["xhtml"] = "DokuWiki with vector... <em>rules</em>!";
-*/
 
+//examples: remove comments to see what is happening
 
 /*
 $_vector_boxes["example2"]["headline"] = "Some links";
@@ -61,7 +54,7 @@ $_vector_boxes["example2"]["xhtml"] =  "<ul>\n"
 
 /*
 $_vector_boxes["example3"]["headline"] = "Buttons";
-$_vector_boxes["example3"]["xhtml"] = "<a href=\"https://donate.arsava.com/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
+$_vector_boxes["example3"]["xhtml"] = "<a href=\"https://donate.arsava.com/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\" rel=\"nofollow\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
 */
 
 

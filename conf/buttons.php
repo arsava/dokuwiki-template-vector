@@ -74,6 +74,15 @@ $_vector_btns["dw"]["title"]    = "DokuWiki";
 $_vector_btns["dw"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
+//W3C (X)HTML validator button
+$_vector_btns["valid_xhtml"]["img"]      = DOKU_TPL."static/img/button-xhtml.png";
+$_vector_btns["valid_xhtml"]["href"]     = "http://validator.w3.org/check/referer";
+$_vector_btns["valid_xhtml"]["width"]    = 80;
+$_vector_btns["valid_xhtml"]["height"]   = 15;
+$_vector_btns["valid_xhtml"]["title"]    = "Valid XHTML";
+$_vector_btns["valid_xhtml"]["nofollow"] = true;
+
+
 
 /******************************************************************************
  ********************************  ATTENTION  *********************************

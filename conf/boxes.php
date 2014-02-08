@@ -243,6 +243,16 @@ if (empty($conf["useacl"]) || //are there any users?
 }
 
 
+//Languages/translations provided by Andreas Gohr's translation plugin,
+//see <https://www.dokuwiki.org/plugin:translation>
+if (!empty($transplugin) &&
+    is_object($transplugin)){
+    $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
+    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
+}
+
+
+
 /******************************************************************************
  ********************************  ATTENTION  *********************************
          DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
