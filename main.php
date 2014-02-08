@@ -425,15 +425,6 @@ if ($ACT === "edit" &&
 tpl_metaheaders();
 echo "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />";
 
-//manually load needed CSS? this is a workaround for PHP Bug #49642. In some
-//version/os combinations PHP is not able to parse INI-file entries if there
-//are slashes "/" used for the keynames (see bugreport for more information:
-//<http://bugs.php.net/bug.php?id=49692>). to trigger this workaround, simply
-//delete/rename vector's style.ini.
-if (!file_exists(DOKU_TPLINC."style.ini")){
-    echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."bug49642.php".((!empty($lang["direction"]) && $lang["direction"] === "rtl") ? "?langdir=rtl" : "")."\" />\n"; //var comes from DokuWiki core
-}
-
 //include default or userdefined favicon
 //
 //note: since 2011-04-22 "Rincewind RC1", there is a core function named

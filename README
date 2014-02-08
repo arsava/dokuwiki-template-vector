@@ -18,16 +18,8 @@
 
     See the vector template website for update instructions [2].
 
-    NOTE: If everything will be displayed unformatted, your PHP environment is
-          probably affected by PHP bug #49692 [3]. You may find errors like
-          "syntax error, unexpected '/' in ../../lib/tpl/vector/style.ini on
-          line XX" in your PHP logs when this is the case. vector provides a
-          workaround for this, simply delete vector's "style.ini" to trigger
-          the template to use it.
-
     [1] <https://www.dokuwiki.org/template>
     [2] <https://www.dokuwiki.org/template:vector#update>
-    [3] <http://bugs.php.net/bug.php?id=49692>
 
 
 
@@ -236,7 +228,6 @@
     - replaced "monobook" through "vector" in:
       - /conf/*
       - /lang/*
-      - /bug49642.php
       - /detail.php
       - /inc_cite.php
       - /inc_detail.php
