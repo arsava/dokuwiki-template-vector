@@ -7,12 +7,12 @@ ACHTUNG: Diese Datei stellt eine AUSZUGSWEISE Übersetzung der wichtigsten Teile
   II. Installation und Aktualisierung
 
     "vector" zu nutzen ist einfach und funktioniert wie unter
-    <http://www.dokuwiki.org/template> beschrieben: Entpacken Sie das
+    <https://www.dokuwiki.org/template> beschrieben: Entpacken Sie das
     heruntergeladene Archiv in das "lib/tpl/"-Verzeichnis Ihrer DokuWiki. Wählen
     Sie es dann einfach im Config Manager über die "template"-Option aus.
 
     Falls Sie eine bestehende vector-Installation aktualisieren wollen, werfen
-    Sie bitte einen Blick auf <http://www.dokuwiki.org/template:vector>. Dort
+    Sie bitte einen Blick auf <https://www.dokuwiki.org/template:vector>. Dort
     sollten Sie alle benötigten Informationen finden.
 
     HINWEIS: Falls alles unformatiert angezeigt wird, ist Ihre PHP-Umgebung ggf.
@@ -88,10 +88,11 @@ ACHTUNG: Diese Datei stellt eine AUSZUGSWEISE Übersetzung der wichtigsten Teile
       Um eigene Tabs anzuzeigen, editieren Sie einfach "vector/user/tabs.php".
       Kein Sorge: Sie finden dort einige Beispiele wie eigene Tabs definiert
       werden. Falls Sie nach dem ausprobieren der Beispiele immernoch Fragen
-      haben, durchsuchen Sie am besten <http://dokuwiki.org/template:vector>
-      und/oder das DokuWiki-Forum unter <http://forum.dokuwiki.org> und/oder
-      fragen Sie die dortige Gemeinschaft falls Sie die Probleme beim
-      Konfigurieren der eigenen Tabs nicht selbst lösen können.
+      haben, durchsuchen Sie am besten
+      <https://www.dokuwiki.org/template:vector> und/oder das DokuWiki-Forum
+      unter <https://forum.dokuwiki.org> und/oder fragen Sie die dortige
+      Gemeinschaft falls Sie die Probleme beim Konfigurieren der eigenen Tabs
+      nicht selbst lösen können.
       Falls "vector/user/tabs.php" nicht existiert, kopieren Sie die Datei
       einfach aus dem aktuellen Installationsarchiv.
 
@@ -100,10 +101,11 @@ ACHTUNG: Diese Datei stellt eine AUSZUGSWEISE Übersetzung der wichtigsten Teile
       80x15 Bildchen), editieren Sie einfach "vector/user/buttons.php".
       Kein Sorge: Sie finden dort einige Beispiele wie eigene Buttons definiert
       werden. Falls Sie nach dem ausprobieren der Beispiele immernoch Fragen
-      haben, durchsuchen Sie am besten <http://dokuwiki.org/template:vector>
-      und/oder das DokuWiki-Forum unter <http://forum.dokuwiki.org> und/oder
-      fragen Sie die dortige Gemeinschaft falls Sie die Probleme beim
-      Konfigurieren der eigenen Buttons nicht selbst lösen können.
+      haben, durchsuchen Sie am besten
+      <https://www.dokuwiki.org/template:vector> und/oder das DokuWiki-Forum
+      unter <https://forum.dokuwiki.org> und/oder fragen Sie die dortige
+      Gemeinschaft falls Sie die Probleme beim  Konfigurieren der eigenen
+      Buttons nicht selbst lösen können.
       Falls "vector/user/buttons.php" nicht existiert, kopieren Sie die Datei
       einfach aus dem aktuellen Installationsarchiv.
 
@@ -112,10 +114,10 @@ ACHTUNG: Diese Datei stellt eine AUSZUGSWEISE Übersetzung der wichtigsten Teile
       "vector/user/boxes.php". Kein Sorge: Sie finden dort einige Beispiele wie
       eigene Boxen definiert werden. Falls Sie nach dem ausprobieren der
       Beispiele immernoch Fragen haben, durchsuchen Sie am besten
-      <http://dokuwiki.org/template:vector> und/oder das DokuWiki-Forum unter
-      <http://forum.dokuwiki.org> und/oder fragen Sie die dortige Gemeinschaft
-      falls Sie die Probleme beim Konfigurieren der eigenen Buttons nicht selbst
-      lösen können.
+      <https://www.dokuwiki.org/template:vector> und/oder das DokuWiki-Forum
+      unter <https://forum.dokuwiki.org> und/oder fragen Sie die dortige
+      Gemeinschaft falls Sie die Probleme beim Konfigurieren der eigenen Buttons
+      nicht selbst lösen können.
       Falls "vector/user/boxes.php" nicht existiert, kopieren Sie die Datei
       einfach aus dem aktuellen Installationsarchiv.
 

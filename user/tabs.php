@@ -14,9 +14,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -100,7 +100,7 @@ if (!empty($conf["recent_days"])){
 /*
 //link
 $_vector_tabs_right["tab-urlexample"]["text"]  = "Creator";
-$_vector_tabs_right["tab-urlexample"]["href"]  = "http://andreas-haerter.com/";
+$_vector_tabs_right["tab-urlexample"]["href"]  = "https://andreashaerter.com/";
 */
 
 
@@ -122,7 +122,7 @@ $_vector_tabs_right["tab-wikilinkexample"]["accesskey"] = "H"; //accesskey is op
 
 /*
 //ODT plugin: export tab
-//see <http://www.dokuwiki.org/plugin:odt> for info
+//see <https://www.dokuwiki.org/plugin:odt> for info
 if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
     !plugin_isdisabled("odt")){
     $_vector_tabs_left["ca-export-odt"]["text"]     = $lang["vector_exportodt"];
@@ -134,8 +134,8 @@ if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
 
 /*
 //dw2pdf or html2pdf plugin: export tab
-//see <http://www.dokuwiki.org/plugin:dw2pdf> and
-//<http://www.dokuwiki.org/plugin:html2pdf> for info
+//see <https://www.dokuwiki.org/plugin:dw2pdf> and
+//<https://www.dokuwiki.org/plugin:html2pdf> for info
 if ((file_exists(DOKU_PLUGIN."dw2pdf/action.php") &&
      !plugin_isdisabled("dw2pdf")) ||
     (file_exists(DOKU_PLUGIN."html2pdf/action.php") &&

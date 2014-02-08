@@ -14,9 +14,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -32,7 +32,7 @@ if (!defined("DOKU_INC")){
 
 
 //Languages/translations provided by Andreas Gohr's translation plugin,
-//see <http://www.dokuwiki.org/plugin:translation>
+//see <https://www.dokuwiki.org/plugin:translation>
 if (!empty($transplugin) && //$transplugin object was created in /conf/boxes.php
     is_object($transplugin)){
     $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
@@ -61,7 +61,7 @@ $_vector_boxes["example2"]["xhtml"] =  "<ul>\n"
 
 /*
 $_vector_boxes["example3"]["headline"] = "Buttons";
-$_vector_boxes["example3"]["xhtml"] = "<a href=\"http://donate.andreas-haerter.com/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
+$_vector_boxes["example3"]["xhtml"] = "<a href=\"https://donate.arsava.com/dokuwiki-template-vector/\" title=\"Donate\" target=\"_blank\"><img src=\"".DOKU_TPL."static/img/button-donate.gif\" width=\"80\" height=\"15\" alt=\"Donate\" border=\"0\" /></a>";
 */
 
 

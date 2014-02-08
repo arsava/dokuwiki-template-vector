@@ -4,8 +4,8 @@
     "vector" brings you the MediaWiki/Wikipedia 2010 look and feel for DokuWiki.
     It is a mostly optical port of the original MediaWiki "vector" skin.
 
-    Website:     <http://www.dokuwiki.org/template:vector>
-    Maintainer:  Andreas Haerter <http://andreas-haerter.com/>
+    Website:     <https://www.dokuwiki.org/template:vector>
+    Maintainer:  ARSAVA <https://dev.arsava.com/>
     Contact:     See "IV. Support" and "V. Contact".
 
 
@@ -25,8 +25,8 @@
           workaround for this, simply delete vector's "style.ini" to trigger
           the template to use it.
 
-    [1] <http://www.dokuwiki.org/template>
-    [2] <http://www.dokuwiki.org/template:vector#update>
+    [1] <https://www.dokuwiki.org/template>
+    [2] <https://www.dokuwiki.org/template:vector#update>
     [3] <http://bugs.php.net/bug.php?id=49692>
 
 
@@ -129,40 +129,40 @@
     using the DokuWiki Search page [2]. If you found nothing helpful, ask your
     question at the DokuWiki forum [3] (preferred) or IRC channel [4].
 
-    [1] <http://www.dokuwiki.org/template:vector#faq>
+    [1] <https://www.dokuwiki.org/template:vector#faq>
     [2] <http://search.dokuwiki.org/>
-    [3] <http://forum.dokuwiki.org/>
-    [4] <http://www.dokuwiki.org/irc>
+    [3] <https://forum.dokuwiki.org/>
+    [4] <https://www.dokuwiki.org/irc>
 
 
 
   V. Contact
 
     If you think you have found a bug or have a useful idea (a.k.a. "feature
-    request"), create an issue [1] on GitHub (preferred), or contact me by
+    request"), create an issue [1] on GitHub (preferred), or contact us by
     mail [2].
 
     Feel free to submit patches as GitHub pull requests (preferred) or by mail
     as well. However, please try to respect the DokuWiki coding style [3] as
     this template follows its rules.
 
-    [1] <https://github.com/andreashaerter/dokuwiki-template-vector/issues>
-    [2] Andreas Haerter <development@andreas-haerter.com>
-    [3] <http://www.dokuwiki.org/devel:coding_style>
+    [1] <https://github.com/arsava/dokuwiki-template-vector/issues>
+    [2] ARSAVA <dokuwiki@dev.arsava.com>
+    [3] <https://www.dokuwiki.org/devel:coding_style>
 
 
 
   VI. Other notes
 
-    If you like this free project, you might buy me a coffee [1], or get some
+    If you like this free project, you might buy us a coffee [1], or get some
     cool QR Code merchandise [2]. Thank you! :-)
 
-    Do not hesitate to contact Andreas Haerter [3] if you need professional
-    support, training or if you think I am the one to get your project done.
+    Do not hesitate to contact ARSAVA [3] if you need professional DokuWiki
+    support, training or if you think we are the ones to get your project done.
 
-    [1] <http://donate.andreas-haerter.com/dokuwiki-template-vector/>
+    [1] <https://donate.arsava.com/dokuwiki-template-vector/>
     [2] <http://goqr.me/>
-    [3] <http://andreas-haerter.com/>
+    [3] <https://dev.arsava.com/>
 
 
 
@@ -200,8 +200,8 @@
       a logo.[png|gif|jpg] in here. See "III. Customizing the template" for
       details.
 
-    [1] <http://www.dokuwiki.org/devel:configuration#default_settings>
-    [2] <http://www.dokuwiki.org/devel:configuration#configuration_metadata>
+    [1] <https://www.dokuwiki.org/devel:configuration#default_settings>
+    [2] <https://www.dokuwiki.org/devel:configuration#configuration_metadata>
     [3] <http://j.mp/eq8zSo>
 
 
@@ -277,7 +277,7 @@
     - Worked worked worked a few days.... and done! :-P
 
     - After ~1 year, I switched the CSS base from DokuWiki's default template
-      to <http://www.dokuwiki.org/template:starter>. See <http://j.mp/f7V4ES>
+      to <https://www.dokuwiki.org/template:starter>. See <http://j.mp/f7V4ES>
       for more information about this. I edited some files, see
       "vector/static/3rd/dokuwiki/00_starter-tmpl-notes.txt" for details.
 
