@@ -453,7 +453,7 @@ if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
 }
 
 //load userdefined js?
-if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPL."user/user.js")){
+if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPLINC."user/user.js")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 

@@ -40,6 +40,8 @@ if (!defined("DOKU_INC")){
 $_vector_boxes["example1"]["headline"] = "Hello World!";
 $_vector_boxes["example1"]["xhtml"] = "DokuWiki with vector... <em>rules</em>!";
 
+
+
 //examples: remove comments to see what is happening
 
 /*
