@@ -149,6 +149,9 @@ if (empty($conf["useacl"]) || //are there any users?
             if (actionOK("subscribe")){ //check if action is disabled
                 $_vector_tabs_right["ca-watch"]["href"] = wl(cleanID(getId()), array("do" => "subscribe"), false, "&");
                 $_vector_tabs_right["ca-watch"]["text"] = $lang["btn_subscribe"]; //language comes from DokuWiki core
+                if ($ACT === "subscribe"){ //$ACT comes from DokuWiki core
+                    $_vector_tabs_right["ca-watch"]["class"] = "selected";
+                }
             }
         //2009-12-25 "Lemming" and older ones. See the following for information:
         //<http://www.freelists.org/post/dokuwiki/Question-about-tpl-buttonsubscribe>
