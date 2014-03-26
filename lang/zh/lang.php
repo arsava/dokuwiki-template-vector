@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -21,9 +20,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author LAINME <lainme993 [ät] gmail.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -49,7 +48,7 @@ $lang["vector_translations"] = "语言";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "导航";
-$lang["vector_toolbox"] = "工具箱";
+$lang["vector_toolbox"] = "工具";
 $lang["vector_exportbox"] = "打印/导出";
 $lang["vector_inotherlanguages"] = "语言";
 $lang["vector_printexport"] = "打印/导出";
@@ -68,7 +67,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "做为PDF下载";
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "反向链接";
 $lang["vector_toolbxdef_upload"] = "上传文件";
-$lang["vector_toolbxdef_siteindex"] = "站点索引";
+$lang["vector_toolbxdef_siteindex"] = "网站地图";
 $lang["vector_toolboxdef_permanent"] = "永久链接";
 $lang["vector_toolboxdef_cite"] = "引用此文";
 

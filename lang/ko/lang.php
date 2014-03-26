@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -22,9 +21,9 @@
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author 관인생략
  * @author Myeongjin <aranet100@gmail.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -50,7 +49,7 @@ $lang["vector_translations"] = "언어";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "둘러보기";
-$lang["vector_toolbox"] = "도구모음";
+$lang["vector_toolbox"] = "도구";
 $lang["vector_exportbox"] = "인쇄/내보내기";
 $lang["vector_qrcodebox"] = "QR 코드";
 $lang["vector_inotherlanguages"] = "언어";
@@ -59,11 +58,11 @@ $lang["vector_personnaltools"] = "개인 도구";
 
 //buttons
 $lang["vector_btn_go"] = "보기";
-$lang["vector_btn_search"] = "찾기";
-$lang["vector_btn_search_title"] = "이 문자열이 포함된 문서 찾기";
+$lang["vector_btn_search"] = "검색";
+$lang["vector_btn_search_title"] = "이 문자열이 포함된 문서 검색";
 
 //exportbox ("print/export")
-$lang["vector_exportbxdef_print"] = "인쇄용 문서";
+$lang["vector_exportbxdef_print"] = "인쇄용 판";
 $lang["vector_exportbxdef_downloadodt"] = "ODT로 다운로드";
 $lang["vector_exportbxdef_downloadpdf"] = "PDF로 다운로드";
 
@@ -104,11 +103,10 @@ $lang["vector_cite_result"] = "결과";
 $lang["vector_cite_thisversion"] = "이 판";
 
 //other
-$lang["vector_search"] = "찾기";
+$lang["vector_search"] = "검색";
 $lang["vector_accessdenied"] = "접근 거부됨";
 $lang["vector_fillplaceholder"] = "이 자리를 채우거나 비활성화하세요";
 $lang["vector_donate"] = "기부";
 $lang["vector_mdtemplatefordw"] = "도쿠위키를 위한 벡터 템플릿";
-$lang["vector_qrcodebtn"] = "QR 코드 생성기";
 $lang["vector_recentchanges"] = "최근 바뀜";
 

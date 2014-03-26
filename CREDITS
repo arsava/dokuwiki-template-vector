@@ -1,12 +1,12 @@
 
-  I. Andreas Haerter <development@andreas-haerter.com>
+  I. ARSAVA <dokuwiki@dev.arsava.com>
 
-    This DokuWiki template is maintained by Andreas Haerter [1]. If you like my
-    projects, you might buy me a coffee [2], or get some cool QR Code
+    This DokuWiki template is maintained by ARSAVA [1]. If you like our
+    projects, you might buy us a coffee [2], or get some cool QR Code
     merchandise [3]. Thank you! :-)
 
-    [1] <http://andreas-haerter.com/>
-    [2] <http://donate.andreas-haerter.com/dokuwiki-template-vector/>
+    [1] <https://dev.arsava.com/>
+    [2] <https://donate.arsava.com/dokuwiki-template-vector/>
     [3] <http://goqr.me/>
 
 
@@ -94,3 +94,8 @@
 
     Myeongjin contributed the Korean language files.
 
+
+
+  X. Dave
+
+    Dave contributed the Hebrew language files.

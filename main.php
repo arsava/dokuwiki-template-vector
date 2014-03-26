@@ -9,12 +9,12 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:templates
- * @link http://www.dokuwiki.org/devel:coding_style
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:action_modes
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:templates
+ * @link https://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:action_modes
  */
 
 
@@ -35,13 +35,13 @@ if (!defined("DOKU_INC")){
  * influencing the var's value.
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $vector_action = "article";
 //note: I used $_REQUEST before (cause DokuWiki controls and fills it. Normally,
 //      using $_REQUEST is a possible security threat. For details, see
 //      <http://www.suspekt.org/2008/10/01/php-53-and-delayed-cross-site-request-forgerieshijacking/>
-//      and <http://forum.dokuwiki.org/post/16524>), but it did not work as
+//      and <https://forum.dokuwiki.org/post/16524>), but it did not work as
 //      expected by me (maybe it is a reference and setting $vector_action
 //      also changed the contents of $_REQUEST?!). That is why I switched back,
 //      checking $_GET and $_POST like I did it before.
@@ -69,7 +69,7 @@ if (!empty($vector_action) &&
  * page or not.
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $vector_context = "article";
 if (preg_match("/^".tpl_getConf("vector_discuss_ns")."?$|^".tpl_getConf("vector_discuss_ns").".*?$/i", ":".getNS(getID()))){
@@ -81,7 +81,7 @@ if (preg_match("/^".tpl_getConf("vector_discuss_ns")."?$|^".tpl_getConf("vector_
  * Stores the name the current client used to login
  *
  * @var string
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  */
 $loginname = "";
 if (!empty($conf["useacl"])){
@@ -136,8 +136,8 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
 /**
  * Helper to render the tabs (like a dynamic XHTML snippet)
  *
- * @param array $arr The tab data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The tab data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("tab1" => array("text"     => "hello world!",
  *                                       "href"     => "http://www.example.com"
  *                                       "nofollow" => true),
@@ -171,15 +171,14 @@ if (file_exists(DOKU_TPLINC."/user/buttons.php")){
  *        - "accesskey" (optional)
  *          accesskey="<value>" will be added to the link if "href" is set
  *          (otherwise this option will do nothing).
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @return bool
- *
- * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
  * @link http://de.selfhtml.org/html/verweise/tastatur.htm#kuerzel
- * @link http://www.dokuwiki.org/devel:environment
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:environment
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _vector_renderTabs($arr)
 {
@@ -245,8 +244,8 @@ function _vector_renderTabs($arr)
 /**
  * Helper to render the boxes (like a dynamic XHTML snippet)
  *
- * @param array $arr The box data to render within the snippet. Each box is
- *        represented through a subarray:
+ * @param array The box data to render within the snippet. Each box is
+ *        represented by a subarray:
  *        $array = array("box-id1" => array("headline" => "hello world!",
  *                                          "xhtml"    => "I am <i>here</i>."));
  *        Available keys within the subarrays:
@@ -256,14 +255,13 @@ function _vector_renderTabs($arr)
  *          aware of XSS and stuff.
  *        - "headline" (optional)
  *          Headline to show above the box. Leave empty/do not set for none.
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @return bool
- *
- * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderTabs()
  * @link http://www.wikipedia.org/wiki/Nofollow
  * @link http://www.wikipedia.org/wiki/Cross-site_scripting
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _vector_renderBoxes($arr)
 {
@@ -314,14 +312,14 @@ function _vector_renderBoxes($arr)
 /**
  * Helper to render the footer buttons (like a dynamic XHTML snippet)
  *
- * @param array $arr The button data to render within the snippet. Each element
- *        is represented through a subarray:
+ * @param array The button data to render within the snippet. Each element is
+ *        represented by a subarray:
  *        $array = array("btn1" => array("img"      => DOKU_TPL."static/img/button-vector.png",
- *                                       "href"     => "http://andreas-haerter.com/",
+ *                                       "href"     => "https://andreashaerter.com/",
  *                                       "width"    => 80,
  *                                       "height"   => 15,
- *                                       "title"    => "vector for DokuWiki",
- *                                       "nofollow" => false),
+ *                                       "title"    => "Andreas Haerter's website",
+ *                                       "nofollow" => true),
  *                       "btn2" => array("img"   => DOKU_TPL."user/mybutton1.png",
  *                                       "href"  => wl("start", false, false, "&")),
  *                       "btn3" => array("img"   => DOKU_TPL."user/mybutton2.png",
@@ -345,13 +343,12 @@ function _vector_renderBoxes($arr)
  *        - "title" (optional)
  *          title="<value>"  will be added to the link and image if "title"
  *          is set + alt="<value>".
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @return bool
- *
- * @author Andreas Haerter <development@andreas-haerter.com>
  * @see _vector_renderButtons()
  * @see _vector_renderBoxes()
  * @link http://www.wikipedia.org/wiki/Nofollow
- * @link http://www.dokuwiki.org/devel:coding_style
+ * @link https://www.dokuwiki.org/devel:coding_style
  */
 function _vector_renderButtons($arr)
 {
@@ -428,15 +425,6 @@ if ($ACT === "edit" &&
 tpl_metaheaders();
 echo "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />";
 
-//manually load needed CSS? this is a workaround for PHP Bug #49642. In some
-//version/os combinations PHP is not able to parse INI-file entries if there
-//are slashes "/" used for the keynames (see bugreport for more information:
-//<http://bugs.php.net/bug.php?id=49692>). to trigger this workaround, simply
-//delete/rename vector's style.ini.
-if (!file_exists(DOKU_TPLINC."style.ini")){
-    echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."bug49642.php".((!empty($lang["direction"]) && $lang["direction"] === "rtl") ? "?langdir=rtl" : "")."\" />\n"; //var comes from DokuWiki core
-}
-
 //include default or userdefined favicon
 //
 //note: since 2011-04-22 "Rincewind RC1", there is a core function named
@@ -465,7 +453,7 @@ if (file_exists(DOKU_TPLINC."user/apple-touch-icon.png")){
 }
 
 //load userdefined js?
-if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPL."user/user.js")){
+if (tpl_getConf("vector_loaduserjs") && file_exists(DOKU_TPLINC."user/user.js")){
     echo "<script type=\"text/javascript\" charset=\"utf-8\" src=\"".DOKU_TPL."user/user.js\"></script>\n";
 }
 

@@ -3,14 +3,19 @@
 /**
  * Place for user defined web analytics software codes/tags
  *
- * Tools like Piwik and Google Analytics normally provide a small code snippet
- * ("tag") which you have to include at your website to make everything work.
- * This file exists to make this easier for you. You don't have to deliberate
- * where you have to copy and paste the code, simply do it here.
+ * Tools like Piwik and Google Analytics normally provide a small HTML code
+ * snippet ("tag") which you have to include at your website to make everything
+ * work. This template tries to make this easier for you.
  *
- * Rename this file from tracker.php.dist to tracker.php
+ * You don't have to deliberate where you have to copy and paste the code
+ * simply create a "/user/tracker.php" file. The template recognizes and loads
+ * the provided tracker data automatically. You may want to rename this file
+ * from "tracker.php.dist" to "tracker.php" to get a good starting point. Just
+ * copy and paste the needed HTML code/tag AFTER the closing "?>"
  *
- * Usage: Copy and paste the needed code/tag AFTER the closing "?>"
+ * Note: All example files are delivered with the ".dist" extensions to make
+ *       sure your changes do not get overwritten when updating the template.
+ *       Just remove the ".dist" extension to use them.
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -18,11 +23,10 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
  * @link http://piwik.org/
  * @link http://www.google.com/analytics/
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
  */
 
 
@@ -31,4 +35,4 @@ if (!defined("DOKU_INC")){
     die();
 }
 
-//place the needed source codes BELOW this line
+//place the needed HTML source codes BELOW this line ?>

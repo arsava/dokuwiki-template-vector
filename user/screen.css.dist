@@ -1,10 +1,9 @@
-/* en: Place for user defined CSS rules (screen media) - this file can safely be
+/*
+   Place for user defined CSS rules (screen media) - this file can safely be
    preserved when updating. See README for details.
-   
-   de: Ort für benutzerdefinierte CSS-Regeln (screen media) - Diese Datei kann
-   beim Durchführen von Updates ohne Risiko beibehalten werden. Konsultieren Sie
-   die README für Detailinformationen.
 
-   Rename this file from screen.css.dist to screen.css
+   Note: All example files are delivered with the ".dist" extensions to make
+         sure your changes do not get overwritten when updating the template.
+         Just remove the ".dist" extension to use them.
 */
 

@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -21,9 +20,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author ander
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 

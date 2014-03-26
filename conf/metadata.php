@@ -9,11 +9,9 @@
  *   and the "default.php" in the same directory as this file.
  * - To change/translate the descriptions showed in the admin/configuration
  *   menu of DokuWiki, have a look at the file
- *   "/lib/tpl/vector/lang/<your lang>/settings.php". If it does not exists,
+ *   /lib/tpl/vector/lang/<your lang>/settings.php. If it does not exists,
  *   copy and translate the English one. Don't forget to mail your translation
- *   to
- *     Andreas Haerter <development@andreas-haerter.com>
- *   Thanks :-D.
+ *   to ARSAVA <dokuwiki@dev.arsava.com>. Thanks! :-D
  * - To change the tab configuration, have a look at the "tabs.php" in the
  *   same directory as this file.
  *
@@ -23,9 +21,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 

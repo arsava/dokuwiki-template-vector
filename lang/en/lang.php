@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -20,10 +19,10 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -49,7 +48,7 @@ $lang["vector_translations"] = "Languages";
 
 //headlines for the different bars and boxes
 $lang["vector_navigation"] = "Navigation";
-$lang["vector_toolbox"] = "Toolbox";
+$lang["vector_toolbox"] = "Tools";
 $lang["vector_exportbox"] = "Print/export";
 $lang["vector_qrcodebox"] = "QR Code";
 $lang["vector_inotherlanguages"] = "Languages";
@@ -69,7 +68,7 @@ $lang["vector_exportbxdef_downloadpdf"] = "Download as PDF";
 //default toolbox
 $lang["vector_toolbxdef_whatlinkshere"] = "What links here";
 $lang["vector_toolbxdef_upload"] = "Upload file";
-$lang["vector_toolbxdef_siteindex"] = "Site index";
+$lang["vector_toolbxdef_siteindex"] = "Sitemap";
 $lang["vector_toolboxdef_permanent"] = "Permanent link";
 $lang["vector_toolboxdef_cite"] = "Cite this page";
 
@@ -108,6 +107,5 @@ $lang["vector_accessdenied"] = "Access denied";
 $lang["vector_fillplaceholder"] = "Please fill or disable this placeholder";
 $lang["vector_donate"] = "Donate";
 $lang["vector_mdtemplatefordw"] = "vector template for DokuWiki";
-$lang["vector_qrcodebtn"] = "QR Code generator";
 $lang["vector_recentchanges"] = "Recent changes";
 

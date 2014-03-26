@@ -12,9 +12,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:templates
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:templates
  */
 
 //check if we are running within the DokuWiki environment
@@ -32,15 +32,6 @@ if (!defined("DOKU_INC")){
 //show meta-tags
 tpl_metaheaders();
 echo "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />";
-
-//manually load needed CSS? this is a workaround for PHP Bug #49642. In some
-//version/os combinations PHP is not able to parse INI-file entries if there
-//are slashes "/" used for the keynames (see bugreport for more information:
-//<http://bugs.php.net/bug.php?id=49692>). to trigger this workaround, simply
-//delete/rename vector's style.ini.
-if (!file_exists(DOKU_TPLINC."style.ini")){
-    echo  "<link rel=\"stylesheet\" media=\"all\" type=\"text/css\" href=\"".DOKU_TPL."bug49642.php".((!empty($lang["direction"]) && $lang["direction"] === "rtl") ? "?langdir=rtl" : "")."\" />\n"; //var comes from DokuWiki core
-}
 
 //include default or userdefined favicon
 //

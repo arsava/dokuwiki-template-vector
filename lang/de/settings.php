@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -20,10 +19,10 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -43,12 +42,12 @@ $lang["vector_discuss_ns"] = "Falls ja, folgenden ':namensraum:' als Wurzel für
 //site notice
 $lang["vector_sitenotice"]           = "Seitenübergreifenden Hinweis einblenden?";
 $lang["vector_sitenotice_location"]  = "Falls ja, folgende wiki-Seite als Hinweis verwenden:";
-$lang["vector_sitenotice_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Seiten-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Seiten-Hinweis(e) lautet [Wert von 'vector_sitenotice_location']_[iso-sprach-code] (z.B. ':wiki:site_notice_en').";
+$lang["vector_sitenotice_translate"] = "Falls ja und <a href=\"https://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Seiten-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Seiten-Hinweis(e) lautet [Wert von 'vector_sitenotice_location']_[iso-sprach-code] (z.B. ':wiki:site_notice_en').";
 
 //navigation
 $lang["vector_navigation"]           = "Navigation anzeigen?";
 $lang["vector_navigation_location"]  = "Falls ja, folgende wiki-Seite als Navigation verwenden:";
-$lang["vector_navigation_translate"] = "Falls ja und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'vector_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
+$lang["vector_navigation_translate"] = "Falls ja und <a href=\"https://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Navigation laden?<br />Die wiki-Seite der übersetzten Navigation(en) lautet [Wert von 'vector_navigation_location']_[iso-sprach-code] (z.B. ':wiki:navigation_en').";
 
 //exportbox ("print/export")
 $lang["vector_exportbox"]          = "'Drucken/exportieren'-Box anzeigen?";
@@ -67,7 +66,7 @@ $lang["vector_qrcodebox"] = "Box mit QR-Code der aktuellen Wiki-Seiten-URL anzei
 $lang["vector_copyright"]           = "Copyright-Hinweis einblenden?";
 $lang["vector_copyright_default"]   = "Falls ja, Standard-Copyright-Hinweis nutzen?";
 $lang["vector_copyright_location"]  = "Falls nicht den Standard-Copyright-Hinweis, folgende wiki-Seite als Copyright-Hinweis verwenden:";
-$lang["vector_copyright_translate"] = "Falls nicht den Standard-Copyright-Hinweis und <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'vector_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
+$lang["vector_copyright_translate"] = "Falls nicht den Standard-Copyright-Hinweis und <a href=\"https://www.dokuwiki.org/plugin:translation\">Translation-Plugin</a> verfügbar: sprachspezifische Copyright-Hinweis(e) laden?<br />Die wiki-Seite des/der übersetzten Copyright-Hinweis(e) lautet [Wert von 'vector_copyright_location']_[iso-sprach-code] (z.B. ':wiki:copyright_en').";
 
 //donation link/button
 $lang["vector_donate"]     = "'Spenden'-Link/button anzeigen?";

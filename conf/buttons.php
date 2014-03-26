@@ -9,9 +9,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -46,9 +46,8 @@ $_vector_btns["rss"]["nofollow"] = true;
 
 
 //"vector for DokuWiki" button
-//Note: please do NOT remove this button. Thank you. :-)
 $_vector_btns["vecfdw"]["img"]      = DOKU_TPL."static/img/button-vector.png";
-$_vector_btns["vecfdw"]["href"]     = "http://andreas-haerter.com/";
+$_vector_btns["vecfdw"]["href"]     = "https://www.dokuwiki.org/template:vector";
 $_vector_btns["vecfdw"]["width"]    = 80;
 $_vector_btns["vecfdw"]["height"]   = 15;
 $_vector_btns["vecfdw"]["title"]    = $lang["vector_mdtemplatefordw"];
@@ -62,27 +61,26 @@ if (tpl_getConf("vector_donate")){
     $_vector_btns["donate"]["width"]    = 80;
     $_vector_btns["donate"]["height"]   = 15;
     $_vector_btns["donate"]["title"]    = $lang["vector_donate"];
-    $_vector_btns["donate"]["nofollow"] = !(cleanID(getID()) === "start");
+    $_vector_btns["donate"]["nofollow"] = true;
 }
-
-
-//QR Code button
-//Note: please do NOT remove this button. Thank you. :-)
-$_vector_btns["qrcode"]["img"]      = DOKU_TPL."static/img/button-qrcode.png";
-$_vector_btns["qrcode"]["href"]     = "http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/";
-$_vector_btns["qrcode"]["width"]    = 80;
-$_vector_btns["qrcode"]["height"]   = 15;
-$_vector_btns["qrcode"]["title"]    = $lang["vector_qrcodebtn"];
-$_vector_btns["qrcode"]["nofollow"] = !(cleanID(getID()) === "start");
 
 
 //DokuWiki button
 $_vector_btns["dw"]["img"]      = DOKU_TPL."static/img/button-dw.png";
-$_vector_btns["dw"]["href"]     = "http://www.dokuwiki.org";
+$_vector_btns["dw"]["href"]     = "https://www.dokuwiki.org/";
 $_vector_btns["dw"]["width"]    = 80;
 $_vector_btns["dw"]["height"]   = 15;
 $_vector_btns["dw"]["title"]    = "DokuWiki";
-$_vector_btns["dw"]["nofollow"] = false;
+$_vector_btns["dw"]["nofollow"] = !(cleanID(getID()) === "start");
+
+
+//W3C (X)HTML validator button
+$_vector_btns["valid_xhtml"]["img"]      = DOKU_TPL."static/img/button-xhtml.png";
+$_vector_btns["valid_xhtml"]["href"]     = "http://validator.w3.org/check/referer";
+$_vector_btns["valid_xhtml"]["width"]    = 80;
+$_vector_btns["valid_xhtml"]["height"]   = 15;
+$_vector_btns["valid_xhtml"]["title"]    = "Valid XHTML";
+$_vector_btns["valid_xhtml"]["nofollow"] = true;
 
 
 

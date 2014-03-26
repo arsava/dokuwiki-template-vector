@@ -14,6 +14,6 @@ III) Notes
   The css files were taken from the "starter template". See the following for
   more information:
   - <http://blog.andreas-haerter.com/2011/03/16/how-to-create-a-maintainable-dokuwiki-template>
-  - <http://www.dokuwiki.org/template:starter>
+  - <https://www.dokuwiki.org/template:starter>
   - ../../../README
 

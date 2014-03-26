@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is free software and may be copied under
@@ -21,9 +20,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author Salman Mohammadi <salman@shimool.org>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -47,7 +46,7 @@ $lang["vector_sitenotice_location"] = ":اگر بله، از صفحه‌ی وی�
 //navigation
 $lang["vector_navigation"]           = "ناوبری نشان داده شود؟";
 $lang["vector_navigation_location"]  = ":اگر بله، از صفحه‌ی ویکی زیر برای ناوبری استفاده کن";
-$lang["vector_navigation_translate"] = "اگر بله و <a href=\"http://www.dokuwiki.org/plugin:translation\">Translation plugin</a> در دسترس بود: آیا آیا از ناوبری مخصوص هر زبان استفاده شود؟<br />صفحه‌ی ویرایش برای ناوبری(های) ترجمه شده به مانند روبرو است [مقدار 'vector_navigation_location']_[iso lang code] (مثلا ':wiki:navigation_fa').";
+$lang["vector_navigation_translate"] = "اگر بله و <a href=\"https://www.dokuwiki.org/plugin:translation\">Translation plugin</a> در دسترس بود: آیا آیا از ناوبری مخصوص هر زبان استفاده شود؟<br />صفحه‌ی ویرایش برای ناوبری(های) ترجمه شده به مانند روبرو است [مقدار 'vector_navigation_location']_[iso lang code] (مثلا ':wiki:navigation_fa').";
 
 //exportbox ("print/export")
 $lang["vector_exportbox"]          = "جعبه‌ی «چاپ/برون‌ریزی را نشان دهد؟?";

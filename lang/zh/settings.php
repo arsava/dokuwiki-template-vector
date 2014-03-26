@@ -5,14 +5,13 @@
  *
  * If your language is not/only partially translated or you found an error/typo,
  * have a look at the following files:
- * - "/lib/tpl/vector/lang/<your lang>/lang.php"
- * - "/lib/tpl/vector/lang/<your lang>/settings.php"
+ * - /lib/tpl/vector/lang/<your lang>/lang.php
+ * - /lib/tpl/vector/lang/<your lang>/settings.php
  * If they are not existing, copy and translate the English ones (hint: looking
  * at <http://[your lang].wikipedia.org> might be helpful).
  *
- * Don't forget to mail your translation to
- *   Andreas Haerter <development@andreas-haerter.com>
- * Thanks :-D.
+ * Don't forget to mail your translation to ARSAVA <dokuwiki@dev.arsava.com>.
+ * Thanks! :-D
  *
  *
  * LICENSE: This file is open source software (OSS) and may be copied under
@@ -21,9 +20,9 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author LAINME <lainme993 [ät] gmail.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/config:lang
- * @link http://www.dokuwiki.org/devel:configuration
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/config:lang
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -54,9 +53,9 @@ $lang["vector_exportbox_default"]  = "如果是，使用默认的“打印/导�
 $lang["vector_exportbox_location"] = "如果不是默认，使用下列wiki页面作为“打印/导出“栏位置：";
 
 //toolbox
-$lang["vector_toolbox"]          = "显示工具箱？";
-$lang["vector_toolbox_default"]  = "如果是，使用默认工具箱？";
-$lang["vector_toolbox_location"] = "如果不是默认，使用下列wiki页面作为工具箱位置：";
+$lang["vector_toolbox"]          = "显示工具？";
+$lang["vector_toolbox_default"]  = "如果是，使用默认工具？";
+$lang["vector_toolbox_location"] = "如果不是默认，使用下列wiki页面作为工具位置：";
 
 //custom copyright notice
 $lang["vector_copyright"]          = "显示版权信息？";

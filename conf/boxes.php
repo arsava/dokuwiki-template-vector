@@ -9,9 +9,9 @@
  *          the author(s) of this file in doubt.
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
- * @author Andreas Haerter <development@andreas-haerter.com>
- * @link http://www.dokuwiki.org/template:vector
- * @link http://www.dokuwiki.org/devel:configuration
+ * @author ARSAVA <dokuwiki@dev.arsava.com>
+ * @link https://www.dokuwiki.org/template:vector
+ * @link https://www.dokuwiki.org/devel:configuration
  */
 
 
@@ -41,7 +41,7 @@ if (empty($conf["useacl"]) || //are there any users?
     !tpl_getConf("vector_closedwiki")){
 
     //Languages/translations provided by Andreas Gohr's translation plugin,
-    //see <http://www.dokuwiki.org/plugin:translation>. Create plugin object if
+    //see <https://www.dokuwiki.org/plugin:translation>. Create plugin object if
     //needed.
     if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
         !plugin_isdisabled("translation")){
@@ -130,18 +130,18 @@ if (empty($conf["useacl"]) || //are there any users?
             //define default, predefined exportbox
             $_vector_boxes["p-coll-print_export"]["xhtml"] =  "      <ul>\n";
             //ODT plugin
-            //see <http://www.dokuwiki.org/plugin:odt> for info
+            //see <https://www.dokuwiki.org/plugin:odt> for info
             if (file_exists(DOKU_PLUGIN."odt/syntax.php") &&
                 !plugin_isdisabled("odt")){
                 $_vector_boxes["p-coll-print_export"]["xhtml"]  .= "        <li id=\"coll-download-as-odt\"><a href=\"".wl(cleanID(getId()), array("do" => "export_odt"))."\" rel=\"nofollow\">".hsc($lang["vector_exportbxdef_downloadodt"])."</a></li>\n";
             }
             //dw2pdf plugin
-            //see <http://www.dokuwiki.org/plugin:dw2pdf> for info
+            //see <https://www.dokuwiki.org/plugin:dw2pdf> for info
             if (file_exists(DOKU_PLUGIN."dw2pdf/action.php") &&
                 !plugin_isdisabled("dw2pdf")){
                 $_vector_boxes["p-coll-print_export"]["xhtml"]  .= "        <li id=\"coll-download-as-rl\"><a href=\"".wl(cleanID(getId()), array("do" => "export_pdf"))."\" rel=\"nofollow\">".hsc($lang["vector_exportbxdef_downloadpdf"])."</a></li>\n";
             //html2pdf plugin
-            //see <http://www.dokuwiki.org/plugin:html2pdf> for info
+            //see <https://www.dokuwiki.org/plugin:html2pdf> for info
             } else if (file_exists(DOKU_PLUGIN."html2pdf/action.php") &&
                        !plugin_isdisabled("html2pdf")){
                 $_vector_boxes["p-coll-print_export"]["xhtml"]  .= "        <li id=\"coll-download-as-rl\"><a href=\"".wl(cleanID(getId()), array("do" => "export_pdf"))."\" rel=\"nofollow\">".hsc($lang["vector_exportbxdef_downloadpdf"])."</a></li>\n";
@@ -223,13 +223,13 @@ if (empty($conf["useacl"]) || //are there any users?
         }
     }
 
-    //QR Code of current page's URL (powered by <http://qrserver.com/api/>)
+    //QR Code of current page's URL (powered by <http://goqr.me/api/>)
     if (tpl_getConf("vector_qrcodebox")){
         //headline
         $_vector_boxes["p-qrcode"]["headline"] = $lang["vector_qrcodebox"];
 
         //content
-        $_vector_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\">".((cleanID(getID()) === "start") ? "<a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "qr-code-generator.de")."/\" target=\"_blank\">" : "")."<img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0&#38;bgcolor=f3f3f3\" alt=\"".hsc($lang["vector_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["vector_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["vector_qrcodebox_urlofcurrentpage"])."\" />".((cleanID(getID()) === "start") ? "</a>" : "")."</span>";
+        $_vector_boxes["p-qrcode"]["xhtml"] = "        <span id=\"t-qrcode\">".((cleanID(getID()) === "start") ? "<a href=\"http://".(($conf["lang"] !== "de") ? "goqr.me" : "goqr.me/de")."/\" target=\"_blank\" rel=\"nofollow\">" : "")."<img src=\"".((!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "on") ? "https" : "http")."://api.qrserver.com/v1/create-qr-code/?data=".urlencode(wl(cleanID(getId()), false, true, "&"))."&#38;size=130x130&#38;margin=0&#38;bgcolor=f3f3f3\" alt=\"".hsc($lang["vector_qrcodebox_qrcode"])." ".hsc(tpl_pagetitle(null, true))." (".hsc($lang["vector_qrcodebox_genforcurrentpage"]).")\" title=\"".hsc($lang["vector_qrcodebox_urlofcurrentpage"])."\" />".((cleanID(getID()) === "start") ? "</a>" : "")."</span>";
     }
 
 }else{
@@ -241,6 +241,16 @@ if (empty($conf["useacl"]) || //are there any users?
                                          ."      </ul>";
 
 }
+
+
+//Languages/translations provided by Andreas Gohr's translation plugin,
+//see <https://www.dokuwiki.org/plugin:translation>
+if (!empty($transplugin) &&
+    is_object($transplugin)){
+    $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
+    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
+}
+
 
 
 /******************************************************************************
