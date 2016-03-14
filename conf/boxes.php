@@ -43,9 +43,9 @@ if (empty($conf["useacl"]) || //are there any users?
     //Languages/translations provided by Andreas Gohr's translation plugin,
     //see <https://www.dokuwiki.org/plugin:translation>. Create plugin object if
     //needed.
-    if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
+    if (file_exists(DOKU_PLUGIN."translation/helper.php") &&
         !plugin_isdisabled("translation")){
-        $transplugin = &plugin_load("syntax", "translation");
+        $transplugin = &plugin_load("helper", "translation");
     } else {
         $transplugin = false;
     }
@@ -60,7 +60,7 @@ if (empty($conf["useacl"]) || //are there any users?
             is_object($transplugin) &&
             tpl_getConf("vector_navigation_translate")){
             //translated navigation?
-            $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+            $transplugin_langcur = $transplugin->getLangPart(cleanID(getId())); //current language part
             $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
             if (empty($transplugin_langs) ||
                 empty($transplugin_langcur) ||
@@ -248,7 +248,7 @@ if (empty($conf["useacl"]) || //are there any users?
 if (!empty($transplugin) &&
     is_object($transplugin)){
     $_vector_boxes["p-lang"]["headline"] = $lang["vector_translations"];
-    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->_showTranslations();
+    $_vector_boxes["p-lang"]["xhtml"]    = $transplugin->showTranslations();
 }
 
 
