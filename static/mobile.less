@@ -11,7 +11,7 @@ div.mobile-logo {
         display: block;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         z-index: 1000;
 
         cursor: pointer;
@@ -42,21 +42,26 @@ div.mobile-logo {
             height: 3rem;
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
         }
     }
 
     div.mobile-menu {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
 
         height: 100%;
         overflow-y: auto;
+        -ms-overflow-style: none;  // IE 10+
+        overflow: -moz-scrollbars-none;  // Firefox
+        &::-webkit-scrollbar {
+            display: none;  // Safari and Chrome
+        }
 
         z-index: 500;
         background-color: @ini_background;
-        box-shadow: 5px 0 5px @ini_border;
+        box-shadow: -5px 0 5px @ini_border;
 
         padding-top: 3rem;
 
@@ -67,9 +72,17 @@ div.mobile-logo {
         .mobile-search {
             display: block;
             margin: 0.25em;
-            input,
-            button {
-                line-height: inherit;
+            div {
+                display: flex;
+
+                input,
+                button {
+                    line-height: inherit;
+                    flex-grow: 0;
+                }
+                input {
+                    flex-grow: 1;
+                }
             }
         }
 
