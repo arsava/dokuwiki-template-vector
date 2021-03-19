@@ -9,28 +9,28 @@
 body {
   font: normal 80%/1.4 sans-serif;
 }
-div#content .dokuwiki h1,
-div#content .dokuwiki h2,
-div#content .dokuwiki h3,
-div#content .dokuwiki h4,
-div#content .dokuwiki h5,
-div#content .dokuwiki h6 {
+div#dokuwiki__content .dokuwiki h1,
+div#dokuwiki__content .dokuwiki h2,
+div#dokuwiki__content .dokuwiki h3,
+div#dokuwiki__content .dokuwiki h4,
+div#dokuwiki__content .dokuwiki h5,
+div#dokuwiki__content .dokuwiki h6 {
   border-bottom: 0 none;
 }
-div#content .dokuwiki h1,
-div#content .dokuwiki h2 {
+div#dokuwiki__content .dokuwiki h1,
+div#dokuwiki__content .dokuwiki h2 {
   font-weight: bold;
 }
-div#content .dokuwiki h1 {
+div#dokuwiki__content .dokuwiki h1 {
   font-weight: 135%;
 }
-div#content .dokuwiki h2 {
+div#dokuwiki__content .dokuwiki h2 {
   font-weight: 130%;
 }
-div#content .dokuwiki h3,
-div#content .dokuwiki h4,
-div#content .dokuwiki h5,
-div#content .dokuwiki h6 {
+div#dokuwiki__content .dokuwiki h3,
+div#dokuwiki__content .dokuwiki h4,
+div#dokuwiki__content .dokuwiki h5,
+div#dokuwiki__content .dokuwiki h6 {
   font-weight: normal;
   text-decoration: underline;
 }
@@ -52,36 +52,36 @@ div.dokuwiki a.interwiki {
 }
 
 /* quotes */
-div#content .dokuwiki blockquote {
+div#dokuwiki__content .dokuwiki blockquote {
   border-left: 2px solid __border__;
   padding-left: 3px;
   margin-left: 0.2em;
 }
 
 /* preformatted stuff, source code */
-div#content .dokuwiki code,
-div#content .dokuwiki pre,
-div#content .dokuwiki pre.code,
-div#content .dokuwiki pre.file {
+div#dokuwiki__content .dokuwiki code,
+div#dokuwiki__content .dokuwiki pre,
+div#dokuwiki__content .dokuwiki pre.code,
+div#dokuwiki__content .dokuwiki pre.file {
   font-size: 100%;
 }
-div#content .dokuwiki pre,
-div#content .dokuwiki pre.code,
-div#content .dokuwiki pre.file {
+div#dokuwiki__content .dokuwiki pre,
+div#dokuwiki__content .dokuwiki pre.code,
+div#dokuwiki__content .dokuwiki pre.file {
   line-height: 1.2em;
   background-color: __background_other__;
 }
-div#content .dokuwiki dl.file,
-div#content .dokuwiki dl.file dd,
-div#content .dokuwiki dl.file dt {
+div#dokuwiki__content .dokuwiki dl.file,
+div#dokuwiki__content .dokuwiki dl.file dd,
+div#dokuwiki__content .dokuwiki dl.file dt {
   margin-left: 0;
 }
-div#content .dokuwiki dl.file dt {
+div#dokuwiki__content .dokuwiki dl.file dt {
   background-color: __background_other__;
 }
 
 /* misc tweaks */
-div#content,
+div#dokuwiki__content,
 div#bodyContent {
   margin-left: 0;
   border: 0 none;
@@ -98,18 +98,18 @@ div.tags {
 }
 
 /* pagelist plugin: listing tables */
-div#content .dokuwiki table.ul,
-div#content .dokuwiki table.ul tr,
-div#content .dokuwiki table.ul td {
+div#dokuwiki__content .dokuwiki table.ul,
+div#dokuwiki__content .dokuwiki table.ul tr,
+div#dokuwiki__content .dokuwiki table.ul td {
   border: 0 none;
 }
-div#content .dokuwiki table.ul td.date,
-div#content .dokuwiki table.ul td.user {
+div#dokuwiki__content .dokuwiki table.ul td.date,
+div#dokuwiki__content .dokuwiki table.ul td.user {
   display: none;
 }
-div#content .dokuwiki table.ul ul,
-div#content .dokuwiki table.ul ol,
-div#content .dokuwiki table.ul li {
+div#dokuwiki__content .dokuwiki table.ul ul,
+div#dokuwiki__content .dokuwiki table.ul ol,
+div#dokuwiki__content .dokuwiki table.ul li {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
@@ -117,19 +117,19 @@ div#content .dokuwiki table.ul li {
 }
 
 /* wrap plugin: modify some inline styles */
-div#content .dokuwiki span.wrap_box,
-div#content .dokuwiki span.wrap_danger,
-div#content .dokuwiki span.wrap_warning,
-div#content .dokuwiki span.wrap_caution,
-div#content .dokuwiki span.wrap_notice,
-div#content .dokuwiki span.wrap_safety,
-div#content .dokuwiki span.wrap_info,
-div#content .dokuwiki span.wrap_important,
-div#content .dokuwiki span.wrap_alert,
-div#content .dokuwiki span.wrap_tip,
-div#content .dokuwiki span.wrap_help,
-div#content .dokuwiki span.wrap_todo,
-div#content .dokuwiki span.wrap_download {
+div#dokuwiki__content .dokuwiki span.wrap_box,
+div#dokuwiki__content .dokuwiki span.wrap_danger,
+div#dokuwiki__content .dokuwiki span.wrap_warning,
+div#dokuwiki__content .dokuwiki span.wrap_caution,
+div#dokuwiki__content .dokuwiki span.wrap_notice,
+div#dokuwiki__content .dokuwiki span.wrap_safety,
+div#dokuwiki__content .dokuwiki span.wrap_info,
+div#dokuwiki__content .dokuwiki span.wrap_important,
+div#dokuwiki__content .dokuwiki span.wrap_alert,
+div#dokuwiki__content .dokuwiki span.wrap_tip,
+div#dokuwiki__content .dokuwiki span.wrap_help,
+div#dokuwiki__content .dokuwiki span.wrap_todo,
+div#dokuwiki__content .dokuwiki span.wrap_download {
   border-top: 0 none;
   border-right: 0 none;
   border-left: 0 none;

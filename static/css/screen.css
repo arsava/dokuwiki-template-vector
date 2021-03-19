@@ -480,69 +480,69 @@ h6 {
   padding: 0;
   clear: left; /* ideally 'both', but problems with toc */
 }
-div#content .dokuwiki h1,
-div#content .dokuwiki h2,
-div#content .dokuwiki h3,
-div#content .dokuwiki h4,
-div#content .dokuwiki h5,
-div#content .dokuwiki h6 {
+div#dokuwiki__content .dokuwiki h1,
+div#dokuwiki__content .dokuwiki h2,
+div#dokuwiki__content .dokuwiki h3,
+div#dokuwiki__content .dokuwiki h4,
+div#dokuwiki__content .dokuwiki h5,
+div#dokuwiki__content .dokuwiki h6 {
   border-bottom: 1px solid #aaa;
   color: __text__;
   margin: 0;
   padding-bottom: 0.17em;
   padding-top: 0.5em;
 }
-div#content .dokuwiki h1 a,
-div#content .dokuwiki h2 a,
-div#content .dokuwiki h3 a,
-div#content .dokuwiki h4 a,
-div#content .dokuwiki h5 a,
-div#content .dokuwiki h6 a {
+div#dokuwiki__content .dokuwiki h1 a,
+div#dokuwiki__content .dokuwiki h2 a,
+div#dokuwiki__content .dokuwiki h3 a,
+div#dokuwiki__content .dokuwiki h4 a,
+div#dokuwiki__content .dokuwiki h5 a,
+div#dokuwiki__content .dokuwiki h6 a {
   color: __text__;
 }
-div#content .dokuwiki h1 a:hover,
-div#content .dokuwiki h2 a:hover,
-div#content .dokuwiki h3 a:hover,
-div#content .dokuwiki h4 a:hover,
-div#content .dokuwiki h5 a:hover,
-div#content .dokuwiki h6 a:hover {
+div#dokuwiki__content .dokuwiki h1 a:hover,
+div#dokuwiki__content .dokuwiki h2 a:hover,
+div#dokuwiki__content .dokuwiki h3 a:hover,
+div#dokuwiki__content .dokuwiki h4 a:hover,
+div#dokuwiki__content .dokuwiki h5 a:hover,
+div#dokuwiki__content .dokuwiki h6 a:hover {
   text-decoration: none;
 }
-div#content .dokuwiki h1 {
+div#dokuwiki__content .dokuwiki h1 {
   font-size: 160%;
 }
-div#content .dokuwiki h1,
-div#content .dokuwiki h2 {
+div#dokuwiki__content .dokuwiki h1,
+div#dokuwiki__content .dokuwiki h2 {
   margin-bottom: 0.6em;
   font-weight: normal;
 }
-div#content .dokuwiki h3,
-div#content .dokuwiki h4,
-div#content .dokuwiki h5,
-div#content .dokuwiki h6 {
+div#dokuwiki__content .dokuwiki h3,
+div#dokuwiki__content .dokuwiki h4,
+div#dokuwiki__content .dokuwiki h5,
+div#dokuwiki__content .dokuwiki h6 {
   font-weight: bold;
   border-bottom: none;
   margin-bottom: 0.3em;
 }
-div#content .dokuwiki h3 {
+div#dokuwiki__content .dokuwiki h3 {
   font-size: 132%;
 }
-div#content .dokuwiki h4 {
+div#dokuwiki__content .dokuwiki h4 {
   font-size: 116%;
 }
-div#content .dokuwiki h5 {
+div#dokuwiki__content .dokuwiki h5 {
   font-size: 100%;
 }
-div#content .dokuwiki h6 {
+div#dokuwiki__content .dokuwiki h6 {
   font-size: 80%;
 }
 
 /* remove indent from different sections */
-div#content .dokuwiki div.level1,
-div#content .dokuwiki div.level2,
-div#content .dokuwiki div.level3,
-div#content .dokuwiki div.level4,
-div#content .dokuwiki div.level5 {
+div#dokuwiki__content .dokuwiki div.level1,
+div#dokuwiki__content .dokuwiki div.level2,
+div#dokuwiki__content .dokuwiki div.level3,
+div#dokuwiki__content .dokuwiki div.level4,
+div#dokuwiki__content .dokuwiki div.level5 {
   margin-left: 0;
 }
 
@@ -594,7 +594,7 @@ div.dokuwiki li {
 }
 
 /* quotes */
-div#content .dokuwiki blockquote {
+div#dokuwiki__content .dokuwiki blockquote {
   border-left: 2px solid __border__;
   padding-left: 3px;
   padding-right: 0;
@@ -616,13 +616,13 @@ div#content .dokuwiki blockquote {
 .dokuwiki dl.file dd {
   margin: 0;
 }
-div#content .dokuwiki code,
-div#content .dokuwiki pre,
-div#content .dokuwiki pre.code,
-div#content .dokuwiki pre.file,
-div#content .dokuwiki samp,
-div#content .dokuwiki kbd,
-div#content .dokuwiki tt {
+div#dokuwiki__content .dokuwiki code,
+div#dokuwiki__content .dokuwiki pre,
+div#dokuwiki__content .dokuwiki pre.code,
+div#dokuwiki__content .dokuwiki pre.file,
+div#dokuwiki__content .dokuwiki samp,
+div#dokuwiki__content .dokuwiki kbd,
+div#dokuwiki__content .dokuwiki tt {
   font-size: 100%;
   background-color: #f9f9f9;
   color: __text__;
@@ -630,22 +630,22 @@ div#content .dokuwiki tt {
   direction: ltr;
   text-align: left;
 }
-div#content .dokuwiki em.u code { /* fix if background-color hides underlining */
+div#dokuwiki__content .dokuwiki em.u code { /* fix if background-color hides underlining */
   text-decoration: underline;
 }
-div#content .dokuwiki pre,
-div#content .dokuwiki pre.code,
-div#content .dokuwiki pre.file {
+div#dokuwiki__content .dokuwiki pre,
+div#dokuwiki__content .dokuwiki pre.code,
+div#dokuwiki__content .dokuwiki pre.file {
   line-height: 1.2em;
   padding: 0.5em;
   border: 1px dashed __border__;
 }
-div#content .dokuwiki dl.file,
-div#content .dokuwiki dl.file dd {
+div#dokuwiki__content .dokuwiki dl.file,
+div#dokuwiki__content .dokuwiki dl.file dd {
   margin-left: 0;
 }
-div#content .dokuwiki dl.file dt,
-div#content .dokuwiki dl.code dt {
+div#dokuwiki__content .dokuwiki dl.file dt,
+div#dokuwiki__content .dokuwiki dl.code dt {
   background-color: #f9f9f9;
   border-bottom: 2px solid #f9f9f9;
   border-top: 1px dashed __border__;
@@ -655,8 +655,8 @@ div#content .dokuwiki dl.code dt {
   margin-left: 2em;
   padding: 0.1em 1em;
 }
-div#content .dokuwiki dl.file dt a,
-div#content .dokuwiki dl.code dt a {
+div#dokuwiki__content .dokuwiki dl.file dt a,
+div#dokuwiki__content .dokuwiki dl.code dt a {
   color: __text__;
 }
 
@@ -700,7 +700,7 @@ th[align="right"] {
 .dokuwiki .secedit {
   margin-top: 0;
 }
-div#content .dokuwiki div.secedit input.button {
+div#dokuwiki__content .dokuwiki div.secedit input.button {
   border: 0 none;
   text-transform: lowercase;
   color: __existing__;
@@ -1132,7 +1132,7 @@ div.notify {
 
 /* --------------- admin menu --------------- */
 /* editing preview */
-div#content .dokuwiki div.preview {
+div#dokuwiki__content .dokuwiki div.preview {
   margin-left: 0;
 }
 /* "remeber me" checkbox, login */
