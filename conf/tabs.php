@@ -166,6 +166,23 @@ if (empty($conf["useacl"]) || //are there any users?
 
 }
 
+//custom plugin tab
+$skip_types = ['backlink', 'create', 'edit', 'export_odt', 'export_pdf', 'revs', 'show', 'top'];
+foreach((new \dokuwiki\Menu\PageMenu())->getItems() as $item) {
+    if(in_array($item->getType(), $skip_types)) {
+        continue;
+    }
+
+    $_vector_tabs_right["tab-" . $item->getType()]["text"]     = $item->getLabel();
+    $_vector_tabs_right["tab-" . $item->getType()]["href"]     = $item->getLink();
+    if ($item->getType() == "menuitem") {
+        $_vector_tabs_right["tab-" . $item->getType()]["class"]    = "plugin_move_page";
+    } else {
+        $_vector_tabs_right["tab-" . $item->getType()]["class"]    = $item->getType();
+    }
+    $_vector_tabs_right["tab-" . $item->getType()]["nofollow"] = true;
+}
+
 /******************************************************************************
  ********************************  ATTENTION  *********************************
          DO NOT MODIFY THIS FILE, IT WILL NOT BE PRESERVED ON UPDATES!
