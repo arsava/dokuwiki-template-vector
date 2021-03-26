@@ -81,7 +81,7 @@ if (empty($conf["useacl"]) || //are there any users?
         if (empty($conf["useacl"]) ||
             auth_quickaclcheck(cleanID($nav_location)) >= AUTH_READ){ //current user got access?
             //get the rendered content of the defined wiki article to use as custom navigation
-            $interim = tpl_include_page($nav_location, false);
+            $interim = tpl_include_page($nav_location, false, false, false);
             if ($interim === "" ||
                 $interim === false){
                 //creation/edit link if the defined page got no content
