@@ -43,6 +43,7 @@ if (empty($conf["useacl"]) || //are there any users?
     //Languages/translations provided by Andreas Gohr's translation plugin,
     //see <https://www.dokuwiki.org/plugin:translation>. Create plugin object if
     //needed.
+    /** @var syntax_plugin_translation $transplugin */
     if (file_exists(DOKU_PLUGIN."translation/syntax.php") &&
         !plugin_isdisabled("translation")){
         $transplugin = &plugin_load("syntax", "translation");
