@@ -527,7 +527,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
           is_object($transplugin) &&
           tpl_getConf("vector_sitenotice_translate")){
           //translated site notice?
-          $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+          $transplugin_langcur = $transplugin->getLangPart(cleanID(getId())); //current language part
           $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
           if (empty($transplugin_langs) ||
               empty($transplugin_langcur) ||
@@ -797,7 +797,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
                 is_object($transplugin) &&
                 tpl_getConf("vector_copyright_translate")){
                 //translated copyright notice?
-                $transplugin_langcur = $transplugin->hlp->getLangPart(cleanID(getId())); //current language part
+                $transplugin_langcur = $transplugin->getLangPart(cleanID(getId())); //current language part
                 $transplugin_langs   = explode(" ", trim($transplugin->getConf("translations"))); //available languages
                 if (empty($transplugin_langs) ||
                     empty($transplugin_langcur) ||
