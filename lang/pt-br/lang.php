@@ -65,7 +65,7 @@ $lang["vector_exportbxdef_downloadodt"] = "Download como ODT";
 $lang["vector_exportbxdef_downloadpdf"] = "Download como PDF";
 
 //default toolbox
-$lang["vector_toolbxdef_whatlinkshere"] = "What links here";
+$lang["vector_toolbxdef_whatlinkshere"] = "Páginas afluentes";
 $lang["vector_toolbxdef_upload"] = "Upload de arquivo";
 $lang["vector_toolbxdef_siteindex"] = "Índice";
 $lang["vector_toolboxdef_permanent"] = "Link permanente";
