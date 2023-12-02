@@ -20,6 +20,7 @@
  *
  * @license GPLv2 (http://www.gnu.org/licenses/gpl2.html)
  * @author Fabio Reis <fabio.netsys@gmail.com>
+ * @reviewer Daniel "Nerun" Rodrigues <danieldiasr@gmail.com>
  * @link https://www.dokuwiki.org/template:vector
  * @link https://www.dokuwiki.org/config:lang
  * @link https://www.dokuwiki.org/devel:configuration
@@ -50,6 +51,7 @@ $lang["vector_translations"] = "Idiomas";
 $lang["vector_navigation"] = "Navegação";
 $lang["vector_toolbox"] = "Ferramentas";
 $lang["vector_exportbox"] = "Imprimir/Exportar";
+$lang["vector_qrcodebox"] = "Código QR";
 $lang["vector_inotherlanguages"] = "Idiomas";
 $lang["vector_printexport"] = "Versão para impressão";
 $lang["vector_personnaltools"] = "Ferramentas Pessoais";
@@ -70,6 +72,11 @@ $lang["vector_toolbxdef_upload"] = "Upload de arquivo";
 $lang["vector_toolbxdef_siteindex"] = "Índice";
 $lang["vector_toolboxdef_permanent"] = "Link permanente";
 $lang["vector_toolboxdef_cite"] = "Citar esta página";
+
+//qr code box
+$lang["vector_qrcodebox_qrcode"] = "Código QR";
+$lang["vector_qrcodebox_genforcurrentpage"] = "gerado para a página atual";
+$lang["vector_qrcodebox_urlofcurrentpage"] = "Página atual em Código QR (escaneie para facilitar acesso de aparelho móvel)";
 
 //cite this article
 $lang["vector_cite_bibdetailsfor"] = "Detalhes bibliográficos para";
@@ -102,3 +109,4 @@ $lang["vector_fillplaceholder"] = "Preencha o espaço reservado";
 $lang["vector_donate"] = "Doações";
 $lang["vector_mdtemplatefordw"] = "template vector para DokuWiki";
 $lang["vector_recentchanges"] = "Alterações Recentes";
+
