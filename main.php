@@ -512,7 +512,7 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 <div id="head-base" class="noprint"></div>
 
 <!-- start div id=content -->
-<div id="content">
+<div id="dokuwiki__content">
   <a name="top" id="top"></a>
   <a name="dokuwiki__top" id="dokuwiki__top"></a>
 

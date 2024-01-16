@@ -33,7 +33,7 @@ body {
 	background-image: url(static/3rd/vector/page-base.png);
 }
 /* Content */
-div#content {
+div#dokuwiki__content {
 	margin-left: 10em;
 	padding: 1em;
 	background-image: url(static/3rd/vector/border.png);
@@ -619,7 +619,7 @@ div#footer #footer-places li {
  * The following code is slightly modified from monobook
  *
  */
-div#content {
+div#dokuwiki__content {
 	line-height: 1.5em;
 }
 #bodyContent {
@@ -954,7 +954,7 @@ img.thumbborder {
 #jump-to-nav {
 	display: none;
 }
-#contentSub, #contentSub2 {
+#dokuwiki__contentSub, #dokuwiki__contentSub2 {
 	font-size: 84%;
 	line-height: 1.2em;
 	margin: 0 0 1.4em 1em;
@@ -996,72 +996,72 @@ h3, h4, h5 {
 	font-size: 1.6em;
 	padding-bottom: 0;
 }
-div#content a.external,
-div#content a[href ^="gopher://"] {
+div#dokuwiki__content a.external,
+div#dokuwiki__content a[href ^="gopher://"] {
 	background: url(static/3rd/vector/external-link-ltr-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a[href ^="https://"],
+div#dokuwiki__content a[href ^="https://"],
 .link-https {
 	background: url(static/3rd/vector/lock-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a[href ^="mailto:"],
+div#dokuwiki__content a[href ^="mailto:"],
 .link-mailto {
 	background: url(static/3rd/vector/mail-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a[href ^="news://"] {
+div#dokuwiki__content a[href ^="news://"] {
 	background: url(static/3rd/vector/news-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a[href ^="ftp://"],
+div#dokuwiki__content a[href ^="ftp://"],
 .link-ftp {
 	background: url(static/3rd/vector/file-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a[href ^="irc://"],
-div#content a.extiw[href ^="irc://"],
+div#dokuwiki__content a[href ^="irc://"],
+div#dokuwiki__content a.extiw[href ^="irc://"],
 .link-irc {
 	background: url(static/3rd/vector/talk-icon.png) center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a.external[href $=".ogg"], div#content a.external[href $=".OGG"],
-div#content a.external[href $=".mid"], div#content a.external[href $=".MID"],
-div#content a.external[href $=".midi"], div#content a.external[href $=".MIDI"],
-div#content a.external[href $=".mp3"], div#content a.external[href $=".MP3"],
-div#content a.external[href $=".wav"], div#content a.external[href $=".WAV"],
-div#content a.external[href $=".wma"], div#content a.external[href $=".WMA"],
+div#dokuwiki__content a.external[href $=".ogg"], div#dokuwiki__content a.external[href $=".OGG"],
+div#dokuwiki__content a.external[href $=".mid"], div#dokuwiki__content a.external[href $=".MID"],
+div#dokuwiki__content a.external[href $=".midi"], div#dokuwiki__content a.external[href $=".MIDI"],
+div#dokuwiki__content a.external[href $=".mp3"], div#dokuwiki__content a.external[href $=".MP3"],
+div#dokuwiki__content a.external[href $=".wav"], div#dokuwiki__content a.external[href $=".WAV"],
+div#dokuwiki__content a.external[href $=".wma"], div#dokuwiki__content a.external[href $=".WMA"],
 .link-audio {
 	background: url("images/audio-icon.png") center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a.external[href $=".ogm"], div#content a.external[href $=".OGM"],
-div#content a.external[href $=".avi"], div#content a.external[href $=".AVI"],
-div#content a.external[href $=".mpeg"], div#content a.external[href $=".MPEG"],
-div#content a.external[href $=".mpg"], div#content a.external[href $=".MPG"],
+div#dokuwiki__content a.external[href $=".ogm"], div#dokuwiki__content a.external[href $=".OGM"],
+div#dokuwiki__content a.external[href $=".avi"], div#dokuwiki__content a.external[href $=".AVI"],
+div#dokuwiki__content a.external[href $=".mpeg"], div#dokuwiki__content a.external[href $=".MPEG"],
+div#dokuwiki__content a.external[href $=".mpg"], div#dokuwiki__content a.external[href $=".MPG"],
 .link-video {
 	background: url("images/video-icon.png") center right no-repeat;
 	padding: 0 13px 0 0;
 }
-div#content a.external[href $=".pdf"], div#content a.external[href $=".PDF"],
-div#content a.external[href *=".pdf#"], div#content a.external[href *=".PDF#"],
-div#content a.external[href *=".pdf?"], div#content a.external[href *=".PDF?"],
+div#dokuwiki__content a.external[href $=".pdf"], div#dokuwiki__content a.external[href $=".PDF"],
+div#dokuwiki__content a.external[href *=".pdf#"], div#dokuwiki__content a.external[href *=".PDF#"],
+div#dokuwiki__content a.external[href *=".pdf?"], div#dokuwiki__content a.external[href *=".PDF?"],
 .link-document {
 	background: url("images/document-icon.png") center right no-repeat;
 	padding: 0 13px 0 0;
 }
 /* Interwiki Styling  (Disabled) */
-div#content a.extiw,
-div#content a.extiw:active {
+div#dokuwiki__content a.extiw,
+div#dokuwiki__content a.extiw:active {
 	color: #36b;
 	background: none;
 	padding: 0;
 }
-div#content a.external {
+div#dokuwiki__content a.external {
 	color: #36b;
 }
-div#content .printfooter {
+div#dokuwiki__content .printfooter {
 	display: none;
 }
 /* Icon for Usernames */
