@@ -479,6 +479,12 @@ if (file_exists(DOKU_TPLINC."lang/".$conf["lang"]."/style.css")){
 ?>
 <!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="<?php echo DOKU_TPL; ?>static/css/screen_iehacks.css" /><![endif]-->
 <!--[if lt IE 7]><style type="text/css">body{behavior:url("<?php echo DOKU_TPL; ?>static/3rd/vector/csshover.htc")}</style><![endif]-->
+
+
+if (file_exists(DOKU_TPLINC."/user/head.php")){
+    include DOKU_TPLINC."/user/head.php"; //add user defined head
+}
+
 </head>
 <body class="<?php
              //different styles/backgrounds for different page types
